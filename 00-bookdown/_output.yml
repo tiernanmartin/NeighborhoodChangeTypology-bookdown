@@ -3,7 +3,7 @@ bookdown::gitbook:
   config:
     toc:
       before: |
-        <li><a href="http\://tinyurl.com/NeighborhoodChangeTypology">Communities of Opportunity:<br/><br/>Neighborhood Change Typology</a></li>
+        <li><a href="./">Communities of Opportunity:<br/><br/>Neighborhood Change Typology</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
