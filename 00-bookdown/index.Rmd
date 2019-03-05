@@ -24,7 +24,7 @@ options(
 
 # {-}
 
-![](coo-logo-gray-displ.png) 
+![](images/coo-logo-gray-displ.png) 
 
 <br>
 
