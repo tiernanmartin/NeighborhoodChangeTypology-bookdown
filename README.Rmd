@@ -21,7 +21,7 @@ knitr::opts_chunk$set(
 understanding the different phases and types of neighborhood change that are occurring in communities throughout
 King County, Washington.
 
-This repository contains the [`NeighborhoodChangeTypology`](https://github.com/tiernanmartin/NeighborhoodChangeTypology) project report.
+This repository contains the [`NeighborhoodChangeTypology`](https://github.com/tiernanmartin/NeighborhoodChangeTypology) project report, which can be viewed here: <http://tinyurl.com/NeighborhoodChangeTypology>.
 
 ## Note 
 

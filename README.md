@@ -14,7 +14,8 @@ County, Washington.
 
 This repository contains the
 [`NeighborhoodChangeTypology`](https://github.com/tiernanmartin/NeighborhoodChangeTypology)
-project report.
+project report, which can be viewed here:
+<http://tinyurl.com/NeighborhoodChangeTypology>.
 
 ## Note
 
