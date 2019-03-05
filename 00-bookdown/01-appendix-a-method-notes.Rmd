@@ -1,0 +1,7 @@
+# (APPENDIX) Appendix {-}
+
+# Method Notes
+
+```{r app-method-notes, echo = FALSE, results='asis'}
+lipsum::lipsum(n=5)
+```
