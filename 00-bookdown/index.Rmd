@@ -1,5 +1,4 @@
 --- 
-title: "Communities of Opportunity: Neighborhood Change Typology" 
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -23,8 +22,9 @@ options(
 # })
 ```
 
-![](coo-logo-gray-displ.png)
+# {-}
 
+![](coo-logo-gray-displ.png) 
 
 <br>
 
@@ -65,3 +65,7 @@ lipsum::lipsum(n=5)
 ```{r conclusion, echo = FALSE, results='asis'}
 lipsum::lipsum(n=5)
 ```
+
+`r if (knitr:::is_html_output()) '
+# Endnotes {-}
+'`
