@@ -1,0 +1,403 @@
+GEOGRAPHY_ID,GEOGRAPHY_ID_TYPE,GEOGRAPHY_NAME,GEOGRAPHY_TYPE,GEOGRAPHY_COMMUNITY_NAME,GEOGRAPHY_COMMUNITY_ID,PDX18_TYPE,COO16_TYPE,COO18_TYPE,COOREV18_MF_TYPE,COOREV18_SF_TYPE
+53033,GEOID,"King County, Washington",county,NA,NA,NA,NA,NA,NA,NA
+53033000100,GEOID,"Census Tract 1, King County, Washington",tract,NA,NA,NA,Susceptible,Early Type 1,NA,Early Type 1
+53033000200,GEOID,"Census Tract 2, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,Continued Loss
+53033000300,GEOID,"Census Tract 3, King County, Washington",tract,NA,NA,Early Type 1,Susceptible,Susceptible,NA,Early Type 1
+53033000401,GEOID,"Census Tract 4.01, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Early Type 1
+53033000402,GEOID,"Census Tract 4.02, King County, Washington",tract,NA,NA,Early Type 1,NA,Susceptible,NA,Early Type 1
+53033000500,GEOID,"Census Tract 5, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033000600,GEOID,"Census Tract 6, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033000700,GEOID,"Census Tract 7, King County, Washington",tract,NA,NA,Susceptible,Dynamic,Early Type 1,NA,Early Type 1
+53033000800,GEOID,"Census Tract 8, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033000900,GEOID,"Census Tract 9, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001000,GEOID,"Census Tract 10, King County, Washington",tract,NA,NA,Continued Loss,Susceptible,NA,NA,NA
+53033001100,GEOID,"Census Tract 11, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001200,GEOID,"Census Tract 12, King County, Washington",tract,NA,NA,Dynamic,Early Type 2,NA,NA,Late
+53033001300,GEOID,"Census Tract 13, King County, Washington",tract,NA,NA,Dynamic,Early Type 2,Early Type 2,NA,Early Type 2
+53033001400,GEOID,"Census Tract 14, King County, Washington",tract,NA,NA,Continued Loss,Continued Loss,Continued Loss,NA,Continued Loss
+53033001500,GEOID,"Census Tract 15, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001600,GEOID,"Census Tract 16, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033001701,GEOID,"Census Tract 17.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001702,GEOID,"Census Tract 17.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001800,GEOID,"Census Tract 18, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033001900,GEOID,"Census Tract 19, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002000,GEOID,"Census Tract 20, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002100,GEOID,"Census Tract 21, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033002200,GEOID,"Census Tract 22, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002400,GEOID,"Census Tract 24, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002500,GEOID,"Census Tract 25, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002600,GEOID,"Census Tract 26, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002700,GEOID,"Census Tract 27, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033002800,GEOID,"Census Tract 28, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033002900,GEOID,"Census Tract 29, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033003000,GEOID,"Census Tract 30, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033003100,GEOID,"Census Tract 31, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033003200,GEOID,"Census Tract 32, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033003300,GEOID,"Census Tract 33, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033003400,GEOID,"Census Tract 34, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033003500,GEOID,"Census Tract 35, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033003600,GEOID,"Census Tract 36, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033003800,GEOID,"Census Tract 38, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033003900,GEOID,"Census Tract 39, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004000,GEOID,"Census Tract 40, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004100,GEOID,"Census Tract 41, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004200,GEOID,"Census Tract 42, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004301,GEOID,"Census Tract 43.01, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004302,GEOID,"Census Tract 43.02, King County, Washington",tract,NA,NA,Late,NA,NA,Dynamic,NA
+53033004400,GEOID,"Census Tract 44, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033004500,GEOID,"Census Tract 45, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033004600,GEOID,"Census Tract 46, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033004700,GEOID,"Census Tract 47, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004800,GEOID,"Census Tract 48, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033004900,GEOID,"Census Tract 49, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005000,GEOID,"Census Tract 50, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033005100,GEOID,"Census Tract 51, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005200,GEOID,"Census Tract 52, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005301,GEOID,"Census Tract 53.01, King County, Washington",tract,NA,NA,Susceptible,NA,NA,Early Type 1,NA
+53033005302,GEOID,"Census Tract 53.02, King County, Washington",tract,NA,NA,NA,NA,NA,Early Type 1,NA
+53033005400,GEOID,"Census Tract 54, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033005600,GEOID,"Census Tract 56, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005700,GEOID,"Census Tract 57, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033005801,GEOID,"Census Tract 58.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005802,GEOID,"Census Tract 58.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033005900,GEOID,"Census Tract 59, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033006000,GEOID,"Census Tract 60, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006100,GEOID,"Census Tract 61, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006200,GEOID,"Census Tract 62, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006300,GEOID,"Census Tract 63, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006400,GEOID,"Census Tract 64, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006500,GEOID,"Census Tract 65, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033006600,GEOID,"Census Tract 66, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006700,GEOID,"Census Tract 67, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006800,GEOID,"Census Tract 68, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033006900,GEOID,"Census Tract 69, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033007000,GEOID,"Census Tract 70, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033007100,GEOID,"Census Tract 71, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033007200,GEOID,"Census Tract 72, King County, Washington",tract,NA,NA,Late,NA,NA,Late,NA
+53033007300,GEOID,"Census Tract 73, King County, Washington",tract,NA,NA,Dynamic,NA,NA,Late,NA
+53033007401,GEOID,"Census Tract 74.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033007402,GEOID,"Census Tract 74.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033007500,GEOID,"Census Tract 75, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033007600,GEOID,"Census Tract 76, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033007700,GEOID,"Census Tract 77, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033007800,GEOID,"Census Tract 78, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033007900,GEOID,"Census Tract 79, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033008001,GEOID,"Census Tract 80.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033008002,GEOID,"Census Tract 80.02, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033008100,GEOID,"Census Tract 81, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033008200,GEOID,"Census Tract 82, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,Continued Loss,NA
+53033008300,GEOID,"Census Tract 83, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033008400,GEOID,"Census Tract 84, King County, Washington",tract,NA,NA,NA,NA,NA,Continued Loss,NA
+53033008500,GEOID,"Census Tract 85, King County, Washington",tract,NA,NA,Early Type 2,NA,NA,Dynamic,NA
+53033008600,GEOID,"Census Tract 86, King County, Washington",tract,NA,NA,Dynamic,Early Type 2,Late,NA,Late
+53033008700,GEOID,"Census Tract 87, King County, Washington",tract,NA,NA,Early Type 2,Susceptible,Late,NA,Late
+53033008800,GEOID,"Census Tract 88, King County, Washington",tract,NA,NA,Continued Loss,NA,Continued Loss,NA,Continued Loss
+53033008900,GEOID,"Census Tract 89, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033009000,GEOID,"Census Tract 90, King County, Washington",tract,NA,NA,Early Type 2,Dynamic,Dynamic,NA,Dynamic
+53033009100,GEOID,"Census Tract 91, King County, Washington",tract,NA,NA,Early Type 2,NA,NA,Dynamic,NA
+53033009200,GEOID,"Census Tract 92, King County, Washington",tract,NA,NA,Late,NA,NA,Late,NA
+53033009300,GEOID,"Census Tract 93, King County, Washington",tract,NA,NA,Early Type 1,Dynamic,Susceptible,NA,Early Type 1
+53033009400,GEOID,"Census Tract 94, King County, Washington",tract,NA,NA,Early Type 1,Dynamic,Susceptible,NA,Early Type 1
+53033009500,GEOID,"Census Tract 95, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033009600,GEOID,"Census Tract 96, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033009701,GEOID,"Census Tract 97.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033009702,GEOID,"Census Tract 97.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033009800,GEOID,"Census Tract 98, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033009900,GEOID,"Census Tract 99, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033010001,GEOID,"Census Tract 100.01, King County, Washington",tract,Rainier Valley,RV,Early Type 2,Dynamic,Early Type 2,NA,Early Type 2
+53033010002,GEOID,"Census Tract 100.02, King County, Washington",tract,NA,NA,Dynamic,Dynamic,NA,NA,Dynamic
+53033010100,GEOID,"Census Tract 101, King County, Washington",tract,NA,NA,Early Type 1,Dynamic,Early Type 1,NA,Early Type 1
+53033010200,GEOID,"Census Tract 102, King County, Washington",tract,NA,NA,Continued Loss,Continued Loss,NA,NA,NA
+53033010300,GEOID,"Census Tract 103, King County, Washington",tract,Rainier Valley,RV,Early Type 2,Early Type 2,Early Type 2,NA,Dynamic
+53033010401,GEOID,"Census Tract 104.01, King County, Washington",tract,Rainier Valley,RV,Early Type 2,Susceptible,Early Type 2,NA,Dynamic
+53033010402,GEOID,"Census Tract 104.02, King County, Washington",tract,NA,NA,Susceptible,Early Type 1,NA,NA,Susceptible
+53033010500,GEOID,"Census Tract 105, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033010600,GEOID,"Census Tract 106, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033010701,GEOID,"Census Tract 107.01, King County, Washington",tract,NA,NA,Early Type 2,NA,Early Type 2,NA,Dynamic
+53033010702,GEOID,"Census Tract 107.02, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Early Type 1
+53033010800,GEOID,"Census Tract 108, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033010900,GEOID,"Census Tract 109, King County, Washington",tract,NA,NA,Early Type 2,Early Type 2,NA,NA,Dynamic
+53033011001,GEOID,"Census Tract 110.01, King County, Washington",tract,Rainier Valley,RV,Susceptible,NA,NA,NA,Susceptible
+53033011002,GEOID,"Census Tract 110.02, King County, Washington",tract,Rainier Valley,RV,NA,Susceptible,NA,NA,Early Type 1
+53033011101,GEOID,"Census Tract 111.01, King County, Washington",tract,Rainier Valley,RV,Dynamic,Early Type 2,Early Type 2,NA,Dynamic
+53033011102,GEOID,"Census Tract 111.02, King County, Washington",tract,Rainier Valley,RV,NA,NA,NA,NA,Early Type 1
+53033011200,GEOID,"Census Tract 112, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033011300,GEOID,"Census Tract 113, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033011401,GEOID,"Census Tract 114.01, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033011402,GEOID,"Census Tract 114.02, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Early Type 1,NA,Early Type 1
+53033011500,GEOID,"Census Tract 115, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033011600,GEOID,"Census Tract 116, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033011700,GEOID,"Census Tract 117, King County, Washington",tract,Rainier Valley,RV,Early Type 2,NA,NA,NA,Dynamic
+53033011800,GEOID,"Census Tract 118, King County, Washington",tract,Rainier Valley,RV,Susceptible,Susceptible,Susceptible,NA,Early Type 1
+53033011900,GEOID,"Census Tract 119, King County, Washington",tract,Rainier Valley,RV,NA,Early Type 2,NA,NA,NA
+53033012000,GEOID,"Census Tract 120, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033012100,GEOID,"Census Tract 121, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020100,GEOID,"Census Tract 201, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020200,GEOID,"Census Tract 202, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020300,GEOID,"Census Tract 203, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033020401,GEOID,"Census Tract 204.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020402,GEOID,"Census Tract 204.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020500,GEOID,"Census Tract 205, King County, Washington",tract,NA,NA,Susceptible,NA,Susceptible,NA,Early Type 1
+53033020600,GEOID,"Census Tract 206, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020700,GEOID,"Census Tract 207, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033020800,GEOID,"Census Tract 208, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033020900,GEOID,"Census Tract 209, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021000,GEOID,"Census Tract 210, King County, Washington",tract,NA,NA,NA,Susceptible,Dynamic,NA,NA
+53033021100,GEOID,"Census Tract 211, King County, Washington",tract,NA,NA,Early Type 1,Susceptible,Susceptible,NA,Susceptible
+53033021300,GEOID,"Census Tract 213, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033021400,GEOID,"Census Tract 214, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021500,GEOID,"Census Tract 215, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021600,GEOID,"Census Tract 216, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021700,GEOID,"Census Tract 217, King County, Washington",tract,NA,NA,Dynamic,NA,NA,NA,Dynamic
+53033021802,GEOID,"Census Tract 218.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021803,GEOID,"Census Tract 218.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021804,GEOID,"Census Tract 218.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021903,GEOID,"Census Tract 219.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021904,GEOID,"Census Tract 219.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021905,GEOID,"Census Tract 219.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033021906,GEOID,"Census Tract 219.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022001,GEOID,"Census Tract 220.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022003,GEOID,"Census Tract 220.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033022005,GEOID,"Census Tract 220.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022006,GEOID,"Census Tract 220.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022101,GEOID,"Census Tract 221.01, King County, Washington",tract,NA,NA,NA,Continued Loss,NA,NA,NA
+53033022102,GEOID,"Census Tract 221.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022201,GEOID,"Census Tract 222.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022202,GEOID,"Census Tract 222.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033022203,GEOID,"Census Tract 222.03, King County, Washington",tract,NA,NA,NA,Continued Loss,NA,NA,NA
+53033022300,GEOID,"Census Tract 223, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022400,GEOID,"Census Tract 224, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022500,GEOID,"Census Tract 225, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022603,GEOID,"Census Tract 226.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022604,GEOID,"Census Tract 226.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022605,GEOID,"Census Tract 226.05, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,NA
+53033022606,GEOID,"Census Tract 226.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022701,GEOID,"Census Tract 227.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022702,GEOID,"Census Tract 227.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022703,GEOID,"Census Tract 227.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022801,GEOID,"Census Tract 228.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022802,GEOID,"Census Tract 228.02, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033022803,GEOID,"Census Tract 228.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022901,GEOID,"Census Tract 229.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033022902,GEOID,"Census Tract 229.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033023000,GEOID,"Census Tract 230, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023100,GEOID,"Census Tract 231, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023201,GEOID,"Census Tract 232.01, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033023202,GEOID,"Census Tract 232.02, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,NA
+53033023300,GEOID,"Census Tract 233, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023401,GEOID,"Census Tract 234.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023403,GEOID,"Census Tract 234.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023404,GEOID,"Census Tract 234.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033023500,GEOID,"Census Tract 235, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023601,GEOID,"Census Tract 236.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023603,GEOID,"Census Tract 236.03, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,Continued Loss
+53033023604,GEOID,"Census Tract 236.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023700,GEOID,"Census Tract 237, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023801,GEOID,"Census Tract 238.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023803,GEOID,"Census Tract 238.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023804,GEOID,"Census Tract 238.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033023900,GEOID,"Census Tract 239, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024000,GEOID,"Census Tract 240, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024100,GEOID,"Census Tract 241, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024200,GEOID,"Census Tract 242, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024300,GEOID,"Census Tract 243, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024400,GEOID,"Census Tract 244, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024500,GEOID,"Census Tract 245, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024601,GEOID,"Census Tract 246.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024602,GEOID,"Census Tract 246.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024701,GEOID,"Census Tract 247.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024702,GEOID,"Census Tract 247.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024800,GEOID,"Census Tract 248, King County, Washington",tract,NA,NA,Early Type 1,NA,NA,NA,NA
+53033024901,GEOID,"Census Tract 249.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033024902,GEOID,"Census Tract 249.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033024903,GEOID,"Census Tract 249.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025001,GEOID,"Census Tract 250.01, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033025003,GEOID,"Census Tract 250.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025005,GEOID,"Census Tract 250.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025006,GEOID,"Census Tract 250.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025101,GEOID,"Census Tract 251.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025102,GEOID,"Census Tract 251.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025200,GEOID,"Census Tract 252, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,NA
+53033025301,GEOID,"Census Tract 253.01, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,Early Type 1
+53033025302,GEOID,"Census Tract 253.02, King County, Washington",tract,NA,NA,Early Type 1,Early Type 1,Early Type 1,NA,Early Type 1
+53033025400,GEOID,"Census Tract 254, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,NA
+53033025500,GEOID,"Census Tract 255, King County, Washington",tract,NA,NA,Dynamic,Dynamic,Early Type 2,NA,Dynamic
+53033025601,GEOID,"Census Tract 256.01, King County, Washington",tract,NA,NA,Early Type 1,NA,Early Type 1,NA,Early Type 1
+53033025602,GEOID,"Census Tract 256.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025701,GEOID,"Census Tract 257.01, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Susceptible
+53033025702,GEOID,"Census Tract 257.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033025803,GEOID,"Census Tract 258.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Early Type 1
+53033025804,GEOID,"Census Tract 258.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Susceptible
+53033025805,GEOID,"Census Tract 258.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Susceptible
+53033025806,GEOID,"Census Tract 258.06, King County, Washington",tract,NA,NA,NA,Early Type 2,NA,NA,NA
+53033026001,GEOID,"Census Tract 260.01, King County, Washington",tract,NA,NA,NA,Susceptible,NA,NA,NA
+53033026002,GEOID,"Census Tract 260.02, King County, Washington",tract,NA,NA,Susceptible,Early Type 2,Susceptible,NA,Early Type 1
+53033026100,GEOID,"Census Tract 261, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,Susceptible,NA,Susceptible
+53033026200,GEOID,"Census Tract 262, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Early Type 2,Susceptible,Dynamic,NA,Dynamic
+53033026300,GEOID,"Census Tract 263, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,Susceptible,NA,Early Type 1
+53033026400,GEOID,"Census Tract 264, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Early Type 2,NA,NA,NA,Dynamic
+53033026500,GEOID,"Census Tract 265, King County, Washington",tract,White Center,WC,Early Type 1,NA,Susceptible,NA,Early Type 1
+53033026600,GEOID,"Census Tract 266, King County, Washington",tract,White Center,WC,Early Type 2,Early Type 2,Early Type 2,NA,Dynamic
+53033026700,GEOID,"Census Tract 267, King County, Washington",tract,White Center,WC,NA,Early Type 2,NA,NA,NA
+53033026801,GEOID,"Census Tract 268.01, King County, Washington",tract,White Center,WC,Susceptible,NA,NA,NA,Early Type 1
+53033026802,GEOID,"Census Tract 268.02, King County, Washington",tract,White Center,WC,NA,NA,NA,NA,Early Type 1
+53033027000,GEOID,"Census Tract 270, King County, Washington",tract,White Center,WC,Susceptible,NA,NA,NA,Early Type 1
+53033027100,GEOID,"Census Tract 271, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,Early Type 2
+53033027200,GEOID,"Census Tract 272, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,Susceptible,NA,Early Type 1
+53033027300,GEOID,"Census Tract 273, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,Early Type 1
+53033027400,GEOID,"Census Tract 274, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Early Type 1
+53033027500,GEOID,"Census Tract 275, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Early Type 1
+53033027600,GEOID,"Census Tract 276, King County, Washington",tract,NA,NA,Dynamic,Early Type 1,Dynamic,NA,Dynamic
+53033027701,GEOID,"Census Tract 277.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033027702,GEOID,"Census Tract 277.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033027800,GEOID,"Census Tract 278, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033027900,GEOID,"Census Tract 279, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Early Type 1
+53033028000,GEOID,"Census Tract 280, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Susceptible,Susceptible,NA,NA,Early Type 1
+53033028100,GEOID,"Census Tract 281, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,Early Type 2
+53033028200,GEOID,"Census Tract 282, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Susceptible,NA,Susceptible,NA,Early Type 1
+53033028300,GEOID,"Census Tract 283, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,NA
+53033028402,GEOID,"Census Tract 284.02, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Susceptible,NA,NA,NA,Early Type 1
+53033028403,GEOID,"Census Tract 284.03, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Susceptible,NA,NA,NA,Susceptible
+53033028500,GEOID,"Census Tract 285, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Susceptible,Susceptible,NA,NA,Early Type 1
+53033028600,GEOID,"Census Tract 286, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033028700,GEOID,"Census Tract 287, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,NA
+53033028801,GEOID,"Census Tract 288.01, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,NA,NA,NA
+53033028802,GEOID,"Census Tract 288.02, King County, Washington",tract,Seatac/Tukwila,STC_TUK,Early Type 2,NA,Early Type 2,NA,Early Type 2
+53033028901,GEOID,"Census Tract 289.01, King County, Washington",tract,NA,NA,Early Type 1,Susceptible,Early Type 1,NA,Early Type 1
+53033028902,GEOID,"Census Tract 289.02, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033029001,GEOID,"Census Tract 290.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029003,GEOID,"Census Tract 290.03, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033029004,GEOID,"Census Tract 290.04, King County, Washington",tract,NA,NA,NA,NA,Susceptible,NA,Early Type 1
+53033029101,GEOID,"Census Tract 291.01, King County, Washington",tract,Seatac/Tukwila,STC_TUK,NA,NA,Susceptible,NA,NA
+53033029102,GEOID,"Census Tract 291.02, King County, Washington",tract,NA,NA,NA,NA,Early Type 2,NA,Early Type 2
+53033029203,GEOID,"Census Tract 292.03, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033029204,GEOID,"Census Tract 292.04, King County, Washington",tract,NA,NA,Early Type 2,Susceptible,Dynamic,NA,Dynamic
+53033029205,GEOID,"Census Tract 292.05, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,NA
+53033029206,GEOID,"Census Tract 292.06, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033029303,GEOID,"Census Tract 293.03, King County, Washington",tract,NA,NA,Susceptible,NA,Susceptible,NA,Early Type 1
+53033029304,GEOID,"Census Tract 293.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029305,GEOID,"Census Tract 293.05, King County, Washington",tract,NA,NA,Early Type 2,NA,NA,NA,Dynamic
+53033029306,GEOID,"Census Tract 293.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029307,GEOID,"Census Tract 293.07, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029403,GEOID,"Census Tract 294.03, King County, Washington",tract,NA,NA,NA,Susceptible,Susceptible,NA,Susceptible
+53033029405,GEOID,"Census Tract 294.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029406,GEOID,"Census Tract 294.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029407,GEOID,"Census Tract 294.07, King County, Washington",tract,NA,NA,Early Type 2,Dynamic,Early Type 2,NA,Early Type 2
+53033029408,GEOID,"Census Tract 294.08, King County, Washington",tract,NA,NA,NA,Early Type 1,Early Type 1,NA,Early Type 1
+53033029502,GEOID,"Census Tract 295.02, King County, Washington",tract,NA,NA,Susceptible,NA,Susceptible,NA,Susceptible
+53033029503,GEOID,"Census Tract 295.03, King County, Washington",tract,NA,NA,Early Type 1,Susceptible,Early Type 1,NA,Early Type 1
+53033029504,GEOID,"Census Tract 295.04, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Early Type 1,NA,Early Type 1
+53033029601,GEOID,"Census Tract 296.01, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033029602,GEOID,"Census Tract 296.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029700,GEOID,"Census Tract 297, King County, Washington",tract,NA,NA,Early Type 2,NA,Dynamic,NA,Dynamic
+53033029801,GEOID,"Census Tract 298.01, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Susceptible,NA,Susceptible
+53033029802,GEOID,"Census Tract 298.02, King County, Washington",tract,NA,NA,NA,Early Type 2,NA,NA,NA
+53033029901,GEOID,"Census Tract 299.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033029902,GEOID,"Census Tract 299.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030003,GEOID,"Census Tract 300.03, King County, Washington",tract,NA,NA,NA,Susceptible,Susceptible,NA,Susceptible
+53033030004,GEOID,"Census Tract 300.04, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,NA
+53033030005,GEOID,"Census Tract 300.05, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,Early Type 1
+53033030006,GEOID,"Census Tract 300.06, King County, Washington",tract,NA,NA,NA,Early Type 1,NA,NA,NA
+53033030100,GEOID,"Census Tract 301, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030201,GEOID,"Census Tract 302.01, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,Early Type 1
+53033030202,GEOID,"Census Tract 302.02, King County, Washington",tract,NA,NA,Susceptible,Susceptible,NA,NA,Early Type 1
+53033030304,GEOID,"Census Tract 303.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030305,GEOID,"Census Tract 303.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030306,GEOID,"Census Tract 303.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030308,GEOID,"Census Tract 303.08, King County, Washington",tract,NA,NA,Susceptible,NA,NA,NA,NA
+53033030309,GEOID,"Census Tract 303.09, King County, Washington",tract,NA,NA,Early Type 1,NA,NA,NA,NA
+53033030310,GEOID,"Census Tract 303.10, King County, Washington",tract,NA,NA,Early Type 2,NA,NA,NA,Dynamic
+53033030311,GEOID,"Census Tract 303.11, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Early Type 1
+53033030312,GEOID,"Census Tract 303.12, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030313,GEOID,"Census Tract 303.13, King County, Washington",tract,NA,NA,Susceptible,Susceptible,NA,NA,Early Type 1
+53033030314,GEOID,"Census Tract 303.14, King County, Washington",tract,NA,NA,Susceptible,Susceptible,NA,NA,Early Type 1
+53033030401,GEOID,"Census Tract 304.01, King County, Washington",tract,NA,NA,NA,Susceptible,Susceptible,NA,Early Type 1
+53033030403,GEOID,"Census Tract 304.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030404,GEOID,"Census Tract 304.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030501,GEOID,"Census Tract 305.01, King County, Washington",tract,NA,NA,Susceptible,NA,Early Type 1,NA,Early Type 1
+53033030503,GEOID,"Census Tract 305.03, King County, Washington",tract,NA,NA,Dynamic,NA,Dynamic,NA,Dynamic
+53033030504,GEOID,"Census Tract 305.04, King County, Washington",tract,NA,NA,Early Type 2,NA,Dynamic,NA,Dynamic
+53033030600,GEOID,"Census Tract 306, King County, Washington",tract,NA,NA,NA,Susceptible,Early Type 1,NA,Early Type 1
+53033030700,GEOID,"Census Tract 307, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033030801,GEOID,"Census Tract 308.01, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033030802,GEOID,"Census Tract 308.02, King County, Washington",tract,NA,NA,NA,NA,Early Type 1,NA,Early Type 1
+53033030901,GEOID,"Census Tract 309.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033030902,GEOID,"Census Tract 309.02, King County, Washington",tract,NA,NA,NA,NA,Susceptible,NA,Early Type 1
+53033031000,GEOID,"Census Tract 310, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031100,GEOID,"Census Tract 311, King County, Washington",tract,NA,NA,NA,Early Type 2,Early Type 1,NA,Early Type 1
+53033031202,GEOID,"Census Tract 312.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031204,GEOID,"Census Tract 312.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031205,GEOID,"Census Tract 312.05, King County, Washington",tract,NA,NA,Susceptible,Susceptible,Early Type 1,NA,Early Type 1
+53033031206,GEOID,"Census Tract 312.06, King County, Washington",tract,NA,NA,NA,Susceptible,Early Type 1,NA,Early Type 1
+53033031301,GEOID,"Census Tract 313.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031302,GEOID,"Census Tract 313.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031400,GEOID,"Census Tract 314, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Early Type 1
+53033031501,GEOID,"Census Tract 315.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031502,GEOID,"Census Tract 315.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031601,GEOID,"Census Tract 316.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031603,GEOID,"Census Tract 316.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031604,GEOID,"Census Tract 316.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031605,GEOID,"Census Tract 316.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031703,GEOID,"Census Tract 317.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031704,GEOID,"Census Tract 317.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031705,GEOID,"Census Tract 317.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031706,GEOID,"Census Tract 317.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031800,GEOID,"Census Tract 318, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031903,GEOID,"Census Tract 319.03, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033031904,GEOID,"Census Tract 319.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031906,GEOID,"Census Tract 319.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031907,GEOID,"Census Tract 319.07, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031908,GEOID,"Census Tract 319.08, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033031909,GEOID,"Census Tract 319.09, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032002,GEOID,"Census Tract 320.02, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033032003,GEOID,"Census Tract 320.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032005,GEOID,"Census Tract 320.05, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032006,GEOID,"Census Tract 320.06, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032007,GEOID,"Census Tract 320.07, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032008,GEOID,"Census Tract 320.08, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032010,GEOID,"Census Tract 320.10, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032011,GEOID,"Census Tract 320.11, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032102,GEOID,"Census Tract 321.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032103,GEOID,"Census Tract 321.03, King County, Washington",tract,NA,NA,Early Type 1,Early Type 1,NA,NA,Early Type 1
+53033032104,GEOID,"Census Tract 321.04, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033032203,GEOID,"Census Tract 322.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032207,GEOID,"Census Tract 322.07, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032208,GEOID,"Census Tract 322.08, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032210,GEOID,"Census Tract 322.10, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032211,GEOID,"Census Tract 322.11, King County, Washington",tract,NA,NA,NA,Continued Loss,NA,NA,NA
+53033032212,GEOID,"Census Tract 322.12, King County, Washington",tract,NA,NA,NA,Continued Loss,NA,NA,NA
+53033032213,GEOID,"Census Tract 322.13, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032214,GEOID,"Census Tract 322.14, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032215,GEOID,"Census Tract 322.15, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032307,GEOID,"Census Tract 323.07, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032309,GEOID,"Census Tract 323.09, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032311,GEOID,"Census Tract 323.11, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032313,GEOID,"Census Tract 323.13, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032315,GEOID,"Census Tract 323.15, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032316,GEOID,"Census Tract 323.16, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032317,GEOID,"Census Tract 323.17, King County, Washington",tract,NA,NA,NA,Continued Loss,Continued Loss,NA,Continued Loss
+53033032318,GEOID,"Census Tract 323.18, King County, Washington",tract,NA,NA,NA,NA,Continued Loss,NA,Continued Loss
+53033032319,GEOID,"Census Tract 323.19, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032320,GEOID,"Census Tract 323.20, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032321,GEOID,"Census Tract 323.21, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033032322,GEOID,"Census Tract 323.22, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032323,GEOID,"Census Tract 323.23, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033032324,GEOID,"Census Tract 323.24, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032325,GEOID,"Census Tract 323.25, King County, Washington",tract,NA,NA,NA,NA,NA,NA,Continued Loss
+53033032326,GEOID,"Census Tract 323.26, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032327,GEOID,"Census Tract 323.27, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033032328,GEOID,"Census Tract 323.28, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032329,GEOID,"Census Tract 323.29, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032401,GEOID,"Census Tract 324.01, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032402,GEOID,"Census Tract 324.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032500,GEOID,"Census Tract 325, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032601,GEOID,"Census Tract 326.01, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033032602,GEOID,"Census Tract 326.02, King County, Washington",tract,NA,NA,Continued Loss,NA,NA,NA,NA
+53033032702,GEOID,"Census Tract 327.02, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032703,GEOID,"Census Tract 327.03, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032704,GEOID,"Census Tract 327.04, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033032800,GEOID,"Census Tract 328, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+53033990100,GEOID,"Census Tract 9901, King County, Washington",tract,NA,NA,NA,NA,NA,NA,NA
+RV,abbr,Rainier Valley,community,NA,NA,NA,NA,NA,NA,NA
+STC_TUK,abbr,Seatac/Tukwila,community,NA,NA,NA,NA,NA,NA,NA
+WC,abbr,White Center,community,NA,NA,NA,NA,NA,NA,NA
