@@ -3,6 +3,16 @@ p.caption {
   margin-top: 10px;
 }
 
+h1 {
+  background-color: #a30382;
+    color: white;
+    padding: .25em;
+}
+
+h2 {
+  color: #a30382; 
+}
+
 h1, h2 {
   text-transform: uppercase; 
 }
