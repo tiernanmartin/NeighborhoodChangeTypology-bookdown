@@ -1,6 +1,8 @@
 --- 
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output: 
+  bookdown::gitbook:
+    css: style.css
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -9,17 +11,19 @@ monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
 url: 'http\://tinyurl.com/NeighborhoodChangeTypology'
 github-repo: tiernanmartin/NeighborhoodChangeTypology-bookdown
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
 ```{r setup, include=FALSE}
 options(
   htmltools.dir.version = FALSE, formatR.indent = 2,
-  width = 55, digits = 4, warnPartialMatchAttr = FALSE, warnPartialMatchDollar = FALSE
+  width = 55, digits = 4, warnPartialMatchAttr = FALSE, warnPartialMatchDollar = FALSE,
+  fig.showtext = TRUE, fig_retina = 1
 )
-# lapply(c(), function(pkg) {
-#   if (system.file(package = pkg) == '') install.packages(pkg)
-# })
+
+knitr::opts_chunk$set(fig.width=7, fig.path='figures/', dpi = 300,
+                      echo=FALSE, warning=FALSE, message=FALSE) 
+
+source("R/setup.R",echo = FALSE)
 ```
 
 # {-}
@@ -31,10 +35,77 @@ options(
 
 # Executive Summary {-}
 
+## Background {-}
+
+Gentrification and displacement shape the neighborhoods of King County, Washingtons's cities and unincorporated urban communities. While many parts of America struggle with the challenges of depopulation and disinvestment, the residents of King County have experienced a set of challenge that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [cite]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents and the appreciation of real estate values - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
+
+The goal of this project is to provide a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The project's partners envision that this information will be used by community members and community-serving organizations in these neighborhoods as they demand displacement mitigation and community restoration policies from their local governments.
+
+## Key Findings {-}
+
+3 - 4
+
+## How to Use This Report {-}
+
+The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as "estimates" rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.[cite "all models are wrong"] The data that are publicly available for each neighborhood reflect the priorities of the predominantly public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. Data are not neutral and they reflect societal power dynamics - especially when it comes to the question of which data are collected/published and which are not.^[@townsend_cities_2015]
 
 ```{r exec, echo = FALSE, results='asis'}
-lipsum::lipsum(n=5)
+lipsum::lipsum(n=1)
 ```
+
+```{r test-plot, fig.asp = 0.5, fig.cap='The number of tracts in each typology type'}
+# LOAD DATA ---------------------------------------------------------------
+
+coorev18 <- readr::read_rds("data/model-all-20190305.rds") %>% 
+  select(matches("GEOGRAPHY"), COOREV18_SF_TYPE) %>%  
+  as_tibble() 
+
+
+coorev18_cnt <- coorev18 %>%  
+  count(COOREV18_SF_TYPE) %>% 
+  mutate(COOREV18_SF_TYPE_FCT = fct_rev(factor(COOREV18_SF_TYPE, levels = typology_levels))) %>% 
+  filter(!is.na(COOREV18_SF_TYPE_FCT))
+
+
+
+# PLOT --------------------------------------------------------------------
+
+showtext_auto()
+# 
+# grDevices::windows()
+
+p1 <- ggplot(data = coorev18_cnt,
+             aes(x = COOREV18_SF_TYPE_FCT, y = n))
+p1 <- p1 + geom_segment(aes(x = COOREV18_SF_TYPE_FCT, y = 0, xend = COOREV18_SF_TYPE_FCT, yend = n), 
+                        color = colors_nct$darkgrey,
+                        size = 1) 
+p1 <- p1 + geom_point(aes(fill = COOREV18_SF_TYPE_FCT),
+                      color = colors_nct$darkgrey,
+                      shape = 21,
+                      # fill = "red",
+                      size = 5,
+                      stroke = 1.5)
+p1 <- p1 + scale_discrete_nct("fill")
+p1 <- p1 + scale_y_continuous(breaks = seq(0,70,by = 10))
+p1 <- p1 + coord_flip()
+p1 <- p1 + theme_nct 
+p1 <- p1 + theme(
+  panel.grid.major.y = element_blank(),
+  panel.grid.minor.y = element_blank(),
+  panel.grid.major.x = element_line(size = 1),
+  panel.grid.minor.x = element_blank(), 
+  axis.title.y = element_blank(),
+  legend.position = "none") 
+p1 <- p1 +labs(title = "Census tracts by neighborhood change type",
+               subtitle = "Census tracts within King County, WA",
+               caption = 'Source: Author\'s analysis\nNote: This analysis classifies 127 of the 398 tracts in King County as "at-risk or gentrifying".',
+               y = "Census Tracts")
+
+p1
+
+```
+
+
 
 # Introduction
 
