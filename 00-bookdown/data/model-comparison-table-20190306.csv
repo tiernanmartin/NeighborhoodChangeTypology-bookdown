@@ -1,0 +1,19 @@
+MODEL,NEIGHBORHOOD TYPE,VULNERABLE POPULATION,DEMOGRAPHIC CHANGE,HOUSING MARKET APPRECIATION TYPE,HOUSING MARKET APPRECIATION MARKET TYPE,HOUSING MARKET APPRECIATION NOTE
+Portland 2013,Susceptible,Yes,No,Adjacent,All,Uses Census survey data of home values
+Portland 2013,Early Type 1,Yes,No,Accelerating,All,–
+Portland 2013,Early Type 2,Yes,Yes,Adjacent,All,–
+Portland 2013,Dynamic,Yes,Yes,Accelerating,All,–
+Portland 2013,Late,Yes,Yes,Appreciated,All,–
+Portland 2013,Continued Loss,No,"White % increasing, % with BA increaseing",Appreciated,All,–
+COO Revised 2018 (Single-Family/Mixed),Susceptible,Yes,No,Adjacent,Single-Family/Mixed,Assessed value; Sale price sqft;
+COO Revised 2018 (Single-Family/Mixed),Early Type 1,Yes,No,Accelerating (short- or medium-term),Single-Family/Mixed,Assessed value; Sale price sqft; home sale rate;
+COO Revised 2018 (Single-Family/Mixed),Early Type 2,Yes,Yes,Adjacent,Single-Family/Mixed,Assessed value; Sale price sqft;
+COO Revised 2018 (Single-Family/Mixed),Dynamic,Yes,Yes,Accelerating (short- or medium-term),Single-Family/Mixed,Assessed value; Sale price sqft; home sale rate;
+COO Revised 2018 (Single-Family/Mixed),Late,Yes,Yes,Appreciated,Single-Family/Mixed,Assessed value; Sale price sqft;
+COO Revised 2018 (Single-Family/Mixed),Continued Loss,No,"White % increasing, % with BA increaseing",Appreciated,Single-Family/Mixed,Assessed value; Sale price sqft;
+COO Revised 2018 (Mostly Multifamily),Susceptible,Yes,No,Adjacent,Mostly Multifamily,Assessed value (condos); rent price (Census)
+COO Revised 2018 (Mostly Multifamily),Early Type 1,Yes,No,Accelerating (short- or medium-term),Mostly Multifamily,Assessed value (condos); rent price (Census); condo sale rate;
+COO Revised 2018 (Mostly Multifamily),Early Type 2,Yes,Yes,Adjacent,Mostly Multifamily,Assessed value (condos); rent price (Census)
+COO Revised 2018 (Mostly Multifamily),Dynamic,Yes,Yes,Accelerating (short- or medium-term),Mostly Multifamily,Assessed value (condos); rent price (Census); condo sale rate;
+COO Revised 2018 (Mostly Multifamily),Late,Yes,Yes,Appreciated,Mostly Multifamily,Assessed value (condos); rent price (Census)
+COO Revised 2018 (Mostly Multifamily),Continued Loss,No,"White % increasing, % with BA increaseing",Appreciated,Mostly Multifamily,Assessed value (condos); rent price (Census)

@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: style.css
+  css: [css/style.css, css/bookdown-leaflet.css, css/bookdown-htmlTable.css]
   toc_depth: 1
   config:
     toc:
