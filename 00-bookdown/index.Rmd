@@ -20,7 +20,7 @@ options(
   fig.showtext = TRUE, fig_retina = 1
 )
 
-knitr::opts_chunk$set(fig.width=7, fig.path='figures/', dpi = 300,
+knitr::opts_chunk$set(fig.width=7, fig.path='figures/', dpi = 300,  out.width = '100%',
                       echo=FALSE, warning=FALSE, message=FALSE) 
 
 source("R/setup.R",echo = FALSE)
@@ -106,9 +106,47 @@ Finally, the project is intended to be clear, accessible, and reproducible; part
 
 # Methods
 
-```{r methods, echo = FALSE, results='asis'}
-lipsum::lipsum(n=5)
+## The Portland Model
+
+This project begins with the method developed by Dr. Lisa Bates in partnership with the City of Portland, OR. As described by Bates, 
+
+> The typology assessment began with a retrospective look at neighborhood change in Portland to assess whether a small number of measured indicators could represent the changes observed today. … Measured indicators were chosen to represent the “robust, yet parsimonious” approach and to align with policy-relevant metrics (such as HUD income standards for housing assistance).^[bates_gentrification_2013; pp.59]
+
+This approach uses the neighborhood (approximated by census tracts) as the unit of analysis, which was part of the reason it appealed to the project team.
+
+Additionally, the method provides a clear conceptual structure to the process of neighborhood change. This structure is a three-level hierarchy^[While the project author characterizes Dr. Bates’ conceptual model as a hierarchy, Bates herself does not use that term in her report] and it enables Bates to develop definitions and assign “measured indicators” to them. 
+
+The structure's levels are:
+
+  1. **Statuses:** Long-term low cost/low income; at-risk or gentrifying; long-term high cost/high income
+  2. **Stages (of neighborhood change):** Early-, Mid-, and Late-stage
+  3. **Types (of neighborhood change):** Susceptible, Early Type 1, Early Type 2, Dynamic, Late, Continued Loss
+
+The diagram below illustrates how elements of this hierarchical conceptual structure relate:
+
+
+```{r methods-concept-diagram, fig.cap='Bates\' Conceptual model; Source: author\'s interpretation of Bates (2013)'}
+knitr::include_graphics(path = "images/concept-diagram-tight-crop.png")
 ```
+
+### Statuses {-}
+
+A neighborhood’s status simply describes whether or not it is considered to be at-risk for gentrification or not. Neighborhoods that experience long-term disinvestment and poverty face many challenges but the threat of gentrification only applies when these conditions are combined with a housing market that begins to rapidly appreciate in value. Similarly, a long-term high cost neighborhood may experience home value appreciation but without a shift toward higher-income and highly-educated residents this case doesn’t fit the model of gentrification. The characteristics of a gentrifying or gentrified neighborhood are “housing market changes, economic status changes, and demographic changes … that alter its character”.^[@bates_gentrification_2013; pp/9]
+
+### Stages {-}
+
+The stages of gentrification describe the changes that are occurring at a high level. Early-stage neighborhoods are at-risk or just beginning to show the signs of gentrification; Mid-stage neighborhoods are experiencing active gentrification pressures; and Late-stage neighborhoods have already progressed from low housing market value to high and have little or none of the previous community left.
+
+Bates connects each stage to a set of policies and strategies that communities can advocate for. This connection between the conceptual model and potential solutions is significant strength of Dr. Bates’ method.
+
+### Types {-}
+
+The six types in the Neighborhood Change Typology represent the full spectrum of possibilities for at-risk and gentrifying neighborhoods. While a given neighborhood could (at least in theory) progress through all six stages linearly, the typology does presume that to be the case; change happens at different rates and in different “flavors” in different neighborhoods.
+
+### Dimensions of Neighborhood Change
+
+## The (Revised) Communinities of Opportunity Model
+
 
 # Findings
 
