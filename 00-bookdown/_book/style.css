@@ -33,3 +33,16 @@ pre {
 pre code {
   white-space: inherit;
 }
+.gt_col_heading.gt_col_heading {
+  color: #ffffff !important;
+  background-color: #a30382 !important;
+}
+.gt_table {
+  table-layout: fixed;
+  width:100% !important;
+  border-style: none !important;
+  word-wrap: break-word !important;
+  font-size: .85em !important;
+  line-height: 1;
+  overflow-wrap: normal;
+}

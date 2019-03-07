@@ -1,7 +1,7 @@
 
 /* required styles */
 
-.book .book-body .page-wrapper .page-inner section.normal table.gt_table th.gt_col_heading.gt_left {
+.book .book-body .page-wrapper .page-inner section.normal table.gt_table .gt_col_heading {
           background-color: #a30382 !important;
   color: white !important;
   text-transform: uppercase;  

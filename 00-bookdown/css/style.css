@@ -33,3 +33,12 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+pre code {
+  overflow-x: auto;
+}
+
+.gt_col_heading {
+  color: #ffffff;
+  background-color: #a30382;
+}
