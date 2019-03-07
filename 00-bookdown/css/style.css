@@ -33,15 +33,11 @@ pre {
 pre code {
   white-space: inherit;
 }
-
-pre code {
-  overflow-x: auto;
-}
-.gt_col_heading.gt_col_heading {
+table .gt_col_heading.gt_col_heading {
   color: #ffffff !important;
   background-color: #a30382 !important;
 }
-.gt_table {
+div .gt_table {
   table-layout: fixed;
   width:100% !important;
   border-style: none !important;
