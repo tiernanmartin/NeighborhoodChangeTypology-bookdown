@@ -1,0 +1,14 @@
+--- 
+output: html_document
+---
+
+```{r change-this, fig.cap='CHANGE THIS)'}
+
+p1_labs <- ggplot2::ggplot(data = NULL) +
+  labs(caption = "Source: author's analysis; Note: tracts without a color have either long-term low cost or long-term high cost housing markets") +
+  theme_nct
+
+ggdraw() +
+  draw_image("images/kc-typo-map.png") + 
+  draw_plot(p1_labs) 
+```

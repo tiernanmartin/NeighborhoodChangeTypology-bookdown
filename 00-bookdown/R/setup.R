@@ -8,6 +8,8 @@ library(sf)
 library(gt)
 library(leaflet)
 library(showtext) 
+library(cowplot)
+library(magick)
 
 # FUNCTIONS ---------------------------------------------------------------
 
