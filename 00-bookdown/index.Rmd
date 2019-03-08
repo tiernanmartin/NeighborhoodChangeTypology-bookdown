@@ -283,7 +283,9 @@ p1
 ```
 
 
-The majority of the neighborhoods (67%) fall in the Early stage of gentrification (Susceptible, Early Type 1, or Early Type 2), while 16% are classified as Mid stage (Dynamic) and 17% are Late stage (Late or Continued Loss). The geography of these neighborhoods appears to be split into three clusters: 
+Of the 127 neighborhoods identified as being "at-risk" or gentrifying, the majority (67%) fall in the Early stage of gentrification (Susceptible, Early Type 1, or Early Type 2), while 16% are classified as Mid stage (Dynamic) and 17% are Late stage (Late or Continued Loss). 
+
+The geography of these neighborhoods appears to be split into three clusters: 
 
   1. Southwestern King County: most of the tracts in this area are either Early or Mid stage
   2. East of Lake Washington: the vast majority of these tracts are in the Late stage
@@ -291,8 +293,9 @@ The majority of the neighborhoods (67%) fall in the Early stage of gentrificatio
 
 ## COO Revised Model (Multifamily) Results
 
-There are far fewer neighborhoods included in the “mostly multifamily” model results. They are concentrated in Seattle and include all three stage of gentrification (Early, Mid, and Late) but they do not represent all six types. 
+There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.
 
+The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). As the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
 ```{r findings-type-counts-mf, fig.asp = 0.4, fig.cap='The number of tracts in each typology type (multfamily)'}
 # LOAD DATA ---------------------------------------------------------------
@@ -347,7 +350,7 @@ p1
 
 ```
 
-The neighborhoods are either within the "city center" area^[The “city center” is, in this case, being broadly defined to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill] of Seattle or in the University District.
+The neighborhoods are located either within the "city center" area of Seattle or  within the University District^[The “city center” is, in this case, being broadly defined to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill].
 
 ```{r findings-kc-map-mf, fig.cap='COO Neighborhood Change Typology - Multifamily (2018)'}
 
