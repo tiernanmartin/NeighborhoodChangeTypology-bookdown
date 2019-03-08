@@ -3,3 +3,6 @@
 .RData
 .Ruserdata
 rsconnect
+00-bookdown/images/*highres.png
+00-bookdown/images/*.indd
+00-bookdown/images/*.idlk
