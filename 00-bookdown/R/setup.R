@@ -16,8 +16,16 @@ library(magick)
 
 g <- dplyr::glimpse
 
+wrapper <- function(x, ...){
+  paste(strwrap(x, ...), collapse = "\n")
+}
+
 
 # GGPLOT2 OBJECTS ---------------------------------------------------------
+
+coo_community_levels <- c("Seatac/Tukwila",
+                          "Rainier Valley",
+                          "White Center")
 
 typology_levels <- c("Susceptible",
                      "Early Type 1",
@@ -32,6 +40,14 @@ theme_nct <- theme_minimal(base_size = 10,
                            base_family = "Open Sans",
                            base_line_size = 1) +
   theme(plot.title = element_text(hjust = 0),
+        plot.subtitle = element_text(hjust = 0),
+        plot.caption = element_text(hjust = 0))
+
+theme_void_nct <- theme_void(base_size = 10,
+                           base_family = "Open Sans",
+                           base_line_size = 1) +
+  theme(plot.margin = margin(),
+        plot.title = element_text(hjust = 0),
         plot.subtitle = element_text(hjust = 0),
         plot.caption = element_text(hjust = 0))
 

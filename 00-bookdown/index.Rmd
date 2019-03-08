@@ -399,81 +399,101 @@ plot_grid(p1, p2, p3, ncol = 1, rel_heights = c(10,2,.5))
 
 ```
 
-## COO Revised Model Results: White Center
+## COO Revised Model Results By Community
 
 
-```{r findings-wc-map, fig.cap='COO Neighborhood Change Typology: White Center (2018)'}
+```{r findings-type-by-comm-counts, fig.cap='The number of tracts in each typology type by COO Community'}
+# LOAD DATA ---------------------------------------------------------------
 
-null_plot <-  ggplot2::ggplot(data = NULL)
+coorev18_comm_tr <- readr::read_rds("data/model-all-20190305.rds") %>% 
+  select(matches("GEOGRAPHY"), COOREV18_SF_TYPE) %>%  
+  as_tibble() %>% 
+  filter(!is.na(GEOGRAPHY_COMMUNITY_ID)) %>% 
+  filter(GEOGRAPHY_TYPE %in% "tract")
 
-p1_labs <- null_plot +
-  labs(caption = "Source: author's analysis; Notes: Tracts without a color have either long-term low cost or long-term high cost housing markets.") +
-  theme_nct
+coorev18_comm_cnt <- coorev18_comm_tr %>%  
+  filter(!is.na(COOREV18_SF_TYPE)) %>% 
+  transmute(GEOGRAPHY_COMMUNITY_NAME_FCT = fct_rev(factor(GEOGRAPHY_COMMUNITY_NAME, levels = coo_community_levels)),
+            COOREV18_SF_TYPE_FCT = fct_rev(factor(COOREV18_SF_TYPE, levels = typology_levels))) %>% 
+  group_by(GEOGRAPHY_COMMUNITY_NAME_FCT, COOREV18_SF_TYPE_FCT,.drop = FALSE) %>%
+  summarise(n = length(GEOGRAPHY_COMMUNITY_NAME_FCT)) %>% 
+  arrange(GEOGRAPHY_COMMUNITY_NAME_FCT, COOREV18_SF_TYPE_FCT)
 
-p1 <- ggdraw() +
-  draw_image("images/wc-typo-map.png") +
-  draw_plot(null_plot)
 
-p2 <- ggdraw() +
-  draw_image("images/typology-scale.png") + 
-  draw_plot(null_plot)
+# PLOT --------------------------------------------------------------------
 
-p3 <- ggdraw() +
-  draw_plot(p1_labs)
+showtext_auto()
+# 
+# grDevices::windows()
 
-plot_grid(p1, p2, p3, ncol = 1, rel_heights = c(10,2,.5))   
+p1 <- ggplot(data = coorev18_comm_cnt,
+             aes(x = COOREV18_SF_TYPE_FCT, y = n))
+p1 <- p1 + geom_bar(aes(fill = COOREV18_SF_TYPE_FCT),stat = "identity") 
+p1 <- p1 + scale_discrete_nct("fill") 
+p1 <- p1 + scale_y_continuous(breaks = c(1:7)) 
+p1 <- p1 + coord_flip()
+p1 <- p1 + facet_wrap(~ GEOGRAPHY_COMMUNITY_NAME_FCT,ncol = 1)
+p1 <- p1 + theme_nct 
+p1 <- p1 +labs(y = "Number of Census Tracts",
+               title = "Neighborhood Change Typology Types (Single-Family/Mixed) by COO Community",
+               subtitle = "Census Tracts, King County, Washington (2018)",
+               caption = wrapper("Source: author's analysis;
+                                 \nNotes: the total number of census tracts in King County is 398. This does not include tracts where 90% or more of the housing units are located in multifamily buildings.",width = 130))
+p1 <- p1 + theme(
+  plot.margin = margin(t = 12,r = 12,b = 12,l = 48,unit = "pt"),
+  panel.grid.major.y = element_blank(),
+  panel.grid.minor.y = element_blank(),
+  panel.grid.major.x = element_line(size = 0.5),
+  panel.grid.minor.x = element_blank(), 
+  axis.title.y = element_blank(),
+  legend.position = "none")
 
+p1
 
 ```
 
+### COO Revised Model Results: White Center {-}
 
 
-```{r findings-rv-map, fig.cap='COO Neighborhood Change Typology: Rainier Valley (2018)'}
+```{r findings-wc-map, out.width = '100%', fig.cap='COO Neighborhood Change Typology: White Center (2018)'}
 
-null_plot <-  ggplot2::ggplot(data = NULL)
+wc_map_image <- image_read("images/wc-typo-map-lowres.png")  
 
-p1_labs <- null_plot +
-  labs(caption = "Source: author's analysis; Notes: Tracts without a color have either long-term low cost or long-term high cost housing markets.") +
-  theme_nct
-
-p1 <- ggdraw() +
-  draw_image("images/rv-typo-map.png") +
-  draw_plot(null_plot)
-
-p2 <- ggdraw() +
-  draw_image("images/typology-scale.png") + 
-  draw_plot(null_plot)
-
-p3 <- ggdraw() +
-  draw_plot(p1_labs)
-
-plot_grid(p1, p2, p3, ncol = 1, rel_heights = c(10,2,.5))   
-
+p1 <- image_ggplot(wc_map_image)
+p1 <- p1 +  
+  labs(caption = "Source: author's analysis")  +
+  theme_void_nct
+p1
 
 ```
 
+### COO Revised Model Results: Rainier Valley {-}
 
+```{r findings-rv-map, out.width = '100%', fig.cap='COO Neighborhood Change Typology: Rainier Valley (2018)'}
 
-```{r findings-stk-map, fig.cap='COO Neighborhood Change Typology: Seatac/Tukwila (2018)'}
+rv_map_image <- image_read("images/rv-typo-map-lowres.png")  
 
-null_plot <-  ggplot2::ggplot(data = NULL)
+p1 <- image_ggplot(rv_map_image)
+p1 <- p1 +  
+  labs(caption = "Source: author's analysis
+       \nNote: Only tracts within the Rainier Valley neighborhood are included in this image.")  +
+  theme_void_nct
+p1 
 
-p1_labs <- null_plot +
-  labs(caption = "Source: author's analysis; Notes: Tracts without a color have either long-term low cost or long-term high cost housing markets.") +
-  theme_nct
+```
 
-p1 <- ggdraw() +
-  draw_image("images/stk-typo-map.png") +
-  draw_plot(null_plot)
+### COO Revised Model Results: Seatac & Tukwila {-}
 
-p2 <- ggdraw() +
-  draw_image("images/typology-scale.png") + 
-  draw_plot(null_plot)
+```{r findings-stk-map, out.width = '100%', fig.cap='COO Neighborhood Change Typology: Seatac/Tukwila (2018)'}
 
-p3 <- ggdraw() +
-  draw_plot(p1_labs)
+stk_map_image <- image_read("images/stk-typo-map-lowres.png")  
 
-plot_grid(p1, p2, p3, ncol = 1, rel_heights = c(10,2,.5))   
+p1 <- image_ggplot(stk_map_image)
+p1 <- p1 +  
+  labs(caption = "Source: author's analysis
+       \nNote: Only tracts within Seatac and Tukwila are included in this image.")  +
+  theme_void_nct
+p1 
 
 
 ```
