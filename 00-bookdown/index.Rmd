@@ -210,7 +210,7 @@ The following table captures the similarities and difference between the Portlan
 
 ## COO Revised Model (Single-Family/Mixed) Results
 
-The COO Revised Model identifies many neighborhoods in King County as either at-risk or gentrifying. 
+The COO Revised Model identifies many neighborhoods in King County as either "at-risk" or gentrifying. 
 
 ```{r findings-type-counts, fig.asp = 0.5, fig.cap='The number of tracts in each typology type'}
 # LOAD DATA ---------------------------------------------------------------
@@ -252,7 +252,8 @@ p1 <- p1 + theme_nct
 p1 <- p1 +labs(y = "Number of Census Tracts",
                title = "Neighborhood Change Typology Types (Single-Family/Mixed)",
                subtitle = "King County, Washington (2019)",
-               caption = wrapper("Source: author's analysis; Notes: the total number of census tracts in King County is 398. This does not include tracts where 90% or more of the housing units are located in multifamily buildings."))
+               caption = wrapper("Source: author's analysis
+                                 \nNotes: the total number of census tracts in King County is 398. The graphic above does not include tracts where 90% or more of the housing units are located in multifamily buildings."))
 p1 <- p1 + theme(
   panel.grid.major.y = element_blank(),
   panel.grid.minor.y = element_blank(),
@@ -277,19 +278,19 @@ p1 <- p1 +
   labs(title = "COO Neighborhood Change Typology - Single-Family/Mixed Neighborhoods (2018)",
        subtitle = "Geographic unit: census tracts; Data sources: multiple (see 'Methods' chapter)",
 caption = wrapper("Source: author's analysis
-                         \nNotes: Tracts without a color have either long-term low cost or long-term high cost housing markets. This does not include tracts where 90% or more of the housing units are located in multifamily buildings."))  +
+                         \nNotes: Tracts without a color have either long-term low cost or long-term high cost housing markets. The graphic above does not include tracts where 90% or more of the housing units are located in multifamily buildings."))  +
   theme_void_nct
 p1 
 ```
 
 
-Of the 127 neighborhoods identified as being "at-risk" or gentrifying, the majority (67%) fall in the Early stage of gentrification (Susceptible, Early Type 1, or Early Type 2), while 16% are classified as Mid stage (Dynamic) and 17% are Late stage (Late or Continued Loss). 
+Of the 127 neighborhoods identified as being "at-risk" or gentrifying, the majority (67%) fall in the Early stage of gentrification (Susceptible, Early Type 1, or Early Type 2), while 16% are classified as Mid-stage (Dynamic) and 17% are Late-stage (Late or Continued Loss). 
 
-The geography of these neighborhoods appears to be split into three clusters: 
+Geographically, these neighborhoods appears to be split into three clusters: 
 
-  1. Southwestern King County: most of the tracts in this area are either Early or Mid stage
-  2. East of Lake Washington: the vast majority of these tracts are in the Late stage
-  3. North Seattle, Shoreline, and Bothell: tracts in this cluster span all three stages of gentrification from Early to Late
+  1. **Southwestern King County:** most of the tracts in this area are either Early- or Mid-stage
+  2. **East of Lake Washington:** the vast majority of these tracts are in the Late stage
+  3. **North Seattle, Shoreline, and Bothell:** tracts in this cluster span all three stages of gentrification from Early to Late
 
 ## COO Revised Model (Multifamily) Results
 
@@ -350,7 +351,7 @@ p1
 
 ```
 
-The neighborhoods are located either within the "city center" area of Seattle or  within the University District^[The “city center” is, in this case, being broadly defined to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill].
+The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill].
 
 ```{r findings-kc-map-mf, fig.cap='COO Neighborhood Change Typology - Multifamily (2018)'}
 
@@ -370,6 +371,20 @@ p1
 
 ## COO Revised Model Results By Community
 
+
+```{r findings-coo-comms-pop, include=FALSE}
+dat <- readr::read_rds("data/model-all-20190305.rds")  %>%  
+  select(matches("GEOGRAPHY"), COOREV18_VULN_POC_EST_TOT_2013_2017,COOREV18_VULN_POC_MOE_TOT_2013_2017) %>%  
+  as_tibble() %>% 
+  filter(!is.na(GEOGRAPHY_COMMUNITY_ID)) %>% 
+  filter(GEOGRAPHY_TYPE %in% "tract") %>% 
+    summarize(POP = scales::comma(sum(COOREV18_VULN_POC_EST_TOT_2013_2017)),
+              MOE = scales::comma(tidycensus::moe_sum(COOREV18_VULN_POC_MOE_TOT_2013_2017,COOREV18_VULN_POC_EST_TOT_2013_2017)))
+```
+
+The COO program’s three original place-based communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`)] from four separate jurisdictions and countless different cultural communities.
+
+The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
 ```{r findings-type-by-comm-counts, fig.cap='The number of tracts in each typology type by COO Community'}
 # LOAD DATA ---------------------------------------------------------------
@@ -407,7 +422,7 @@ p1 <- p1 +labs(y = "Number of Census Tracts",
                title = "Neighborhood Change Typology Types (Single-Family/Mixed) by COO Community",
                subtitle = "Census Tracts, King County, Washington (2018)",
                caption = wrapper("Source: author's analysis;
-                                 \nNotes: the total number of census tracts in King County is 398. This does not include tracts where 90% or more of the housing units are located in multifamily buildings."))
+                                 \nNote: 34 of King County's 398 census tracts are located within the three original COO communties"))
 p1 <- p1 + theme(
   plot.margin = margin(t = 12,r = 12,b = 12,l = 48,unit = "pt"),
   panel.grid.major.y = element_blank(),
@@ -421,6 +436,26 @@ p1
 
 ```
 
+As indicated in the graphic below, no clear pattern is present in the geographic distribution of the neighborhood change types.
+
+```{r findings-typo-coo-comms-map, fig.cap='COO Neighborhood Change Typology - Original Three COO Communities (2018)'}
+
+coo_comms_map_image <- image_read("images/typo-coo-comms-lowres.png")  
+
+p1 <- image_ggplot(coo_comms_map_image)
+p1 <- p1 +  
+  labs(title = wrapper("COO Neighborhood Change Typology - Original Three COO Communities (2018)"),
+       subtitle = "Geographic unit: census tracts; Data sources: multiple (see 'Methods' chapter)",
+caption = wrapper("Source: author's analysis
+                         \nNote: Tracts without a color have either long-term low cost or long-term high cost housing markets. Tracts outside the original three COO communities are not displayed in this graphic."))  +
+  theme_void_nct
+p1  
+
+
+```
+
+
+
 ### COO Revised Model Results: White Center {-}
 
 
@@ -432,7 +467,8 @@ p1 <- image_ggplot(wc_map_image)
 p1 <- p1 +  
   labs(title = "COO Neighborhood Change Typology: White Center (2018)",
        subtitle = "Geographic unit: census tracts; Data sources: multiple (see 'Methods' chapter)",
-    caption = "Source: author's analysis")  +
+    caption = "Source: author's analysis
+    \nNote: Tracts without a color have either long-term low cost or long-term high cost housing markets. Tracts outside White Center are not displayed in this graphic.")  +
   theme_void_nct
 p1
 
@@ -449,7 +485,7 @@ p1 <- p1 +
   labs(title = "COO Neighborhood Change Typology: Rainier Valley (2018)",
        subtitle = "Geographic unit: census tracts; Data sources: multiple (see 'Methods' chapter)",
 caption = wrapper("Source: author's analysis
-       \nNote: Both map images show the same census tracts: those within Seattle's Rainier Valley neighborhood."))  +
+                  \nNote: Tracts without a color have either long-term low cost or long-term high cost housing markets. Tracts outside Rainier Valley are not displayed in this graphic."))  +
   theme_void_nct
 p1 
 
@@ -466,7 +502,7 @@ p1 <- p1 +
   labs(title = "COO Neighborhood Change Typology: Seatac & Tukwila (2018)",
        subtitle = "Geographic unit: census tracts; Data sources: multiple (see 'Methods' chapter)",
 caption = wrapper("Source: author's analysis
-       \nNote: Both map images show the same census tracts: those within Seatac or Tukwila."))  +
+                  \nNote: Tracts without a color have either long-term low cost or long-term high cost housing markets. Tracts outside Seatac and Tukwila are not displayed in this graphic."))  +
   theme_void_nct
 p1 
 

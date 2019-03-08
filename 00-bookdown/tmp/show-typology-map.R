@@ -537,6 +537,155 @@ show_coorev18_sf_communities_map <- function(){
     dplyr::group_by(GEOGRAPHY_COMMUNITY_NAME, GEOGRAPHY_COMMUNITY_ID) %>%
     dplyr::summarise() %>%
     sf::st_transform(4326)
+
+    kc_no_comm <- kc_boundary %>% st_difference(st_union(coo_communities)) %>% st_union()
+  
+    kc_no_wc <- kc_boundary %>% st_difference(coo_comm_wc) %>% st_union()
+    
+     kc_no_rv <- kc_boundary %>% st_difference(coo_comm_rv) %>% st_union()
+    
+    kc_no_stk <- kc_boundary %>% st_difference(coo_comm_stk) %>% st_union()
+    
+    
+  comm_tracts <- model_all %>% 
+    filter(!is.na(GEOGRAPHY_COMMUNITY_ID)) %>% 
+    filter(GEOGRAPHY_TYPE %in% "tract")
+  
+ 
+  comm_tract_centers <- model_all %>% 
+    st_centroid() %>% 
+    mutate(coord = map(geom, ~ as_tibble(st_coordinates(.x))),
+           coord_x = map_dbl(coord, ~pull(.x,"X")),
+           coord_y =  map_dbl(coord, ~pull(.x,"Y"))) %>% 
+    select(matches("GEOG"),matches("coord")) %>% 
+    mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME,", King County, Washington"),
+           GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME,"Census "))
+  
+
+  
+   # assign one of the model objects to model_df
+
+  model_colnames <- c("PDX18_TYPE",       # 1
+                      "COO16_TYPE",       # 2
+                      "COO18_TYPE",       # 3
+                      "COOREV18_MF_TYPE", # 4
+                      "COOREV18_SF_TYPE") # 5
+
+  kc_boundary <- sf::st_transform(kc_boundary, 4326)
+
+  model_all <- sf::st_transform(model_all, 4326)
+
+
+my_pal_hex <- c("#ffff00",
+                "#ffc800",
+                "#ff9600",
+                "#a30382",
+                "#0794d0",
+                "#1b5f8f") 
+
+
+
+dat_ready <- comm_tracts %>%
+    dplyr::select(dplyr::starts_with("GEOGRAPHY"),
+                  tidyselect::vars_select(names(.),model_colnames[5])) %>%
+    dplyr::mutate(COOREV18_SF_TYPE_FCT = factor(COOREV18_SF_TYPE,
+                                        levels = c("Susceptible",
+                                                   "Early Type 1",
+                                                   "Early Type 2",
+                                                   "Dynamic",
+                                                   "Late",
+                                                   "Continued Loss"
+                                        )))
+pal <- leaflet::colorFactor(my_pal_hex,levels = levels(dat_ready$COOREV18_SF_TYPE_FCT), ordered = TRUE,na.color = 'transparent')
+
+vals <- levels(ordered(dat_ready$COOREV18_SF_TYPE_FCT))
+
+
+dat_ready %>%
+  sf::st_transform(4326) %>%
+  dplyr::mutate(POPUP= paste0(GEOGRAPHY_NAME,": ",GEOGRAPHY_ID)) %>%
+  leaflet::leaflet() %>%
+  leaflet::addMapPane("background_map", zIndex = 410) %>%
+  leaflet::addMapPane("polygons", zIndex = 420) %>%
+  leaflet::addMapPane("lines", zIndex = 430) %>%
+  leaflet::addMapPane("communities", zIndex = 440) %>%
+  leaflet::addMapPane("labels", zIndex = 450) %>%
+  leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLite,
+                            options = leaflet::pathOptions(pane = "background_map")) %>%
+  leaflet::addPolygons(data = kc_no_comm,
+                       fillOpacity = 0.1, smoothFactor = 0,
+                       fill = "black", weight = 0, 
+                       options = leaflet::pathOptions(pane = "polygons")) %>% 
+  leaflet::addPolygons(fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                       color = 'white', opacity = .85, weight = .5,
+                       popup = ~POPUP,
+                       options = leaflet::pathOptions(pane = "polygons")) %>% 
+  leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLines,
+                            options = leaflet::pathOptions(pane = "lines")) %>%
+  leaflet::addPolygons(data = comm_tracts,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .25, weight = 5,
+                       options = leaflet::pathOptions(pane = "lines")) %>% 
+  leaflet::addPolygons(data = coo_communities,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .85, weight = 5,
+                       options = leaflet::pathOptions(pane = "communities")) %>% 
+  leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLabels,
+                            options = leaflet::pathOptions(pane = "labels")) 
+  
+dat_ready %>%
+  sf::st_transform(4326) %>%
+  dplyr::mutate(POPUP= paste0(GEOGRAPHY_NAME,": ",GEOGRAPHY_ID)) %>%
+  leaflet::leaflet() %>%
+  leaflet::addMapPane("background_map", zIndex = 410) %>%
+  leaflet::addMapPane("polygons", zIndex = 420) %>%
+  leaflet::addMapPane("lines", zIndex = 430) %>%
+  leaflet::addMapPane("communities", zIndex = 440) %>%
+  leaflet::addMapPane("labels", zIndex = 450) %>%
+  leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLite,
+                            options = leaflet::pathOptions(pane = "background_map")) %>%
+  leaflet::addPolygons(data = kc_no_wc,
+                       fillOpacity = 0.1, smoothFactor = 0,
+                       fill = "black", weight = 0, 
+                       options = leaflet::pathOptions(pane = "polygons")) %>% 
+  leaflet::addPolygons(fillOpacity = 0, smoothFactor = 0,
+                       color = 'white', opacity = .85, weight = .5,
+                       popup = ~POPUP,
+                       options = leaflet::pathOptions(pane = "polygons")) %>%  
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLines,
+                            options = leaflet::pathOptions(pane = "lines")) %>%
+  leaflet::addPolygons(data = wc_tracts,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .25, weight = 5,
+                       options = leaflet::pathOptions(pane = "lines")) %>% 
+  leaflet::addPolygons(data = coo_comm_wc,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .85, weight = 5,
+                       options = leaflet::pathOptions(pane = "communities")) %>% 
+  leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLabels,
+                            options = leaflet::pathOptions(pane = "labels")) %>% 
+  leaflet::addLabelOnlyMarkers(data = wc_tract_centers, options = markerOptions(draggable = TRUE),
+                    lng = ~coord_x, lat = ~coord_y, label = ~GEOGRAPHY_NAME,
+                    labelOptions = labelOptions(noHide = TRUE, direction = 'top', textOnly = FALSE, textsize = "10px")) 
+}
+
+#' @rdname show-typology-map
+#' @export
+show_coorev18_sf_communities_individual_map <- function(){
+
+  # loadd the objects
+
+  model_all <- st_read("00-bookdown/data/model-coorev18-20190305.gpkg")
+  
+  kc_boundary <- st_read("00-bookdown/data/kc-boundary.gpkg") 
+
+  coo_communities <- model_all %>%
+    dplyr::select(GEOGRAPHY_ID,
+                  dplyr::matches("GEOGRAPHY_COMMUNITY")) %>%
+    dplyr::filter(! is.na(GEOGRAPHY_COMMUNITY_ID)) %>%
+    dplyr::group_by(GEOGRAPHY_COMMUNITY_NAME, GEOGRAPHY_COMMUNITY_ID) %>%
+    dplyr::summarise() %>%
+    sf::st_transform(4326)
   
   coo_comm_wc <-  model_all %>%
     dplyr::select(GEOGRAPHY_ID,
