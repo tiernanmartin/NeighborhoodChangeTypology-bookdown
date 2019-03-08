@@ -251,7 +251,7 @@ p1 <- p1 + coord_flip()
 p1 <- p1 + theme_nct
 p1 <- p1 +labs(y = "Number of Census Tracts",
                title = "Neighborhood Change Typology Types (Single-Family/Mixed)",
-               subtitle = "King County, Washington (2019)",
+               subtitle = "King County, Washington (2018)",
                caption = wrapper("Source: author's analysis
                                  \nNotes: the total number of census tracts in King County is 398. The graphic above does not include tracts where 90% or more of the housing units are located in multifamily buildings."))
 p1 <- p1 + theme(
@@ -266,7 +266,7 @@ p1
 
 ```
 
-Of the 398 census tracts, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are mostly concentrated in southwestern King County, although some Late-stage gentrification tracts are identified in the communities surrounding Lake Sammamish. 
+Of the 398 census tracts in King County, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are mostly concentrated in southwestern part of the county although some Late-stage gentrification tracts are identified in the communities surrounding Lake Sammamish. 
 
 
 ```{r findings-kc-map, fig.cap='COO Neighborhood Change Typology - Single-Family/Mixed (2018)'}
@@ -337,7 +337,7 @@ p1 <- p1 + coord_flip()
 p1 <- p1 + theme_nct
 p1 <- p1 +labs(y = "Number of Census Tracts",
                title = "Neighborhood Change Typology Types (Multifamily)",
-               subtitle = "King County, Washington (2019)",
+               subtitle = "King County, Washington (2018)",
                caption = wrapper("Source: author's analysis; Notes: the total number of census tracts in King County is 398. This does not include tracts where less than 90% of the housing units are located in multifamily buildings."))
 p1 <- p1 + theme(
   panel.grid.major.y = element_blank(),
@@ -382,7 +382,7 @@ dat <- readr::read_rds("data/model-all-20190305.rds")  %>%
               MOE = scales::comma(tidycensus::moe_sum(COOREV18_VULN_POC_MOE_TOT_2013_2017,COOREV18_VULN_POC_EST_TOT_2013_2017)))
 ```
 
-The COO program’s three original place-based communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`)] from four separate jurisdictions and countless different cultural communities.
+The COO program’s three original place-based communities are White Center, Raininer Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`)] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
 
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
@@ -454,7 +454,7 @@ p1
 
 ```
 
-
+The following maps display the COO Revised Neighborhood Change Typology (2018) results for the original three place-based communities.
 
 ### COO Revised Model Results: White Center {-}
 
