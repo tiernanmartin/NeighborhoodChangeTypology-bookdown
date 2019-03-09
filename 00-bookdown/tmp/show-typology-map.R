@@ -259,7 +259,9 @@ show_coo18_sf_map <- function(){
 
   # loadd the objects
 
-  drake::loadd(model_all, kc_boundary)
+  model_all <- st_read("00-bookdown/data/model-coorev18-20190305.gpkg")
+  
+  kc_boundary <- st_read("00-bookdown/data/kc-boundary.gpkg")
 
    # assign one of the model objects to model_df
 
