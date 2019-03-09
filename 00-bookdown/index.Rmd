@@ -30,3 +30,45 @@ source("R/setup.R",echo = FALSE)
 
 <br>
 
+# Acknowledgements {-}
+
+# Authors & Contributors {-}
+
+#### [Futurewise](http://www.futurewise.org) {-}
+
+Futurewise works to advance livable communities while protecting Washington’s most valuable natural resources. 
+They collaborate strategically with legislators, government staff, community-based non-profits, Washington residents and Futurewise members to develop smart policy and advocate for responsible growth management. 
+Futurewise works statewide with offices in Seattle and Spokane and a presence in both Pierce County and the Tri-Cities to create a livable and dynamic future for Washington.
+
+Contributring staff include:
+
+  - **Tiernan Martin**, author - for more information about the project contact Tiernan at tiernan@futurewise.org
+  - **Yen Baynes**, contributor
+  
+#### [Puget Sound Sage](http://www.pugetsoundsage.org) {-}
+
+Puget Sound Sage improves the lives of all families by building power for shared prosperity in the Puget Sound regional economy. 
+They combine research, innovative policy and organizing to advance racial equity,stronger democracy, good jobs, affordable housing,
+accessible transit and a healthy environment. 
+
+Contributring staff include:
+
+  - **Giulia Pasciuto**, contributor
+  
+#### [White Center Community Development Authority](https://www.wccda.org/) {-}
+
+The White Center CDA works to eradicate poverty and build a vibrant, economically diverse community.
+They do this by:
+
+  - Facilitating a community-driven agenda for change
+  - Connecting families and community members to resources, services, and supports
+  - Advocating for inclusion, engagement and resident leadership
+  - Working across communities, cultures and systems
+The WCCDA is committed to ensuring long-term equity and social justice through systems change for the benefit of the White Center community.
+
+Contributring staff include:
+
+  - **Sili Savusa**, contributor
+  - **Ahn-Dao Tran**, contributor 
+  - **Aaron Garcia**, contributor
+  - **Catherina Willard**, contributor
