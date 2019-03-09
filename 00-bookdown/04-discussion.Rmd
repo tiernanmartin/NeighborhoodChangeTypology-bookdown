@@ -1,0 +1,7 @@
+
+# Discussion
+
+```{r discussion, echo = FALSE, results='asis'}
+lipsum::lipsum(n=5)
+```
+ 

@@ -1,0 +1,6 @@
+
+# Conclusion
+
+```{r conclusion, echo = FALSE, results='asis'}
+lipsum::lipsum(n=5)
+```
