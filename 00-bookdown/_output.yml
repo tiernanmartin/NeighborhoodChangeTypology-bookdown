@@ -3,9 +3,11 @@ bookdown::gitbook:
     config:
       toc:
         collapse: section
-        scroll_highlight: yes
-        before: null
-        after: null
+        scroll_highlight: yes 
+        before: |
+          <li><a href="./">Communities of Opportunity:<br/>Neighborhood Change Typology</a></li>
+        after: |
+          <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
       toolbar:
         position: fixed
       edit : null
