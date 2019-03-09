@@ -108,6 +108,7 @@ p1 <- ggplot(data = coorev18_cnt_mf,
              aes(x = COOREV18_MF_TYPE_FCT, y = n))
 p1 <- p1 + geom_bar(aes(fill = COOREV18_MF_TYPE_FCT), stat = "identity") 
 p1 <- p1 + scale_discrete_nct("fill") 
+p1 <- p1 + scale_y_continuous(breaks = c(1:10),limits = c(0,10))
 p1 <- p1 + coord_flip()
 p1 <- p1 + theme_nct
 p1 <- p1 +labs(y = "Number of Census Tracts",
