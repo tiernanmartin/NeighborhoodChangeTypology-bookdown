@@ -1,18 +1,25 @@
 bookdown::gitbook:
-  css: [css/style.css, css/bookdown-leaflet.css, css/bookdown-htmlTable.css]
-  toc_depth: 1
-  config:
-    toc:
-      before: |
-        <li><a href="./">Communities of Opportunity:<br/><br/>Neighborhood Change Typology</a></li>
-      after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
-    edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
-    download: ["epub"]
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
+    css: [css/style.css]
+    config:
+      toc:
+        collapse: section
+        scroll_highlight: yes
+        before: null
+        after: null
+      toolbar:
+        position: fixed
+      edit : null
+      download: null
+      search: yes
+      fontsettings:
+        theme: white
+        family: sans
+        size: 2
+      sharing:
+        facebook: no
+        twitter: no
+        google: no
+        linkedin: no
+        weibo: no
+        instapaper: no
+        vk: no
