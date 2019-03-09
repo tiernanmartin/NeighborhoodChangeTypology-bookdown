@@ -1,9 +1,10 @@
 bookdown::gitbook:
     css: [css/style.css]
-    config:
-      toc:
-        collapse: section
+    toc_depth: 2
+    config:  
+      toc: 
         scroll_highlight: yes 
+        collapse: section
         before: |
           <li><a href="./">Communities of Opportunity:<br/>Neighborhood Change Typology</a></li>
         after: |
