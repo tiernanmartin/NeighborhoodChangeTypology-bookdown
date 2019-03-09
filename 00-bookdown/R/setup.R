@@ -46,7 +46,7 @@ theme_nct <- theme_minimal(base_size = 10,
 theme_void_nct <- theme_void(base_size = 10,
                            base_family = "Open Sans",
                            base_line_size = 1) +
-  theme(plot.margin = margin(t = 5,r = 5,b = 5,l = 5,unit = "pt"),
+  theme(plot.margin = margin(t = 5,r = 5,b = 5,l = 0,unit = "pt"),
         plot.title = element_text(hjust = 0),
         plot.subtitle = element_text(hjust = 0),
         plot.caption = element_text(hjust = 0))

@@ -23,6 +23,14 @@ h1, h2, h3 {
 p {
   font-family: 'Open Sans'
 }
+
+ul, ol {
+  font-family: 'Open Sans'
+}
+
+div .normal p, ul, ol {
+  font-family: 'Open Sans' !important
+}
 p code {
   white-space: inherit;
 }

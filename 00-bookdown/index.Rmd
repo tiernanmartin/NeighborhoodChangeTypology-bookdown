@@ -6,6 +6,7 @@ output:
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
+csl: environment-and-planning.csl
 link-citations: yes
 monofont: "Source Code Pro"
 monofontoptions: "Scale=0.7"
@@ -37,7 +38,13 @@ source("R/setup.R",echo = FALSE)
 
 ## Background {-}
 
-Gentrification and displacement shape the neighborhoods of King County, Washingtons's cities and unincorporated urban communities. While many parts of America struggle with the challenges of depopulation and disinvestment, the residents of King County have experienced a set of challenge that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes[@king_county_2016_2016]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents and the appreciation of real estate values - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
+Blah blah [see @king_county_2016_2016, pp. 33-35; @townsend_cities_2015, pp.45-50].
+
+Blah blah [@king_county_2016_2016, pp. 33-35; @townsend_cities_2015, pp.45-50].
+
+@king_county_2016_2016 [p. 33] says blah. 
+
+Gentrification and displacement shape the neighborhoods of King County, Washingtons's cities and unincorporated urban communities. While many parts of America struggle with the challenges of depopulation and disinvestment, the residents of King County have experienced a set of challenge that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [@king_county_2016_2016]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents and the appreciation of real estate values - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
 
 The goal of this project is to provide a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The project's partners envision that this information will be used by community members and community-serving organizations in these neighborhoods as they demand displacement mitigation and community restoration policies from their local governments.
 
@@ -47,14 +54,14 @@ The goal of this project is to provide a clearer understanding of which neighbor
 
 ## How to Use This Report {-}
 
-The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as "estimates" rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the predominantly public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. Data are not neutral and they reflect societal power dynamics - especially when it comes to the question of which data are collected/published and which are not.[@townsend_cities_2015]
+The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as "estimates" rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the predominantly public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. Data are not neutral and they reflect societal power dynamics - especially when it comes to the question of which data are collected/published and which are not [@townsend_cities_2015].
 
 
 # Introduction
 
 ## Project History
 
-This project was undertaken at a time when King County was experiencing both economic and population growth.^[Between 1985 and 2015, King County's population grew by 25% (1.4M to 2.1M) and it is expected to grow to 2.3M by 2031[@king_county_2016_2016]] As with any growing region, the costs and benefits of this growth have not been experienced equally or equitably by the County's residents. The government of King County, in partnership with the Seattle Foundation, formed a partnership and began implementing the Communities of Opportunity (COO) program with the goal of "address[ing] economic and racial inequities through place-based work and systemic change"^[To learn more information about COO visit the program's [website](https://www.coopartnerships.org/about-coo)].
+This project was undertaken at a time when King County was experiencing both economic and population growth.^[Between 1985 and 2015, King County's population grew by 25% (1.4M to 2.1M) and it is expected to grow to 2.3M by 2031 [@king_county_2016_2016]] As with any growing region, the costs and benefits of this growth have not been experienced equally or equitably by the County's residents. The government of King County, in partnership with the Seattle Foundation, formed a partnership and began implementing the Communities of Opportunity (COO) program with the goal of "address[ing] economic and racial inequities through place-based work and systemic change"^[To learn more information about COO visit the program's [website](https://www.coopartnerships.org/about-coo)].
 
 Two of COO's signature strategies (the practice data-driven policy making and the creation of peer-based learning communities) were exemplified by a group of placed-based organizations who met regularly to discuss the challenges and opportunities of working with community data. Known as the Evaluation and Advisory Data Workgroup (EAG)^[The name was initially just "The COO Data Workgroup" but it changed in 2018 to reflect the COO program's focus on internal evaluation], this body provided the inspiration and motivation for the project that would become the "COO Neighborhood Change Typology Report". At a meeting in early 2016, EAG participants discussed the four outcome areas that COO had identified^[These include health, housing, economic opportunity, and community connections] and the "headline indicators" of these different topics. The group felt that progress was being made on the tracking of most indicators with one glaring exception: involuntary displacement. While nearly everyone was able share stories of neighbors and clients who were feeling displacement pressure (or had already moved because of it), the participants noted a lack of comprehensive data confirming these lived experiences. The group decided to explore how this problem might be addressed, a process which led to the formation of a subgroup and, ultimately, the creation of this report.
 
@@ -74,17 +81,17 @@ In early summer of 2018, the project team reconvened and began working on a revi
 
 ## Defining Gentrification & Displacement
 
-Terms like "neighborhood change", "gentrification", and "displacement" have become increasingly commonplace in the popular discourse about American urban life but this doesn't mean that there is broad agreement on what they are. To the contrary, the academic literature on this subject contains a passionate debate around the definition of these words as well as the forces the cause them. This project benefits from the scholarship of researchers like Dr. Lisa Bates[@bates_gentrification_2013] (who developed the method that this project is modeled after) and Dr. Miriam Zuk[@miriam_zuk_gentrification_2015] (who along with her colleagues produced a comprehensive literature review on these subjects).
+Terms like "neighborhood change", "gentrification", and "displacement" have become increasingly commonplace in the popular discourse about American urban life but this doesn't mean that there is broad agreement on what they are. To the contrary, the academic literature on this subject contains a passionate debate around the definition of these words as well as the forces the cause them. This project benefits from the scholarship of researchers like Dr. Lisa Bates - who developed the method that this project is modeled after [@bates_gentrification_2013] - and Dr. Miriam Zuk  - who, along with her colleagues, produced a comprehensive literature review on these subjects [@miriam_zuk_gentrification_2015].
 
 ### Influential Works {-}
 
 Rather than attempting to summarize the wide spectrum of thought on this topic, this report highlights the specific pieces of literature that contributed most to the authors’ understanding of this topic. 
 
-First and foremost, Dr. Bates’ 2013 report titled “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification” provides an excellent overview of the scholarship before laying out a clear, reproducible method of “operationalizing” the concept of gentrification. Bates’ work itself builds on a 2005 article by Dr. Lance Freeman[@freeman_displacement_2005] which introduced a focused set of socioeconomic and real estate indicators to measure gentrification. 
+First and foremost, Dr. Bates’ 2013 report titled “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification” provides an excellent overview of the scholarship before laying out a clear, reproducible method of “operationalizing” the concept of gentrification. Bates’ work itself builds on a 2005 article by Dr. Lance Freeman which introduced a focused set of socioeconomic and real estate indicators to measure gentrification [@freeman_displacement_2005]. 
 
-In addition to Bates and Freeman respective works, the aforementioned literature review by Dr. Miriam Zuk et all describes the scholarship landscape on neighborhood change, gentrification, and displacement. This work explains the different conceptions and helps dispel any notion that there might be a universally accepted method for measuring any of these phenomena. Dr. Jackelyn Hwang’s study of homeowner mobility in Philadelphia, which uses anonymized credit data from the Federal Reserve Bank of Philadelphia, illustrates the extraordinary degree of access and ingenuity required to “track” displacement at the household level.[@ding_effects_2018].
+In addition to Bates and Freeman respective works, the aforementioned literature review by Dr. Miriam Zuk et all describes the scholarship landscape on neighborhood change, gentrification, and displacement. This work explains the different conceptions and helps dispel any notion that there might be a universally accepted method for measuring any of these phenomena. Dr. Jackelyn Hwang’s study of homeowner mobility in Philadelphia, which uses anonymized credit data from the Federal Reserve Bank of Philadelphia, illustrates the extraordinary degree of access and ingenuity required to “track” displacement at the household level [@ding_effects_2018].
 
-Lastly, the City of Seattle’s 2016 “Growth and Equity” report illustrates a different methodology applied to part of the study area of this report.[@city_of_seattle_seattle_2016] Although Seattle’s assessment of displacement risk is also informed by Dr. Bates’ work in Portland, OR; it uses a wide variety of indicators to produce an estimate of the relative degree of risk rather than  the relative type of risk (i.e., a “continuous” scale or risk rather than a “discrete” one).
+Lastly, the City of Seattle’s 2016 “Growth and Equity” report illustrates a different methodology applied to part of the study area of this report [@city_of_seattle_seattle_2016]. Although Seattle’s assessment of displacement risk is also informed by Dr. Bates’ work in Portland, OR; it uses a wide variety of indicators to produce an estimate of the relative degree of risk rather than  the relative type of risk (i.e., a “continuous” scale or risk rather than a “discrete” one).
 
 ### Key Terms Defined {-}
 
@@ -92,13 +99,13 @@ While the authors acknowledge the existing debate around these terms, for the sa
 
   - **Neighborhood Change:** Neighborhood Change: a substantial shift in the socio-economic and/or racial composition of a neighborhood’s residents and businesses along with the elements of the built environment that make up the neighborhood’s physical space
   - **Gentrification:** Gentrification: the socio-economic “upgrading” of a neighborhood’s demographics combined with a shift from low to high real estate values. While gentrification in the US context is often associated with racial turnover, this project does not constrain its definition of gentrification with the requirement of racial demographic shift.^[While this project doesn’t require evidence of racial turnover in order to describe a neighborhood as “gentrifying”, this study shows that increases in white, non-hispanic population are common in gentrifying census tracts] 
-  - **Displacement:** “the involuntary relocation of current residents or businesses from their current residence”[@city_of_seattle_seattle_2016; pp.4] This may be caused by the physical destruction of a home, the process of becoming “priced out” of a neighborhood, or the loss of an individual’s community and community-serving institutions.
+  - **Displacement:** “the involuntary relocation of current residents or businesses from their current residence” [@city_of_seattle_seattle_2016, p.4]. This may be caused by the physical destruction of a home, the process of becoming “priced out” of a neighborhood, or the loss of an individual’s community and community-serving institutions.
 
 ## Project Summary
 
 The primary goal of this project is to provide the COO partners with a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The gentrification of a neighborhood often leads to the removal of many of the residents (i.g., displacement), preventing them from receiving the benefits of the changes and improvements that characterize neighborhood revitalization efforts. As this regions economic and population growth changes the composition of neighborhoods, it is critical that communities and their governments work together to ensure that the costs and benefits of growth are distributed equitably.
 
-In addition to the question of which neighborhoods are at-risk or gentrifying, this project also tries to provide a useful description of what stage each neighborhood is at in the process. The concept of a "neighborhood change typology" that is actionable and connects to anti-displacement policies comes directly from the work of Dr. Bates.[@bates_gentrification_2013; pp.9] Importantly (although perhaps counter-intuitively), this project does not try to measure the number of displaced households, nor does it try to predict displacement rates. While those two data points would be useful information and would fit nicely into the COO "headline indicator" framework, this project's literature review suggests that there is not yet a methodologically sound way to measure them at the project's geographic scale.
+In addition to the question of which neighborhoods are at-risk or gentrifying, this project also tries to provide a useful description of what stage each neighborhood is at in the process. The concept of a "neighborhood change typology" that is actionable and connects to anti-displacement policies comes directly from the work of Dr. @bates_gentrification_2013 [p.9]. Importantly (although perhaps counter-intuitively), this project does not try to measure the number of displaced households, nor does it try to predict displacement rates. While those two data points would be useful information and would fit nicely into the COO "headline indicator" framework, this project's literature review suggests that there is not yet a methodologically sound way to measure them at the project's geographic scale.
 
 Because this project operates within the framework of the COO program, it focuses specifically on the census tracts^[Census tracts are a geographic unit created used by the US Census to organize its survey data. Although these geographies are often used as proxies for neighborhoods, they almost never align with the actual boundaries of any given city's neighborhoods. For that reason, they should be consider a "best approximation" of neighborhoods rather than an exact representation.] that characterize the three original COO place-based communities. The purpose is not to compare one community against another but rather to provide a data-driven foundation for displacement mitigation and community restoration policies.
 
@@ -108,9 +115,9 @@ Finally, the project is intended to be clear, accessible, and reproducible; part
 
 ## The Portland Model
 
-This project begins with the method developed by Dr. Lisa Bates in partnership with the City of Portland, OR. As described by Bates, 
+This project begins with the method developed by Dr. Lisa Bates in partnership with the City of Portland, OR. As described by @bates_gentrification_2013 [p.59], 
 
-> The typology assessment began with a retrospective look at neighborhood change in Portland to assess whether a small number of measured indicators could represent the changes observed today. … Measured indicators were chosen to represent the “robust, yet parsimonious” approach and to align with policy-relevant metrics (such as HUD income standards for housing assistance).[@bates_gentrification_2013; pp.59]
+> The typology assessment began with a retrospective look at neighborhood change in Portland to assess whether a small number of measured indicators could represent the changes observed today. … Measured indicators were chosen to represent the “robust, yet parsimonious” approach and to align with policy-relevant metrics (such as HUD income standards for housing assistance).
 
 This approach uses the neighborhood (approximated by census tracts) as the unit of analysis, which was part of the reason it appealed to the project team.
 
@@ -131,7 +138,7 @@ knitr::include_graphics(path = "images/concept-diagram-tight-crop.png")
 
 ### Statuses {-}
 
-A neighborhood’s status simply describes whether or not it is considered to be at-risk for gentrification or not. Neighborhoods that experience long-term disinvestment and poverty face many challenges but the threat of gentrification only applies when these conditions are combined with a housing market that begins to rapidly appreciate in value. Similarly, a long-term high cost neighborhood may experience home value appreciation but without a shift toward higher-income and highly-educated residents this case doesn’t fit the model of gentrification. The characteristics of a gentrifying or gentrified neighborhood are “housing market changes, economic status changes, and demographic changes … that alter its character”.[@bates_gentrification_2013; pp.9]
+A neighborhood’s status simply describes whether or not it is considered to be at-risk for gentrification or not. Neighborhoods that experience long-term disinvestment and poverty face many challenges but the threat of gentrification only applies when these conditions are combined with a housing market that begins to rapidly appreciate in value. Similarly, a long-term high cost neighborhood may experience home value appreciation but without a shift toward higher-income and highly-educated residents this case doesn’t fit the model of gentrification. The characteristics of a gentrifying or gentrified neighborhood are “housing market changes, economic status changes, and demographic changes … that alter its character” [@bates_gentrification_2013, p.9].
 
 ### Stages {-}
 
@@ -159,19 +166,19 @@ The characteristics of a neighborhood that determine its type are called the "di
       c. Medium/high-income households
       d. Owner households
       
-  3. **Housing Market Appreciation:** whether the neighborhoods housing market is shifting from a low value state to high value. Bates measures this change using the home values themselves (in comparison to all neighborhoods) and the rate of change in these values (i.e., appreciation).[@bates_gentrification_2013; pp.28] The Housing Market Appreciation dimension of neighborhood change can itself be divided into types:
-      a. **Adjacent neighborhoods:** low/moderate value neighborhoods with low appreciation rates that are next to high value or rapidly appreciating neighborhoods^[The Adjacent type is intended to capture the "spillover effect" where the proximity to high value markets draws buyers to a nearby low value neighborhood]
+  3. **Housing Market Appreciation:** whether the neighborhoods housing market is shifting from a low value state to high value. Bates measures this change using the home values themselves (in comparison to all neighborhoods) and the rate of change in these values (i.e., appreciation) [@bates_gentrification_2013, p.28]. The Housing Market Appreciation dimension of neighborhood change can itself be divided into types:
+      a. **Adjacent neighborhoods:** low/moderate value neighborhoods with low appreciation rates that are next to high value or rapidly appreciating neighborhoods^[The Adjacent type is intended to capture the "spillover effect" where the proximity to high value markets draws buyers to a nearby low value neighborhood [see @bates_gentrification_2013, p.61]]
       b. **Accelerating neighborhoods:** low/moderate value neighborhoods with high appreciation rates
       c. **Appreciated neighborhoods:** high value neighborhoods that appreciated from low value status over a longer period of time
 
 
 ## The (Revised) Communinities of Opportunity Model
 
-The model that Dr. Bates developed for the City of Portland served as a foundation for this project and for many others.^[see @city_of_seattle_seattle_2016] However, given that this approach uses a limited number of indicators to capture a complex process, it is necessary to adapt the method slightly to fit the context in which it is applied.^[When developing the model for Portland, Dr. Bates began with a “retrospective look” at neighborhood change in that city and this process informed the selection of indicators; see @bates_gentrification_2013 pp.59] After considering the context of King County and receiving constructive criticism of the preliminary model, the project team decided to implement the following adaptations to the Portland model:
+The model that Dr. Bates developed for the City of Portland served as a foundation for this project and for many others.^[see @city_of_seattle_seattle_2016] However, given that this approach uses a limited number of indicators to capture a complex process, it is necessary to adapt the method slightly to fit the context in which it is applied.^[When developing the model for Portland, Dr. Bates began with a “retrospective look” at neighborhood change in that city and this process informed the selection of indicators; see @bates_gentrification_2013 [p.59]] After considering the context of King County and receiving constructive criticism of the preliminary model, the project team decided to implement the following adaptations to the Portland model:
 
-  1. Use the most recent data available
-  2. Add indicators of housing market appreciation that might capture faster rates of change
-  3. Where possible, make a distinction between the experience of renter and homeowner households (note: this goal was not fully achieved)
+  1. **Use the most recent data available**
+  2. **Add indicators of housing market appreciation** that might capture faster rates of change
+  3. Where possible, **make a distinction between the experience of renter and homeowner households** (note: this goal was not fully achieved)
   
 ### Most Recent Data {-}
 
@@ -183,7 +190,7 @@ In contrast, the COO Revised Model uses data from one additional data source (th
 
 While the Portland model relied on US Census surveys responses, the COO Revised model primarily uses data from the King County Tax Assessor. The tax assessor data captures the entirety of the County’s housing properties and the valuations are updated regularly according to the  County’s algorithm. Additionally, this data includes all sales of housing properties along with relevant metadata like the sale price, the size of the home, and the “instrument” of the sale (e.g., foreclosure, divorce settlement, etc.)^[See the metadata for the ‘Real Property Sales’ file listed on King County’s Assessor Data Portal: <https://info.kingcounty.gov/assessor/datadownload/desc/Real%20Property%20Sales.doc>].
 
-In addition to adding a source of more recent housing market data, this project deviates from the Portland model by using multiple indicators in the definition of each housing market appreciation type. For instance, a neighborhood with a “High” 2018 value may either have a high median assessed value or a high median sale price per square foot (both measures are relative to all census tracts in King County). Similarly, this project adds a measurement of the percentage of homes sold in a neighborhood in the past three years as an alternate indicator of a “hot”/appreciating market. The inspiration for this additional appreciation indicator comes from Bates’ recommendations for the “monitoring and tracking” of new market sales activity.[@bates_gentrification_2013; pp.35] The COO Revised Model refers to this sale rate indicator as “short-term” appreciation and the home value indicator as “medium-term” appreciation, but the presence of a high value in either indicator is interpreted by the model as an “appreciating” housing market type.
+In addition to adding a source of more recent housing market data, this project deviates from the Portland model by using multiple indicators in the definition of each housing market appreciation type. For instance, a neighborhood with a “High” 2018 value may either have a high median assessed value or a high median sale price per square foot (both measures are relative to all census tracts in King County). Similarly, this project adds a measurement of the percentage of homes sold in a neighborhood in the past three years as an alternate indicator of a “hot”/appreciating market. The inspiration for this additional appreciation indicator comes from Bates’ recommendations for the “monitoring and tracking” of new market sales activity [@bates_gentrification_2013, p.35]. The COO Revised Model refers to this sale rate indicator as “short-term” appreciation and the home value indicator as “medium-term” appreciation, but the presence of a high value in either indicator is interpreted by the model as an “appreciating” housing market type.
 
 ### The Renter Experience {-}
 
@@ -205,8 +212,21 @@ The following table captures the similarities and difference between the Portlan
   gt()
 ```
 
+## Limitations
 
-# Findings
+This method is intended to guide policy makers and community members toward effective displacement mitigation strategies by categorizing neighborhoods according to their stage in the process of neighborhood change. As with any approach that attempts to model a complex system (in this case, a neighborhood), the results of this method should be interpreted cautiously and its limitations must be acknowledged.^[For a relevant summary of the limitations of displacement risk composite indices, see @city_of_seattle_seattle_2016 [p.15] ]
+
+**The most important limitation is the absence of contextual information.** Simply put, if a neighborhood is experiencing gentrification and displacement but those changes are not captured in Census/Assessor’s Office data then this model will be wrong because it only “knows about” a small set of indicators. This method does not include a way to add contextual data from the communities that are being displaced to refine its typology classification. If used to inform public policy, the model’s results should _complement_ the results of direct community engagement - not replace them.
+
+**The use of small geographic units (e.g., census tracts) increases the uncertainty of the data.** While there appears to be some consensus in the academic scholarship that gentrification is a neighborhood-based dynamic [@miriam_zuk_gentrification_2015], the use of neighborhood-sized samples of American Community Survey data introduces significant statistical uncertainty into the results. Similarly, the use of data collected during wide spans of time (five years for the ACS data) restricts the ability of the model to reflect current on-the-ground conditions. This limitation is particularly relevant to highly dynamic indicators like rent prices. 
+
+**This method produces _descriptive_ - not predictive - results.** The results describe the demographic and housing market pattern of neighborhoods; they do not predict the precise number of households that might be displaced, nor do they directly measure the number of households that have been displaced already.
+
+**The absence of recent, systematically collected rent price data weakens the model’s ability to accurately portray changes in rental housing markets.** While the project team tried to find a better source of rent data than the ACS, that effort was ultimately unsuccessful. The procurement of rent price data (past and present) for the entirety of King County is beyond the scope of this project.
+
+**The model narrowly focuses on indicators of residential neighborhood change but businesses experience gentrification and displacement pressure as well.** The results should not be interpreted as evidence of changes in the composition of a neighborhood’s business community [bates_gentrification_2013, p.64].^[@bates_gentrification_2013 [p.64] mentions the potential for conducting a “neighborhood-serving business analysis” using data from the US Census Bureau’s North American Industry Classification System (NAICS)] 
+
+# Results
 
 ## COO Revised Model (Single-Family/Mixed) Results
 
@@ -235,16 +255,7 @@ showtext_auto()
 
 p1 <- ggplot(data = coorev18_cnt,
              aes(x = COOREV18_SF_TYPE_FCT, y = n))
-p1 <- p1 + geom_bar(aes(fill = COOREV18_SF_TYPE_FCT),stat = "identity")
-# p1 <- p1 + geom_segment(aes(x = COOREV18_SF_TYPE_FCT, y = 0, xend = COOREV18_SF_TYPE_FCT, yend = n), 
-#                         color = colors_nct$darkgrey,
-#                         size = 1) 
-# p1 <- p1 + geom_point(aes(fill = COOREV18_SF_TYPE_FCT),
-#                       color = colors_nct$darkgrey,
-#                       shape = 21,
-#                       # fill = "red",
-#                       size = 5,
-#                       stroke = 1.5)
+p1 <- p1 + geom_bar(aes(fill = COOREV18_SF_TYPE_FCT),stat = "identity") 
 p1 <- p1 + scale_discrete_nct("fill")
 p1 <- p1 + scale_y_continuous(breaks = seq(0,70,by = 10))
 p1 <- p1 + coord_flip()
@@ -298,7 +309,7 @@ There are far fewer neighborhoods included in the “mostly multifamily” model
 
 The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). As the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
-```{r findings-type-counts-mf, fig.asp = 0.4, fig.cap='The number of tracts in each typology type (multfamily)'}
+```{r findings-type-counts-mf, fig.asp = 0.4, fig.cap='The number of tracts in each typology type (multifamily)'}
 # LOAD DATA ---------------------------------------------------------------
 
 coorev18_mf <- readr::read_rds("data/model-all-20190305.rds") %>% 
@@ -322,16 +333,7 @@ showtext_auto()
 # grDevices::windows()
 p1 <- ggplot(data = coorev18_cnt_mf,
              aes(x = COOREV18_MF_TYPE_FCT, y = n))
-p1 <- p1 + geom_bar(aes(fill = COOREV18_MF_TYPE_FCT), stat = "identity")
-# p1 <- p1 + geom_segment(aes(x = COOREV18_SF_TYPE_FCT, y = 0, xend = COOREV18_SF_TYPE_FCT, yend = n), 
-#                         color = colors_nct$darkgrey,
-#                         size = 1) 
-# p1 <- p1 + geom_point(aes(fill = COOREV18_SF_TYPE_FCT),
-#                       color = colors_nct$darkgrey,
-#                       shape = 21,
-#                       # fill = "red",
-#                       size = 5,
-#                       stroke = 1.5)
+p1 <- p1 + geom_bar(aes(fill = COOREV18_MF_TYPE_FCT), stat = "identity") 
 p1 <- p1 + scale_discrete_nct("fill") 
 p1 <- p1 + coord_flip()
 p1 <- p1 + theme_nct
@@ -520,5 +522,3 @@ lipsum::lipsum(n=5)
 ```{r conclusion, echo = FALSE, results='asis'}
 lipsum::lipsum(n=5)
 ```
-
-`r if (knitr::is_html_output()) '# References {-}'`
