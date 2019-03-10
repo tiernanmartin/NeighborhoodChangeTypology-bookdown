@@ -11,8 +11,9 @@ library(showtext)
 library(cowplot)
 library(magick)
 library(patchwork)
-library(glue)
-library(GGally)
+library(glue) 
+library(scales)
+library(facetscales) # devtools::install_github("zeehio/facetscales")
 
 # FUNCTIONS ---------------------------------------------------------------
 
@@ -61,7 +62,8 @@ theme_void_nct <- theme_void(base_size = 10,
         plot.subtitle = element_text(hjust = 0),
         plot.caption = element_text(hjust = 0))
 
-colors_nct <- list(darkgrey = "#434343")
+colors_nct <- list(darkgrey = "#434343",
+                   grey = "#cccccc")
 
 colors_nct_typology <- c(
   "Susceptible" = "#ffff00",

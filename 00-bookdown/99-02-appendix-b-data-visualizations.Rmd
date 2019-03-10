@@ -1,11 +1,18 @@
+# Data Visualizations
+
+```{r app-tabular-data-01, echo = FALSE, results='asis'}
+lipsum::lipsum(n=1)
+```
+
+```{r app-tabular-data-comm-vuln-hist, fig.asp = 1, fig.cap='Vulnerability Indicators by COO Community (2013-2017)'}
 
 # SETUP -------------------------------------------------------------------
 
-source("00-bookdown/R/setup.R",echo = FALSE)
+source("R/setup.R",echo = FALSE)
 
 # LOAD DATA ---------------------------------------------------------------
 
-coorev18 <- readr::read_rds("00-bookdown/data/model-all-20190305.rds") %>% 
+coorev18 <- readr::read_rds("data/model-all-20190305.rds") %>% 
   select(matches("GEOGRAPHY"), matches("COOREV18")) %>%  
   as_tibble() 
 
@@ -14,10 +21,10 @@ coorev18 <- readr::read_rds("00-bookdown/data/model-all-20190305.rds") %>%
 
 
 dat_vuln_wide <- coorev18 %>% select(matches("GEOGRAPHY"),
-                                     COOREV18_VULN_POC_EST_PCT_2013_2017,
-                                     COOREV18_VULN_LOWED_EST_PCT_2013_2017, 
-                                     COOREV18_VULN_LOWINCAMI_EST_PCT_2011_2015,
-                                     COOREV18_VULN_RENTHH_EST_PCT_2013_2017) 
+                 COOREV18_VULN_POC_EST_PCT_2013_2017,
+                 COOREV18_VULN_LOWED_EST_PCT_2013_2017, 
+                         COOREV18_VULN_LOWINCAMI_EST_PCT_2011_2015,
+                 COOREV18_VULN_RENTHH_EST_PCT_2013_2017) 
 
 dat_vuln_long <- dat_vuln_wide %>% 
   gather(COL, VAL, -matches("GEOGRAPHY")) %>% 
@@ -29,7 +36,6 @@ dat_vuln_long <- dat_vuln_wide %>%
     str_detect(COL,"RENTHH") ~ "% RENTERS"
   )) %>% 
   mutate(VAR = glue("{VAR} ({str_replace(YEAR,'_','-')})"))
-
 
 dat_vuln_tr <- dat_vuln_long %>% 
   filter(GEOGRAPHY_TYPE %in% c("tract"))
@@ -62,12 +68,11 @@ dat_vuln_lines_by_comm <- dat_vuln_lines %>%
 showtext_auto()
 
 show_comm_hist <- function(x, y_axis_title, legend_position){  
-  
+
   comm_name <- unique(x$GEOG_COMM)
   
   dat_vuln_tr %>% 
-    ggplot2::ggplot(ggplot2::aes(x = VAL)) +
-    ggplot2::scale_x_continuous(labels = scales::percent) +
+    ggplot2::ggplot(ggplot2::aes(x = VAL)) + 
     ggplot2::geom_histogram(fill = colors_nct$grey) +
     ggplot2::geom_vline(data = x, 
                         aes(xintercept = VAL, 
@@ -80,7 +85,7 @@ show_comm_hist <- function(x, y_axis_title, legend_position){
                                   colors_nct_list$Late)) +
     scale_x_continuous(limits = c(0,1), labels = scales::percent) +
     scale_size_manual(values = c(0.5,1,1)) +
-    scale_alpha_manual(values = c(1,1,1)) +
+    scale_alpha_manual(values = c(0.75,1,1)) +
     scale_linetype_manual(values = c(1,6,1)) + 
     ggplot2::facet_wrap(~ VAR, ncol = 1, scales = "free_x") +
     theme_nct_8 +
@@ -100,16 +105,20 @@ show_comm_hist <- function(x, y_axis_title, legend_position){
 dat_vuln_list_by_comm <- group_split(dat_vuln_lines_by_comm, GEOG_COMM)
 
 pmap(list(x = dat_vuln_list_by_comm,
-          y_axis_title = c("# of Census Tracts","",""),
-          legend_position = c("none","bottom","none")), 
+            y_axis_title = c("# of Census Tracts","",""),
+            legend_position = c("none","bottom","none")), 
      show_comm_hist) %>% 
   wrap_plots(nrow = 1) +
   plot_annotation(title = "Vulnerability Indicators by COO Community (2013-2017)",
-                  subtitle = "",
-                  caption = wrapper("Source: author's analysis of data from American Community Survey and HUD CHAS
-                                  \nNote: The income indicator uses CHAS data, which lags behind the ACS data by two years'"),
-                  theme = theme_nct)
+                subtitle = "",
+                caption = wrapper("Source: author's analysis of data from American Community Survey and HUD CHAS
+                                  \nNote: The income indicator uses CHAS data, which lags behind the ACS data by two years. The gray bars show the amount of census tracts at each part of the x-axis."),
+                theme = theme_nct)
 
+```
+
+
+```{r app-tabular-data-comm-demo-hist, fig.asp = 1, fig.cap='Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)'}
 
 # TRANSFORM DATA: DEMO. CHANGE -------------------------------------------
 
@@ -122,21 +131,24 @@ dat_demochng_wide <- coorev18 %>% select(matches("GEOGRAPHY"),
 
 dat_demochng_long <- dat_demochng_wide %>% 
   gather(COL, VAL, -matches("GEOGRAPHY")) %>% 
-  mutate(YEAR = str_extract(COL,"\\d{4}_\\d{4}_TO_\\d{4}_\\d{4}$")) %>% 
+  mutate(YEAR = str_extract(COL,"\\d{4}_\\d{4}_TO_\\d{4}_\\d{4}$")) %>%  
   mutate(YEAR = str_replace(YEAR,"_TO_", " TO ")) %>% 
   mutate(YEAR = str_replace_all(YEAR,'_','-')) %>% 
+  mutate(YEAR = str_replace_all(YEAR,'20',"'")) %>% 
   mutate(VAR = case_when(
-    str_detect(COL,"HIGHED") ~ "Δ % HIGH-EDUCATION",
-    str_detect(COL,"INCOME") ~ "Δ MEDIAN INCOME",
-    str_detect(COL,"WHITE") ~ "Δ % WHITE",
-    str_detect(COL,"OWNHH") ~ "Δ % HOME OWNER"
+    str_detect(COL,"HIGHED") ~ "CHANGE % HIGH-ED.",
+    str_detect(COL,"INCOME") ~ "CHANGE MEDIAN INC.",
+    str_detect(COL,"WHITE") ~ "CHANGE % WHITE",
+    str_detect(COL,"OWNHH") ~ "CHANGE % HOMEOWNER"
   )) %>% 
-  mutate(VAR = glue("{VAR} ({YEAR})")) %>% 
+  mutate(VAR = as.character(glue("{VAR} ({YEAR})"))) 
+
+lvls <- unique(dat_demochng_long$VAR)
+
+dat_demochng_long <-dat_demochng_long %>% 
   mutate(VAR = factor(VAR,
-                      levels = c("Δ % HIGH-EDUCATION (2007-2011 TO 2013_2017)",
-                                 "Δ MEDIAN INCOME (2007-2011 TO 2013_2017)",
-                                 "Δ % WHITE (2007-2011 TO 2013_2017)",
-                                 "Δ % HOME OWNER (2007-2011 TO 2013_2017)")))
+                      levels = c(lvls)))
+
 
 dat_demochng_tr <- dat_demochng_long %>% 
   filter(GEOGRAPHY_TYPE %in% c("tract"))
@@ -162,7 +174,6 @@ dat_demochng_lines_by_comm <- dat_demochng_lines %>%
     GEOG_COMM %in% "STC_TUK" ~ "Seatac/Tukwila"
   )) %>% 
   filter(GEOGRAPHY_TYPE %in% c("tract","county") | GEOG_COMM == GEOGRAPHY_NAME)
-
 
 
 # PLOT: DEMOGRAPHIC CHANGE ------------------------------------------------
@@ -192,11 +203,11 @@ show_comm_hist <- function(x, y_axis_title, legend_position){
                             size = GEOG_TYPE_FCT, 
                             alpha = GEOG_TYPE_FCT,
                             linetype = GEOG_TYPE_FCT)) +
-    scale_color_manual(values = c(colors_nct_list$Dynamic,
-                                  colors_nct_list$Dynamic,
+    scale_color_manual(values = c(colors_nct_list$`Early Type 2`,
+                                  colors_nct_list$`Early Type 2`,
                                   colors_nct_list$Late)) + 
     scale_size_manual(values = c(0.5,1,1)) +
-    scale_alpha_manual(values = c(1,1,1)) +
+    scale_alpha_manual(values = c(.75,1,1)) +
     scale_linetype_manual(values = c(1,6,1)) +  
      facet_wrap(~ VAR, ncol = 1, scales = "free_x") +
     scale_x_continuous(labels = varied_labels) +
@@ -224,6 +235,10 @@ pmap(list(x = dat_demochng_list_by_comm,
   plot_annotation(title = "Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)",
                   subtitle = "",
                   caption = wrapper("Source: author's analysis of data from American Community Survey 
-                                  \nNote: Median income at the community level is not calculated"),
+                                  \nNote: Median income at the community level is not calculated. The gray bars show the amount of census tracts at each part of the x-axis."),
                   theme = theme_nct)
+
+
+
+```
 
