@@ -190,7 +190,7 @@ p1 <- ggplot(data = coorev18_comm_cnt,
              aes(x = COOREV18_SF_TYPE_FCT, y = n))
 p1 <- p1 + geom_bar(aes(fill = COOREV18_SF_TYPE_FCT),stat = "identity") 
 p1 <- p1 + scale_discrete_nct("fill") 
-p1 <- p1 + scale_y_continuous(breaks = c(1:7)) 
+p1 <- p1 + scale_y_continuous(breaks = c(1:10),limits = c(0,10))
 p1 <- p1 + coord_flip()
 p1 <- p1 + facet_wrap(~ GEOGRAPHY_COMMUNITY_NAME_FCT,ncol = 1)
 p1 <- p1 + theme_nct 

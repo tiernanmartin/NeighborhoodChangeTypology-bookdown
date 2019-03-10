@@ -1,7 +1,12 @@
 
 # Discussion
 
-```{r discussion, echo = FALSE, results='asis'}
-lipsum::lipsum(n=5)
-```
- 
+## Partnership & Process 
+
+Before discussing the project’s results (and their policy implications), it may be beneficial to consider the partnership and process that made the results possible. 
+
+Data-driven analyses like this one have no shortage of technical challenges to overcome^[For a disucssion of the technical challenges faced by this project, see the [limitations] section of this report] but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly. This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Nevertheless, even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. These early results posed a potential threat to the community development efforts of organizations like the White Center Community Development Association. If their staff had not pointed out the flaws in these early results (and later brainstormed solutions with the project team), the project’s results would have been less accurate and could have been used as evidence _against_ the need for displacement mitigation policies and equitable public investment. 
+
+This experience underscores what might be the most significant finding of the project: **the communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution.** A classification model built with institutional data (like the COO Revised Neighborhood Change Typology) can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
+
+Lastly, this project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.^[For more information about research justice, see @jolivette_research_2015 and @coalition_of_communities_of_color_leading_2018]
