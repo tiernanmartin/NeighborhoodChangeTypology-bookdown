@@ -9,7 +9,7 @@ Data-driven analyses like this one have no shortage of technical challenges to o
 
 This experience underscores what might be the most significant finding of the project: 
 
-#### 1. The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution {-}
+#### 1. The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution. {-}
 
 A classification model built with institutional data (like the COO Revised Neighborhood Change Typology) can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
 
@@ -29,13 +29,13 @@ Seattle’s Central Area neighborhood (also known as the Central District) shows
 
 Lastly, the geographically dispersed group of Continued Loss type neighborhoods east of Lake Washington is unexpected and warrants further investigation.
 
-#### 3. The vast majority of COO neighborhoods are showing signs of gentrification {-}
+#### 3. The vast majority of COO neighborhoods show some signs (at least) of gentrification. {-}
 
 Of the COO neighborhoods, the most prevalent type is Early Type 1. This indicates that a neighborhood has relatively large populations that are vulnerable to displacement; has not yet seen a substantial demographic shift toward whiter, more affluent, better educated home owners; and still has low or moderate home values but is seeing high rates of short-term or medium-term home value appreciation. Put plainly, the neighborhoods are “on track” to gentrify and may soon experience significant displacement pressure (if they aren’t already).
 
 The introduction of the additional indicators of appreciation (i.e., change in sale price per sqft and the percent of homes sold) improves the model’s ability to identify housing markets with high turnover rates.^[see Figure \@ref(fig:app-tabular-data-comm-hous-hist) for a comparison of housing market indicators by COO community] The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”. This methodological change accounts for much of the different between the preliminary results produced during the Pilot phase and the final model results.
 
-#### 4. Each COO community has at least one neighborhood undergoing active, current gentrification {-}
+#### 4. Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement. {-}
 
 While evidence of substantial demographic change is present in only 7 of the 34 COO community tracts, each of the communities has at least one such changing tract. As with the Early Type 1 neighborhoods, the new housing market appreciation indicators help the model to better identify Dynamic neighborhoods. While the demographic change indicators cannot by themselves be used as measures of displacement, they strongly suggest that vulnerable groups are being displaced from these neighborhoods. The Rainier Valley, which has four Dynamic tracts, should be treated as a community undergoing active gentrification and policies that are appropriate to this gentrification stage should be explored by community members and policy makers.
 
@@ -114,6 +114,7 @@ readr::read_csv("data/bates-toolkittable-04.csv") %>%
 
 ```
 
+#### Final word on inclusive policy-making {-}
 
 The importance of including people from the communities experiencing the disruptive impacts of displacement bears repeating. During the course of this project, the authors have witnessed first-hand how valuable and necessary it is to have local expertise “at the table“ when making these sort of decisions. The COO program is designed to embody this approach, as exemplified in their six strategies:
 

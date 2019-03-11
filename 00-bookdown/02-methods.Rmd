@@ -116,3 +116,7 @@ This method is intended to guide policy makers and community members toward effe
 
 **The model narrowly focuses on indicators of residential neighborhood change but businesses experience gentrification and displacement pressure as well.** The results should not be interpreted as evidence of changes in the composition of a neighborhood’s business community [@bates_gentrification_2013, p.64].^[@bates_gentrification_2013 [p.64] mentions the potential for conducting a “neighborhood-serving business analysis” using data from the US Census Bureau’s North American Industry Classification System (NAICS)] 
  
+## Reproducibility & Open Source Materials
+
+The raw data and an R package containing the project's code files are available to download at https://doi.org/10.17605/OSF.IO/SJ7N9
+

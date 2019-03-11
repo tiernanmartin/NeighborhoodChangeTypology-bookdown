@@ -26,11 +26,17 @@ source("R/setup.R",echo = FALSE)
 
 # {-}
 
-![](images/coo-logo-gray-displ.png) 
+![](images/nct-report-cover-with-logos.png) 
 
 <br>
 
 # Acknowledgements {-}
+
+Futurewise would like to thank King County Public Health and the Communities of Opportunity Program for their generous support, which made this analysis possible.
+
+The authors would like to thank the staff members of the White Center Community Development Association for their valuable insights and critiques of the project throughout its timeline. They would also like to thank the following King County staff for their guidance and support: Andrea Akita, Public Health; Kim Tippens, Public Health; Kirsten Wysen, Public Health; Kristin Moore, Public Health; and Cheryl Markham, Department of Community and Human Services. 
+
+Additional gratitude is extended to the members of the COO Evaluation and Advisory Group who provided feedback on the project; to Christie Most at the King County Assessor's office; and to all of the community members who contributed to the project by participating in workshops in the Fall of 2016. 
 
 # Authors & Contributors {-}
 
