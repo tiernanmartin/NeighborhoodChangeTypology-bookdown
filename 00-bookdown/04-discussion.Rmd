@@ -7,30 +7,120 @@ Before discussing the project’s results (and their policy implications), it ma
 
 Data-driven analyses like this one have no shortage of technical challenges to overcome^[For a disucssion of the technical challenges faced by this project, see the [limitations] section of this report] but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly. This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Nevertheless, even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. These early results posed a potential threat to the community development efforts of organizations like the White Center Community Development Association. If their staff had not pointed out the flaws in these early results (and later brainstormed solutions with the project team), the project’s results would have been less accurate and could have been used as evidence _against_ the need for displacement mitigation policies and equitable public investment. 
 
-This experience underscores what might be the most significant finding of the project: **the communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution.** A classification model built with institutional data (like the COO Revised Neighborhood Change Typology) can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
+This experience underscores what might be the most significant finding of the project: 
+
+#### 1. The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution {-}
+
+A classification model built with institutional data (like the COO Revised Neighborhood Change Typology) can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
 
 Lastly, this project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.^[For more information about research justice, see @jolivette_research_2015 and @coalition_of_communities_of_color_leading_2018]
 
 ## Typology Findings
 
-#### 1. Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it. {-}
+#### 2. Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it. {-}
 
 According to the project’s definition of “gentrification”, this means that a substantial portion of the County is experiencing an upward shift in socioeconomic demographics combined with housing market appreciation. Gentrification occurs in changing neighborhoods that are neither persistently low-income/low-value nor persistently high-income/high-value; in and of itself, it is not necessarily a bad thing.  
 
-However, history suggests that without community mobilization and strategic intervention by local governments, many community members in these changing neighborhoods will be forced to relocate just as the benefits of revitalization begin to emerge.
+**However, history suggests that without community mobilization and strategic intervention by local governments, many community members in these changing neighborhoods will be forced to relocate just as the benefits of revitalization begin to emerge.**
 
-The identification of 127 census tracts that meet the criteria for being “at-risk” or gentrifying suggests that substantial investment in anti-displacement and community stabilization initiatives should be undertaken. The large concentration of Early- and Mid-stage neighborhoods in the southwestern part of the county reaffirms what many of the “ground-truthing” workshop participants said: individuals, families, and whole communities are being “pushed“ out of Seattle’s South End neighborhoods and this shift seems to be rippling through the communities to the south. A similar effect may be occurring in some of Seattle’s North End neighborhoods near the city’s border with Shoreline, although the model suggests that a few of these communities are already in the Continued Loss stage of neighborhood change. 
+The identification of 127 census tracts that meet the criteria for being “at-risk” or gentrifying suggests that substantial investment in anti-displacement and neighborhood revitalization initiatives should be undertaken. The large concentration of Early- and Mid-stage neighborhoods in the southwestern part of the county reaffirms what many of the “ground-truthing” workshop participants said: individuals, families, and whole communities are being “pushed“ out of Seattle’s South End neighborhoods and this shift seems to be rippling through the communities to the south. A similar effect may be occurring in some of Seattle’s North End neighborhoods near the city’s border with Shoreline, although the model suggests that a few of these communities are already in the Continued Loss stage of neighborhood change. 
 
 Seattle’s Central Area neighborhood (also known as the Central District) shows a combination of Late and Continued Loss types - a result that only reflects the most recent part of the decades-long displacement of Seattle’s original African American community [@taylor_forging_1994; @mcgee_seattles_2007].
 
 Lastly, the geographically dispersed group of Continued Loss type neighborhoods east of Lake Washington is unexpected and warrants further investigation.
 
-#### 2. The vast majority of COO neighborhoods are showing signs of gentrification {-}
+#### 3. The vast majority of COO neighborhoods are showing signs of gentrification {-}
 
 Of the COO neighborhoods, the most prevalent type is Early Type 1. This indicates that a neighborhood has relatively large populations that are vulnerable to displacement; has not yet seen a substantial demographic shift toward whiter, more affluent, better educated home owners; and still has low or moderate home values but is seeing high rates of short-term or medium-term home value appreciation. Put plainly, the neighborhoods are “on track” to gentrify and may soon experience significant displacement pressure (if they aren’t already).
 
-The introduction of the “short-term appreciation” indicator (the percent of single-family homes sold in the 2018) improves the model’s ability to identify housing markets with high turnover rates. The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”.
+The introduction of the additional indicators of appreciation (i.e., change in sale price per sqft and the percent of homes sold) improves the model’s ability to identify housing markets with high turnover rates.^[see Figure \@ref(fig:app-tabular-data-comm-hous-hist) for a comparison of housing market indicators by COO community] The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”. This methodological change accounts for much of the different between the preliminary results produced during the Pilot phase and the final model results.
 
-#### 3. Each COO community has at least one neighborhood undergoing active, current gentrification {-}
+#### 4. Each COO community has at least one neighborhood undergoing active, current gentrification {-}
+
+While evidence of substantial demographic change is present in only 7 of the 34 COO community tracts, each of the communities has at least one such changing tract. As with the Early Type 1 neighborhoods, the new housing market appreciation indicators help the model to better identify Dynamic neighborhoods. While the demographic change indicators cannot by themselves be used as measures of displacement, they strongly suggest that vulnerable groups are being displaced from these neighborhoods. The Rainier Valley, which has four Dynamic tracts, should be treated as a community undergoing active gentrification and policies that are appropriate to this gentrification stage should be explored by community members and policy makers.
 
 ## Policy Implications
+
+The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political, must be made in partnership with the most impacted communities, and exceed the scope of this project [@bates_gentrification_2013, p.56].
+
+The following tables are direct transcriptions from [@bates_gentrification_2013]:
+
+#### 1. Plan for inclusive, equitable development {-}
+```{r discussion-toolkit-table-01}
+readr::read_csv("data/bates-toolkittable-01.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+#### 2. Increase/preserve opportunities for affordable housing {-}
+##### 2.1 Generate revenue for housing programs {-}
+```{r discussion-toolkit-table-02}
+readr::read_csv("data/bates-toolkittable-02.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+##### 2.2 Create new affordable housing {-}
+```{r discussion-toolkit-table-03}
+readr::read_csv("data/bates-toolkittable-03.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+##### 2.3 Preserve affordable housing {-}
+```{r discussion-toolkit-table-04}
+readr::read_csv("data/bates-toolkittable-04.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) %>% 
+   tab_footnote(
+    footnote = "Rent control policies have significant legal challenges to overcome before they can be applied in Washington State",
+    locations = cells_data(columns = vars(STRATEGY),rows = 4)
+  )
+
+```
+
+
+The importance of including people from the communities experiencing the disruptive impacts of displacement bears repeating. During the course of this project, the authors have witnessed first-hand how valuable and necessary it is to have local expertise “at the table“ when making these sort of decisions. The COO program is designed to embody this approach, as exemplified in their six strategies:
+
+>  * Establishing community-based priorities
+>  * Tapping into existing community expertise and leadership
+>  * Strengthening community capacity for advocacy and to take on local challenges
+>  * Systematizing a collaborative approach between communities and institutions
+>  * Shaping policies to promote equity and positively impact our communities
+>  * Bringing new resources into communities ^[For more details on the COO's approach see @noauthor_communities_nodate]
+

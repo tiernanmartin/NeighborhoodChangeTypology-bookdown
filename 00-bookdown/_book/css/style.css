@@ -40,8 +40,7 @@ table .gt_col_heading.gt_col_heading {
   background-color: #a30382 !important;
 }
 div .gt_table {
-  font-family: 'Open Sans Condensed', sans-serif !important;  
-  table-layout: fixed !important; 
+  font-family: 'Open Sans Condensed', sans-serif !important;   
   width:100% !important;
   border-style: none !important;
   word-wrap: break-word !important;
@@ -49,3 +48,13 @@ div .gt_table {
   line-height: 1 !important;
   overflow-wrap: normal !important;
 } 
+table .gt_sourcenote{
+    font-size: 90% !important;
+    padding: 4px !important;
+    border: inherit !important;
+}
+table .gt_footnote{
+    font-size: 90% !important;
+    padding: 4px !important;
+    border: inherit !important;
+}
