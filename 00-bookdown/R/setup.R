@@ -12,8 +12,7 @@ library(cowplot)
 library(magick)
 library(patchwork)
 library(glue) 
-library(scales)
-library(facetscales) # devtools::install_github("zeehio/facetscales")
+library(scales) 
 
 # FUNCTIONS ---------------------------------------------------------------
 

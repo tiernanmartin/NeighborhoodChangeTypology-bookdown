@@ -43,7 +43,7 @@ The six types in the Neighborhood Change Typology represent the full spectrum of
 The characteristics of a neighborhood that determine its type are called the "dimensions". The dimensions of neighborhood change include:
 
   1. **Vulnerability to Housing Displacement:** whether the neighborhoods residents have relatively high percentages of groups that have historically been less able to resist displacement pressure. These groups include: 
-      a. People of color
+      a. People of color^[Throughout US history, racist actions taken by governments, businesses, and individuals have forced people who aren’t white to live in certain neighborhoods. Examples of these types of actions - including the redlining of communities of color, the placement of racially restrictive covenants on property deeds, and the physical degradation (or destruction) of people of color neighborhoods in pursuit of public infrastructure projects - are present in the history of many places in King County and elsewhere [see @taylor_forging_1994; @chin_seattles_2001]. While a person’s race or ethnicity should not (in theory) make them any more or less vulnerable to displacement, the legacy of systemic racism has significant, inter-generational negative influence on the lives of people of color [@chetty_race_2018] and therefore this project treats race as an indicator of vulnerability to displacement.]
       b. Adults with less formal education (less than a Bachelor's degree)
       c. Low-income households
       d. Renter households
