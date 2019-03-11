@@ -17,12 +17,26 @@ The structure's levels are:
   2. **Stages (of neighborhood change):** Early-, Mid-, and Late-stage
   3. **Types (of neighborhood change):** Susceptible, Early Type 1, Early Type 2, Dynamic, Late, and Continued Loss
 
-The diagram below illustrates how elements of this hierarchical conceptual structure relate:
+The diagram below illustrates how elements of this hierarchical conceptual structure relate, pairing them with the results of Bates' 2013 assessment:
 
 
-```{r methods-concept-diagram, fig.cap='Bates\' Conceptual model; Source: author\'s interpretation of Bates (2013)'}
-knitr::include_graphics(path = "images/concept-diagram-tight-crop.png")
+```{r methods-concept-diagram, fig.asp= 1, fig.cap='Bates\' Conceptual model; Source: author\'s interpretation of Bates (2013)'}
+
+pdx_map_image <- image_read("images/pdx-with-hierarchy-diagram-lowres.png")  
+
+p1 <- image_ggplot(pdx_map_image)
+p1 <- p1 +  
+  labs(title = wrapper("Neighborhood Change Typology & Conceptual Model Diagram"),
+       subtitle = "Portland, OR (2013)",
+caption = wrapper("Sources: Bates, 2013, p.32 (upper); author's interpretation of Bates, 2013 (lower)"))  +
+  theme_void_nct
+p1  
+
+
+
 ```
+
+
 
 ### Statuses {-}
 
