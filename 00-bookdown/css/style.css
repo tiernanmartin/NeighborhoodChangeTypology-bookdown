@@ -33,6 +33,9 @@ pre {
 pre code {
   white-space: inherit;
 }
+table .gt_sep_right {
+    border-right: .5px solid #A8A8A8 !important;
+}
 table .gt_col_heading.gt_col_heading {
   font-family: 'Roboto Condensed', sans-serif !important; 
   font-weight: 300 !important;
