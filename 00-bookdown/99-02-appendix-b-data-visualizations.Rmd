@@ -1,10 +1,19 @@
 # Data Visualizations
 
-```{r app-tabular-data-01, echo = FALSE, results='asis'}
-lipsum::lipsum(n=1)
-```
+## How to Read these Plots {-}
 
-```{r app-tabular-data-comm-vuln-hist, fig.asp = 1, fig.cap='Vulnerability Indicators by COO Community (2013-2017)'}
+The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column, with each grid square containing the following information:
+
+  * the indicator values for each census tract (represented by a thin vertical line)
+  * the indicator values for all census tracts (represented by a light gray histogram chart in the grid's background)
+  * the indicator value for King County (represented by a thick, blue, vertical line)
+  * _for some indicators only:_ the indicator value of all of the tracts in the COO community combined (represented by a thick dashed vertical line)
+  
+Reading the plot one column at a time, from top to bottom, the view can see how each COO communities' tracts compare to the Count and the rest of the county's tracts.
+
+## Plots {-}
+
+```{r app-data-viz-comm-vuln-hist, fig.asp = 1, fig.cap='Vulnerability Indicators by COO Community (2013-2017)'}
 
 # SETUP -------------------------------------------------------------------
 
@@ -118,7 +127,7 @@ pmap(list(x = dat_vuln_list_by_comm,
 ```
 
 
-```{r app-tabular-data-comm-demo-hist, fig.asp = 1.25, fig.cap='Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)'}
+```{r app-data-viz-comm-demo-hist, fig.asp = 1.25, fig.cap='Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)'}
 
 # TRANSFORM DATA: DEMO. CHANGE -------------------------------------------
 
@@ -243,7 +252,7 @@ pmap(list(x = dat_demochng_list_by_comm,
 ```
 
 
-```{r app-tabular-data-comm-hous-hist, fig.asp = 1.5, fig.cap='Housing Market Indicators by COO Community (2018)'}
+```{r app-data-viz-comm-hous-hist, fig.asp = 1.5, fig.cap='Housing Market Indicators by COO Community (2018)'}
 # TRANSFORM DATA: HOUSING MARKET -------------------------------------------
 
 

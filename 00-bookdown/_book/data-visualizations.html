@@ -30,7 +30,7 @@
   
   
 <link rel="prev" href="conclusion.html">
-<link rel="next" href="references.html">
+<link rel="next" href="tabular-data.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
@@ -96,7 +96,11 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a></li>
+<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+</ul></li>
+<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -120,26 +124,39 @@
             <section class="normal" id="section-">
 <div id="data-visualizations" class="section level1">
 <h1><span class="header-section-number">A</span> Data Visualizations</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<div class="figure"><span id="fig:app-tabular-data-comm-vuln-hist"></span>
-<img src="figures/app-tabular-data-comm-vuln-hist-1.png" alt="Vulnerability Indicators by COO Community (2013-2017)" width="100%" />
+<div id="how-to-read-these-plots" class="section level2 unnumbered">
+<h2>How to Read these Plots</h2>
+<p>The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column, with each grid square containing the following information:</p>
+<ul>
+<li>the indicator values for each census tract (represented by a thin vertical line)</li>
+<li>the indicator values for all census tracts (represented by a light gray histogram chart in the grid’s background)</li>
+<li>the indicator value for King County (represented by a thick, blue, vertical line)</li>
+<li><em>for some indicators only:</em> the indicator value of all of the tracts in the COO community combined (represented by a thick dashed vertical line)</li>
+</ul>
+<p>Reading the plot one column at a time, from top to bottom, the view can see how each COO communities’ tracts compare to the Count and the rest of the county’s tracts.</p>
+</div>
+<div id="plots" class="section level2 unnumbered">
+<h2>Plots</h2>
+<div class="figure"><span id="fig:app-data-viz-comm-vuln-hist"></span>
+<img src="figures/app-data-viz-comm-vuln-hist-1.png" alt="Vulnerability Indicators by COO Community (2013-2017)" width="100%" />
 <p class="caption">
 Figure A.1: Vulnerability Indicators by COO Community (2013-2017)
 </p>
 </div>
-<div class="figure"><span id="fig:app-tabular-data-comm-demo-hist"></span>
-<img src="figures/app-tabular-data-comm-demo-hist-1.png" alt="Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)" width="100%" />
+<div class="figure"><span id="fig:app-data-viz-comm-demo-hist"></span>
+<img src="figures/app-data-viz-comm-demo-hist-1.png" alt="Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)" width="100%" />
 <p class="caption">
 Figure A.2: Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)
 </p>
 </div>
-<div class="figure"><span id="fig:app-tabular-data-comm-hous-hist"></span>
-<img src="figures/app-tabular-data-comm-hous-hist-1.png" alt="Housing Market Indicators by COO Community (2018)" width="100%" />
+<div class="figure"><span id="fig:app-data-viz-comm-hous-hist"></span>
+<img src="figures/app-data-viz-comm-hous-hist-1.png" alt="Housing Market Indicators by COO Community (2018)" width="100%" />
 <p class="caption">
 Figure A.3: Housing Market Indicators by COO Community (2018)
 </p>
 </div>
 
+</div>
 </div>
             </section>
 
@@ -147,7 +164,7 @@ Figure A.3: Housing Market Indicators by COO Community (2018)
         </div>
       </div>
 <a href="conclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="tabular-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook/js/app.min.js"></script>
