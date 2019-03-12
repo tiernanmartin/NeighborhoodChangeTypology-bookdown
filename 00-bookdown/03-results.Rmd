@@ -78,9 +78,9 @@ Geographically, these neighborhoods appears to be split into three clusters:
 
 ## COO Revised Model (Multifamily) Results
 
-There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.
+There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.^[As previously mentioned in the \@ref(results) section, the 90% threshold is an arbitrary one but it was arrived at through an analysis of the data. See \ref{fig:my_fig} for detail of that analysis.]
 
-The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). As the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
+The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). However, as the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
 ```{r findings-type-counts-mf, fig.asp = 0.4, fig.cap='The number of tracts in each typology type (multifamily)'}
 # LOAD DATA ---------------------------------------------------------------

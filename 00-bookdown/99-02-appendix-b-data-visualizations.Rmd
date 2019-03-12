@@ -1,17 +1,19 @@
 # Data Visualizations
 
-## How to Read these Plots {-}
+## Project Indicators by COO Community {-}
 
-The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column, with each grid square containing the following information:
+### How to Read these Plots {-}
+
+The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square containing the following information:
 
   * the indicator values for each census tract (represented by a thin yellow line)
   * the indicator values for all census tracts (represented by a light gray histogram chart in the grid's background)
   * the indicator value for King County (represented by a thick blue line)
-  * _for percent indicators only:_ the indicator value of all of the tracts in the COO community combined (represented by a thick dashed vertical line)
+  * _for percent indicators only:_ the indicator value of all of the tracts in the COO community combined (represented by a thick dashed yellow line)
   
 Reading the plot from top to bottom, one column at a time, the viewer can see how the tracts of each community compare to each other; to the community as a whole; to the county as a whole; and to the distribution of values amongst all King County census tracts.
 
-## Plots {-}
+### Plots {-}
 
 ```{r app-data-viz-comm-vuln-hist, fig.asp = 1, fig.cap='Vulnerability Indicators by COO Community (2013-2017)'}
 
@@ -407,6 +409,14 @@ pmap(list(x = dat_housmrkt_list_by_comm,
 
 
 
+
+```
+
+
+
+## Other Data Visualizations
+
+```{r app-data-viz-pct-mf, fig.asp = 1, fig.cap='Multifamily Residences as a % of All Housing Units (2013-2017)'}
 
 ```
 
