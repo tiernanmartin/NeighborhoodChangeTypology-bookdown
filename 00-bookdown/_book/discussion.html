@@ -45,10 +45,23 @@
 
 
 
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
 </head>
 
 <body>
@@ -96,11 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+<li class="chapter" data-level="A" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>A</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology-single-familymixed"><i class="fa fa-check"></i>COO Revised Neighborhood Typology (Single-Family/Mixed)</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
+<li class="chapter" data-level="B" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>B</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>C</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -127,12 +143,12 @@
 <div id="partnership-process" class="section level2">
 <h2><span class="header-section-number">4.1</span> Partnership &amp; Process</h2>
 <p>Before discussing the project’s results (and their policy implications), it may be beneficial to consider the partnership and process that made the results possible.</p>
-<p>Data-driven analyses like this one have no shortage of technical challenges to overcome<a href="#fn25" class="footnote-ref" id="fnref25"><sup>25</sup></a> but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly. This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Nevertheless, even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. These early results posed a potential threat to the community development efforts of organizations like the White Center Community Development Association. If their staff had not pointed out the flaws in these early results (and later brainstormed solutions with the project team), the project’s results would have been less accurate and could have been used as evidence <em>against</em> the need for displacement mitigation policies and equitable public investment.</p>
+<p>Data-driven analyses like this one have no shortage of technical challenges to overcome<a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a> but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly. This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Nevertheless, even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. These early results posed a potential threat to the community development efforts of organizations like the White Center Community Development Association. If their staff had not pointed out the flaws in these early results (and later brainstormed solutions with the project team), the project’s results would have been less accurate and could have been used as evidence <em>against</em> the need for displacement mitigation policies and equitable public investment.</p>
 <p>This experience underscores what might be the most significant finding of the project:</p>
 <div id="the-communities-most-impacted-by-inequities-understand-the-challenge-that-they-face-and-they-must-therefore-play-a-meaningful-role-in-the-solution." class="section level4 unnumbered">
 <h4>1. The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution.</h4>
 <p>A classification model built with institutional data (like the COO Revised Neighborhood Change Typology) can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.</p>
-<p>Lastly, this project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.<a href="#fn26" class="footnote-ref" id="fnref26"><sup>26</sup></a></p>
+<p>Lastly, this project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a></p>
 </div>
 </div>
 <div id="typology-findings" class="section level2">
@@ -148,7 +164,7 @@
 <div id="the-vast-majority-of-coo-neighborhoods-show-some-signs-at-least-of-gentrification." class="section level4 unnumbered">
 <h4>3. The vast majority of COO neighborhoods show some signs (at least) of gentrification.</h4>
 <p>Of the COO neighborhoods, the most prevalent type is Early Type 1. This indicates that a neighborhood has relatively large populations that are vulnerable to displacement; has not yet seen a substantial demographic shift toward whiter, more affluent, better educated home owners; and still has low or moderate home values but is seeing high rates of short-term or medium-term home value appreciation. Put plainly, the neighborhoods are “on track” to gentrify and may soon experience significant displacement pressure (if they aren’t already).</p>
-<p>The introduction of the additional indicators of appreciation (i.e., change in sale price per sqft and the percent of homes sold) improves the model’s ability to identify housing markets with high turnover rates.<a href="#fn27" class="footnote-ref" id="fnref27"><sup>27</sup></a> The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”. This methodological change accounts for much of the different between the preliminary results produced during the Pilot phase and the final model results.</p>
+<p>The introduction of the additional indicators of appreciation (i.e., change in sale price per sqft and the percent of homes sold) improves the model’s ability to identify housing markets with high turnover rates.<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a> The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”. This methodological change accounts for much of the different between the preliminary results produced during the Pilot phase and the final model results.</p>
 </div>
 <div id="each-coo-community-has-at-least-one-neighborhood-undergoing-the-type-of-active-gentrification-associated-with-involuntary-displacement." class="section level4 unnumbered">
 <h4>4. Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.</h4>
@@ -157,15 +173,16 @@
 </div>
 <div id="policy-implications" class="section level2">
 <h2><span class="header-section-number">4.3</span> Policy Implications</h2>
-<p>The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political, must be made in partnership with the most impacted communities, and exceed the scope of this project <span class="citation">(Bates, <a href="#ref-bates_gentrification_2013">2013</a>, page 56)</span>.</p>
-<p>The following tables are direct transcriptions from <span class="citation">(Bates, <a href="#ref-bates_gentrification_2013">2013</a>)</span>:</p>
+<p>The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political and therefore must be made in partnership with the most impacted communities <span class="citation">(Bates, <a href="#ref-bates_gentrification_2013">2013</a>, page 56)</span>.</p>
+<p>Prescriptive policy recommendations for specific communties are beyond the scope of this project but the following tables, when paired with the typology results, may be useful in assessing appropriate policy alternatives.</p>
+<p>Please note that the following tables are direct transcriptions from <span class="citation">Bates (<a href="#ref-bates_gentrification_2013">2013</a>)</span>:</p>
 <div id="plan-for-inclusive-equitable-development" class="section level4 unnumbered">
 <h4>1. Plan for inclusive, equitable development</h4>
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#gqiqnqycas .gt_table {
+#okdfrmuyuk .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -184,13 +201,13 @@
   /* table.border.top.color */
 }
 
-#gqiqnqycas .gt_heading {
+#okdfrmuyuk .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#gqiqnqycas .gt_title {
+#okdfrmuyuk .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -201,7 +218,7 @@
   border-bottom-width: 0;
 }
 
-#gqiqnqycas .gt_subtitle {
+#okdfrmuyuk .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -212,7 +229,7 @@
   border-top-width: 0;
 }
 
-#gqiqnqycas .gt_bottom_border {
+#okdfrmuyuk .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -221,7 +238,7 @@
   /* heading.border.bottom.color */
 }
 
-#gqiqnqycas .gt_column_spanner {
+#okdfrmuyuk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -229,7 +246,7 @@
   padding-bottom: 4px;
 }
 
-#gqiqnqycas .gt_col_heading {
+#okdfrmuyuk .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -242,11 +259,11 @@
   margin: 10px;
 }
 
-#gqiqnqycas .gt_sep_right {
+#okdfrmuyuk .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#gqiqnqycas .gt_group_heading {
+#okdfrmuyuk .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -270,7 +287,7 @@
   vertical-align: middle;
 }
 
-#gqiqnqycas .gt_empty_group_heading {
+#okdfrmuyuk .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -294,37 +311,37 @@
   vertical-align: middle;
 }
 
-#gqiqnqycas .gt_striped {
+#okdfrmuyuk .gt_striped {
   background-color: #f2f2f2;
 }
 
-#gqiqnqycas .gt_from_md > :first-child {
+#okdfrmuyuk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gqiqnqycas .gt_from_md > :last-child {
+#okdfrmuyuk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gqiqnqycas .gt_row {
+#okdfrmuyuk .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#gqiqnqycas .gt_stub {
+#okdfrmuyuk .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#gqiqnqycas .gt_stub.gt_row {
+#okdfrmuyuk .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#gqiqnqycas .gt_summary_row {
+#okdfrmuyuk .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -333,13 +350,13 @@
   /* summary_row.text_transform */
 }
 
-#gqiqnqycas .gt_first_summary_row {
+#okdfrmuyuk .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#gqiqnqycas .gt_table_body {
+#okdfrmuyuk .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -354,55 +371,55 @@
   /* field.border.bottom.color */
 }
 
-#gqiqnqycas .gt_footnote {
+#okdfrmuyuk .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#gqiqnqycas .gt_sourcenote {
+#okdfrmuyuk .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#gqiqnqycas .gt_center {
+#okdfrmuyuk .gt_center {
   text-align: center;
 }
 
-#gqiqnqycas .gt_left {
+#okdfrmuyuk .gt_left {
   text-align: left;
 }
 
-#gqiqnqycas .gt_right {
+#okdfrmuyuk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gqiqnqycas .gt_font_normal {
+#okdfrmuyuk .gt_font_normal {
   font-weight: normal;
 }
 
-#gqiqnqycas .gt_font_bold {
+#okdfrmuyuk .gt_font_bold {
   font-weight: bold;
 }
 
-#gqiqnqycas .gt_font_italic {
+#okdfrmuyuk .gt_font_italic {
   font-style: italic;
 }
 
-#gqiqnqycas .gt_super {
+#okdfrmuyuk .gt_super {
   font-size: 65%;
 }
 
-#gqiqnqycas .gt_footnote_glyph {
+#okdfrmuyuk .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="gqiqnqycas" style="overflow-x:auto;"><!--gt table start-->
+<div id="okdfrmuyuk" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='1' colspan='1'>TOOL</th>
@@ -465,7 +482,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#lxxirhwjmu .gt_table {
+#morclihfaj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -484,13 +501,13 @@
   /* table.border.top.color */
 }
 
-#lxxirhwjmu .gt_heading {
+#morclihfaj .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#lxxirhwjmu .gt_title {
+#morclihfaj .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -501,7 +518,7 @@
   border-bottom-width: 0;
 }
 
-#lxxirhwjmu .gt_subtitle {
+#morclihfaj .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -512,7 +529,7 @@
   border-top-width: 0;
 }
 
-#lxxirhwjmu .gt_bottom_border {
+#morclihfaj .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -521,7 +538,7 @@
   /* heading.border.bottom.color */
 }
 
-#lxxirhwjmu .gt_column_spanner {
+#morclihfaj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -529,7 +546,7 @@
   padding-bottom: 4px;
 }
 
-#lxxirhwjmu .gt_col_heading {
+#morclihfaj .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -542,11 +559,11 @@
   margin: 10px;
 }
 
-#lxxirhwjmu .gt_sep_right {
+#morclihfaj .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#lxxirhwjmu .gt_group_heading {
+#morclihfaj .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -570,7 +587,7 @@
   vertical-align: middle;
 }
 
-#lxxirhwjmu .gt_empty_group_heading {
+#morclihfaj .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -594,37 +611,37 @@
   vertical-align: middle;
 }
 
-#lxxirhwjmu .gt_striped {
+#morclihfaj .gt_striped {
   background-color: #f2f2f2;
 }
 
-#lxxirhwjmu .gt_from_md > :first-child {
+#morclihfaj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#lxxirhwjmu .gt_from_md > :last-child {
+#morclihfaj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#lxxirhwjmu .gt_row {
+#morclihfaj .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#lxxirhwjmu .gt_stub {
+#morclihfaj .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#lxxirhwjmu .gt_stub.gt_row {
+#morclihfaj .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#lxxirhwjmu .gt_summary_row {
+#morclihfaj .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -633,13 +650,13 @@
   /* summary_row.text_transform */
 }
 
-#lxxirhwjmu .gt_first_summary_row {
+#morclihfaj .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#lxxirhwjmu .gt_table_body {
+#morclihfaj .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -654,55 +671,55 @@
   /* field.border.bottom.color */
 }
 
-#lxxirhwjmu .gt_footnote {
+#morclihfaj .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#lxxirhwjmu .gt_sourcenote {
+#morclihfaj .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#lxxirhwjmu .gt_center {
+#morclihfaj .gt_center {
   text-align: center;
 }
 
-#lxxirhwjmu .gt_left {
+#morclihfaj .gt_left {
   text-align: left;
 }
 
-#lxxirhwjmu .gt_right {
+#morclihfaj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#lxxirhwjmu .gt_font_normal {
+#morclihfaj .gt_font_normal {
   font-weight: normal;
 }
 
-#lxxirhwjmu .gt_font_bold {
+#morclihfaj .gt_font_bold {
   font-weight: bold;
 }
 
-#lxxirhwjmu .gt_font_italic {
+#morclihfaj .gt_font_italic {
   font-style: italic;
 }
 
-#lxxirhwjmu .gt_super {
+#morclihfaj .gt_super {
   font-size: 65%;
 }
 
-#lxxirhwjmu .gt_footnote_glyph {
+#morclihfaj .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="lxxirhwjmu" style="overflow-x:auto;"><!--gt table start-->
+<div id="morclihfaj" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='1' colspan='1'>STRATEGY</th>
@@ -763,7 +780,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#crekvaamxv .gt_table {
+#oyavvakmdv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -782,13 +799,13 @@
   /* table.border.top.color */
 }
 
-#crekvaamxv .gt_heading {
+#oyavvakmdv .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#crekvaamxv .gt_title {
+#oyavvakmdv .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -799,7 +816,7 @@
   border-bottom-width: 0;
 }
 
-#crekvaamxv .gt_subtitle {
+#oyavvakmdv .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -810,7 +827,7 @@
   border-top-width: 0;
 }
 
-#crekvaamxv .gt_bottom_border {
+#oyavvakmdv .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -819,7 +836,7 @@
   /* heading.border.bottom.color */
 }
 
-#crekvaamxv .gt_column_spanner {
+#oyavvakmdv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -827,7 +844,7 @@
   padding-bottom: 4px;
 }
 
-#crekvaamxv .gt_col_heading {
+#oyavvakmdv .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -840,11 +857,11 @@
   margin: 10px;
 }
 
-#crekvaamxv .gt_sep_right {
+#oyavvakmdv .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#crekvaamxv .gt_group_heading {
+#oyavvakmdv .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -868,7 +885,7 @@
   vertical-align: middle;
 }
 
-#crekvaamxv .gt_empty_group_heading {
+#oyavvakmdv .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -892,37 +909,37 @@
   vertical-align: middle;
 }
 
-#crekvaamxv .gt_striped {
+#oyavvakmdv .gt_striped {
   background-color: #f2f2f2;
 }
 
-#crekvaamxv .gt_from_md > :first-child {
+#oyavvakmdv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#crekvaamxv .gt_from_md > :last-child {
+#oyavvakmdv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#crekvaamxv .gt_row {
+#oyavvakmdv .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#crekvaamxv .gt_stub {
+#oyavvakmdv .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#crekvaamxv .gt_stub.gt_row {
+#oyavvakmdv .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#crekvaamxv .gt_summary_row {
+#oyavvakmdv .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -931,13 +948,13 @@
   /* summary_row.text_transform */
 }
 
-#crekvaamxv .gt_first_summary_row {
+#oyavvakmdv .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#crekvaamxv .gt_table_body {
+#oyavvakmdv .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -952,55 +969,55 @@
   /* field.border.bottom.color */
 }
 
-#crekvaamxv .gt_footnote {
+#oyavvakmdv .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#crekvaamxv .gt_sourcenote {
+#oyavvakmdv .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#crekvaamxv .gt_center {
+#oyavvakmdv .gt_center {
   text-align: center;
 }
 
-#crekvaamxv .gt_left {
+#oyavvakmdv .gt_left {
   text-align: left;
 }
 
-#crekvaamxv .gt_right {
+#oyavvakmdv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#crekvaamxv .gt_font_normal {
+#oyavvakmdv .gt_font_normal {
   font-weight: normal;
 }
 
-#crekvaamxv .gt_font_bold {
+#oyavvakmdv .gt_font_bold {
   font-weight: bold;
 }
 
-#crekvaamxv .gt_font_italic {
+#oyavvakmdv .gt_font_italic {
   font-style: italic;
 }
 
-#crekvaamxv .gt_super {
+#oyavvakmdv .gt_super {
   font-size: 65%;
 }
 
-#crekvaamxv .gt_footnote_glyph {
+#oyavvakmdv .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="crekvaamxv" style="overflow-x:auto;"><!--gt table start-->
+<div id="oyavvakmdv" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='1' colspan='1'>TOOL</th>
@@ -1049,7 +1066,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#hqvroqbtdj .gt_table {
+#bghnpwqjrl .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1068,13 +1085,13 @@
   /* table.border.top.color */
 }
 
-#hqvroqbtdj .gt_heading {
+#bghnpwqjrl .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#hqvroqbtdj .gt_title {
+#bghnpwqjrl .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1085,7 +1102,7 @@
   border-bottom-width: 0;
 }
 
-#hqvroqbtdj .gt_subtitle {
+#bghnpwqjrl .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1096,7 +1113,7 @@
   border-top-width: 0;
 }
 
-#hqvroqbtdj .gt_bottom_border {
+#bghnpwqjrl .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1105,7 +1122,7 @@
   /* heading.border.bottom.color */
 }
 
-#hqvroqbtdj .gt_column_spanner {
+#bghnpwqjrl .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -1113,7 +1130,7 @@
   padding-bottom: 4px;
 }
 
-#hqvroqbtdj .gt_col_heading {
+#bghnpwqjrl .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1126,11 +1143,11 @@
   margin: 10px;
 }
 
-#hqvroqbtdj .gt_sep_right {
+#bghnpwqjrl .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#hqvroqbtdj .gt_group_heading {
+#bghnpwqjrl .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -1154,7 +1171,7 @@
   vertical-align: middle;
 }
 
-#hqvroqbtdj .gt_empty_group_heading {
+#bghnpwqjrl .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -1178,37 +1195,37 @@
   vertical-align: middle;
 }
 
-#hqvroqbtdj .gt_striped {
+#bghnpwqjrl .gt_striped {
   background-color: #f2f2f2;
 }
 
-#hqvroqbtdj .gt_from_md > :first-child {
+#bghnpwqjrl .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#hqvroqbtdj .gt_from_md > :last-child {
+#bghnpwqjrl .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#hqvroqbtdj .gt_row {
+#bghnpwqjrl .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#hqvroqbtdj .gt_stub {
+#bghnpwqjrl .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#hqvroqbtdj .gt_stub.gt_row {
+#bghnpwqjrl .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#hqvroqbtdj .gt_summary_row {
+#bghnpwqjrl .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -1217,13 +1234,13 @@
   /* summary_row.text_transform */
 }
 
-#hqvroqbtdj .gt_first_summary_row {
+#bghnpwqjrl .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#hqvroqbtdj .gt_table_body {
+#bghnpwqjrl .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -1238,55 +1255,55 @@
   /* field.border.bottom.color */
 }
 
-#hqvroqbtdj .gt_footnote {
+#bghnpwqjrl .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#hqvroqbtdj .gt_sourcenote {
+#bghnpwqjrl .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#hqvroqbtdj .gt_center {
+#bghnpwqjrl .gt_center {
   text-align: center;
 }
 
-#hqvroqbtdj .gt_left {
+#bghnpwqjrl .gt_left {
   text-align: left;
 }
 
-#hqvroqbtdj .gt_right {
+#bghnpwqjrl .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#hqvroqbtdj .gt_font_normal {
+#bghnpwqjrl .gt_font_normal {
   font-weight: normal;
 }
 
-#hqvroqbtdj .gt_font_bold {
+#bghnpwqjrl .gt_font_bold {
   font-weight: bold;
 }
 
-#hqvroqbtdj .gt_font_italic {
+#bghnpwqjrl .gt_font_italic {
   font-style: italic;
 }
 
-#hqvroqbtdj .gt_super {
+#bghnpwqjrl .gt_super {
   font-size: 65%;
 }
 
-#hqvroqbtdj .gt_footnote_glyph {
+#bghnpwqjrl .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="hqvroqbtdj" style="overflow-x:auto;"><!--gt table start-->
+<div id="bghnpwqjrl" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='1' colspan='1'>STRATEGY</th>
@@ -1350,9 +1367,10 @@
 <li>Strengthening community capacity for advocacy and to take on local challenges</li>
 <li>Systematizing a collaborative approach between communities and institutions</li>
 <li>Shaping policies to promote equity and positively impact our communities</li>
-<li>Bringing new resources into communities<a href="#fn28" class="footnote-ref" id="fnref28"><sup>28</sup></a></li>
+<li>Bringing new resources into communities<a href="#fn29" class="footnote-ref" id="fnref29"><sup>29</sup></a></li>
 </ul>
 </blockquote>
+<p>As mentioned in the Section <a href="methods.html#limitations">2.4</a> of the Methods chapter, if the results of this project are used to inform public policy, it is critical that they <em>complement</em> the findings of direct community engagement - not replace them.</p>
 
 </div>
 </div>
@@ -1371,11 +1389,11 @@
 </div>
 <div class="footnotes">
 <hr />
-<ol start="25">
-<li id="fn25"><p>For a disucssion of the technical challenges faced by this project, see the <a href="methods.html#limitations">limitations</a> section of this report<a href="discussion.html#fnref25" class="footnote-back">↩</a></p></li>
-<li id="fn26"><p>For more information about research justice, see <span class="citation">Jolivétte (<a href="#ref-jolivette_research_2015">2015</a>)</span> and <span class="citation">Coalition of Communities of Color (<a href="#ref-coalition_of_communities_of_color_leading_2018">2018</a>)</span><a href="discussion.html#fnref26" class="footnote-back">↩</a></p></li>
-<li id="fn27"><p>see Figure <a href="#fig:app-tabular-data-comm-hous-hist"><strong>??</strong></a> for a comparison of housing market indicators by COO community<a href="discussion.html#fnref27" class="footnote-back">↩</a></p></li>
-<li id="fn28"><p>For more details on the COO’s approach see <span class="citation">(Communities of Opportunity — About Communities of Opportunity)</span><a href="discussion.html#fnref28" class="footnote-back">↩</a></p></li>
+<ol start="26">
+<li id="fn26"><p>For a disucssion of the technical challenges faced by this project, see the <a href="methods.html#limitations">limitations</a> section of this report<a href="discussion.html#fnref26" class="footnote-back">↩</a></p></li>
+<li id="fn27"><p>For more information about research justice, see <span class="citation">Jolivétte (<a href="#ref-jolivette_research_2015">2015</a>)</span> and <span class="citation">Coalition of Communities of Color (<a href="#ref-coalition_of_communities_of_color_leading_2018">2018</a>)</span><a href="discussion.html#fnref27" class="footnote-back">↩</a></p></li>
+<li id="fn28"><p>see Figure <a href="data-visualizations.html#fig:app-data-viz-comm-hous-hist">B.3</a> for a comparison of housing market indicators by COO community<a href="discussion.html#fnref28" class="footnote-back">↩</a></p></li>
+<li id="fn29"><p>For more details on the COO’s approach see <span class="citation">(Communities of Opportunity — About Communities of Opportunity)</span><a href="discussion.html#fnref29" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
             </section>

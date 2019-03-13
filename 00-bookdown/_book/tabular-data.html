@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>B Tabular Data | NeighborhoodChangeTypology-report.utf8.md</title>
+  <title>C Tabular Data | NeighborhoodChangeTypology-report.utf8.md</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
-  <meta property="og:title" content="B Tabular Data | NeighborhoodChangeTypology-report.utf8.md" />
+  <meta property="og:title" content="C Tabular Data | NeighborhoodChangeTypology-report.utf8.md" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://tinyurl.com/NeighborhoodChangeTypology" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tiernanmartin/NeighborhoodChangeTypology-bookdown" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="B Tabular Data | NeighborhoodChangeTypology-report.utf8.md" />
+  <meta name="twitter:title" content="C Tabular Data | NeighborhoodChangeTypology-report.utf8.md" />
   
   
   
@@ -45,10 +45,23 @@
 
 
 
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
 </head>
 
 <body>
@@ -96,11 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+<li class="chapter" data-level="A" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>A</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology-single-familymixed"><i class="fa fa-check"></i>COO Revised Neighborhood Typology (Single-Family/Mixed)</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
+<li class="chapter" data-level="B" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>B</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>C</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -123,7 +139,7 @@
 
             <section class="normal" id="section-">
 <div id="tabular-data" class="section level1">
-<h1><span class="header-section-number">B</span> Tabular Data</h1>
+<h1><span class="header-section-number">C</span> Tabular Data</h1>
 <p>The following tables show the indicator values for the census tracts that are part of the three COO communities.</p>
 <div id="vulnernability-demographic-change-indicators" class="section level3 unnumbered">
 <h3>Vulnernability &amp; Demographic Change Indicators</h3>
@@ -131,7 +147,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#gltgwjsmzt .gt_table {
+#bluthejhmw .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -150,13 +166,13 @@
   /* table.border.top.color */
 }
 
-#gltgwjsmzt .gt_heading {
+#bluthejhmw .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#gltgwjsmzt .gt_title {
+#bluthejhmw .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -167,7 +183,7 @@
   border-bottom-width: 0;
 }
 
-#gltgwjsmzt .gt_subtitle {
+#bluthejhmw .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -178,7 +194,7 @@
   border-top-width: 0;
 }
 
-#gltgwjsmzt .gt_bottom_border {
+#bluthejhmw .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -187,7 +203,7 @@
   /* heading.border.bottom.color */
 }
 
-#gltgwjsmzt .gt_column_spanner {
+#bluthejhmw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -195,7 +211,7 @@
   padding-bottom: 4px;
 }
 
-#gltgwjsmzt .gt_col_heading {
+#bluthejhmw .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -208,11 +224,11 @@
   margin: 10px;
 }
 
-#gltgwjsmzt .gt_sep_right {
+#bluthejhmw .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#gltgwjsmzt .gt_group_heading {
+#bluthejhmw .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -236,7 +252,7 @@
   vertical-align: middle;
 }
 
-#gltgwjsmzt .gt_empty_group_heading {
+#bluthejhmw .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -260,37 +276,37 @@
   vertical-align: middle;
 }
 
-#gltgwjsmzt .gt_striped {
+#bluthejhmw .gt_striped {
   background-color: #f2f2f2;
 }
 
-#gltgwjsmzt .gt_from_md > :first-child {
+#bluthejhmw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#gltgwjsmzt .gt_from_md > :last-child {
+#bluthejhmw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#gltgwjsmzt .gt_row {
+#bluthejhmw .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#gltgwjsmzt .gt_stub {
+#bluthejhmw .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#gltgwjsmzt .gt_stub.gt_row {
+#bluthejhmw .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#gltgwjsmzt .gt_summary_row {
+#bluthejhmw .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -299,13 +315,13 @@
   /* summary_row.text_transform */
 }
 
-#gltgwjsmzt .gt_first_summary_row {
+#bluthejhmw .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#gltgwjsmzt .gt_table_body {
+#bluthejhmw .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -320,55 +336,55 @@
   /* field.border.bottom.color */
 }
 
-#gltgwjsmzt .gt_footnote {
+#bluthejhmw .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#gltgwjsmzt .gt_sourcenote {
+#bluthejhmw .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#gltgwjsmzt .gt_center {
+#bluthejhmw .gt_center {
   text-align: center;
 }
 
-#gltgwjsmzt .gt_left {
+#bluthejhmw .gt_left {
   text-align: left;
 }
 
-#gltgwjsmzt .gt_right {
+#bluthejhmw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#gltgwjsmzt .gt_font_normal {
+#bluthejhmw .gt_font_normal {
   font-weight: normal;
 }
 
-#gltgwjsmzt .gt_font_bold {
+#bluthejhmw .gt_font_bold {
   font-weight: bold;
 }
 
-#gltgwjsmzt .gt_font_italic {
+#bluthejhmw .gt_font_italic {
   font-style: italic;
 }
 
-#gltgwjsmzt .gt_super {
+#bluthejhmw .gt_super {
   font-size: 65%;
 }
 
-#gltgwjsmzt .gt_footnote_glyph {
+#bluthejhmw .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="gltgwjsmzt" style="overflow-x:auto;"><!--gt table start-->
+<div id="bluthejhmw" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='2' colspan='1'></th>
@@ -780,7 +796,7 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#tycuxtwtrh .gt_table {
+#xmbphlimvj .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -799,13 +815,13 @@
   /* table.border.top.color */
 }
 
-#tycuxtwtrh .gt_heading {
+#xmbphlimvj .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#tycuxtwtrh .gt_title {
+#xmbphlimvj .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -816,7 +832,7 @@
   border-bottom-width: 0;
 }
 
-#tycuxtwtrh .gt_subtitle {
+#xmbphlimvj .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -827,7 +843,7 @@
   border-top-width: 0;
 }
 
-#tycuxtwtrh .gt_bottom_border {
+#xmbphlimvj .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -836,7 +852,7 @@
   /* heading.border.bottom.color */
 }
 
-#tycuxtwtrh .gt_column_spanner {
+#xmbphlimvj .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -844,7 +860,7 @@
   padding-bottom: 4px;
 }
 
-#tycuxtwtrh .gt_col_heading {
+#xmbphlimvj .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -857,11 +873,11 @@
   margin: 10px;
 }
 
-#tycuxtwtrh .gt_sep_right {
+#xmbphlimvj .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#tycuxtwtrh .gt_group_heading {
+#xmbphlimvj .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -885,7 +901,7 @@
   vertical-align: middle;
 }
 
-#tycuxtwtrh .gt_empty_group_heading {
+#xmbphlimvj .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -909,37 +925,37 @@
   vertical-align: middle;
 }
 
-#tycuxtwtrh .gt_striped {
+#xmbphlimvj .gt_striped {
   background-color: #f2f2f2;
 }
 
-#tycuxtwtrh .gt_from_md > :first-child {
+#xmbphlimvj .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tycuxtwtrh .gt_from_md > :last-child {
+#xmbphlimvj .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tycuxtwtrh .gt_row {
+#xmbphlimvj .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#tycuxtwtrh .gt_stub {
+#xmbphlimvj .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#tycuxtwtrh .gt_stub.gt_row {
+#xmbphlimvj .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#tycuxtwtrh .gt_summary_row {
+#xmbphlimvj .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -948,13 +964,13 @@
   /* summary_row.text_transform */
 }
 
-#tycuxtwtrh .gt_first_summary_row {
+#xmbphlimvj .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#tycuxtwtrh .gt_table_body {
+#xmbphlimvj .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -969,55 +985,55 @@
   /* field.border.bottom.color */
 }
 
-#tycuxtwtrh .gt_footnote {
+#xmbphlimvj .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#tycuxtwtrh .gt_sourcenote {
+#xmbphlimvj .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#tycuxtwtrh .gt_center {
+#xmbphlimvj .gt_center {
   text-align: center;
 }
 
-#tycuxtwtrh .gt_left {
+#xmbphlimvj .gt_left {
   text-align: left;
 }
 
-#tycuxtwtrh .gt_right {
+#xmbphlimvj .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tycuxtwtrh .gt_font_normal {
+#xmbphlimvj .gt_font_normal {
   font-weight: normal;
 }
 
-#tycuxtwtrh .gt_font_bold {
+#xmbphlimvj .gt_font_bold {
   font-weight: bold;
 }
 
-#tycuxtwtrh .gt_font_italic {
+#xmbphlimvj .gt_font_italic {
   font-style: italic;
 }
 
-#tycuxtwtrh .gt_super {
+#xmbphlimvj .gt_super {
   font-size: 65%;
 }
 
-#tycuxtwtrh .gt_footnote_glyph {
+#xmbphlimvj .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="tycuxtwtrh" style="overflow-x:auto;"><!--gt table start-->
+<div id="xmbphlimvj" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='2' colspan='1'></th>

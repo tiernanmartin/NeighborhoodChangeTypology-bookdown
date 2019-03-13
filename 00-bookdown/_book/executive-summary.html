@@ -45,10 +45,23 @@
 
 
 
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
 </head>
 
 <body>
@@ -96,11 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+<li class="chapter" data-level="A" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>A</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology-single-familymixed"><i class="fa fa-check"></i>COO Revised Neighborhood Typology (Single-Family/Mixed)</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
+<li class="chapter" data-level="B" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>B</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>C</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -132,15 +148,15 @@
 <div id="key-findings" class="section level2 unnumbered">
 <h2>Key Findings</h2>
 <ol style="list-style-type: decimal">
-<li><strong>The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution.</strong></li>
-<li><strong>Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.</strong></li>
-<li><strong>The vast majority of Communities of Opportunity (COO) neighborhoods show some signs (at least) of gentrification.</strong></li>
-<li><strong>Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.</strong></li>
+<li><strong>The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue.</strong><br><br></li>
+<li><strong>Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.</strong><br><br></li>
+<li><strong>The vast majority of Communities of Opportunity (COO) neighborhoods show some signs (at least) of gentrification.</strong><br><br></li>
+<li><strong>Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.</strong><br><br></li>
 </ol>
 </div>
 <div id="how-to-use-this-report" class="section level2 unnumbered">
 <h2>How to Use This Report</h2>
-<p>The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as “estimates” rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor’s Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. Data are not neutral and they reflect societal power dynamics - especially when it comes to the question of which data are collected/published and which are not <span class="citation">(Townsend, <a href="#ref-townsend_cities_2015">2015</a>)</span>.</p>
+<p>The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as “estimates” rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor’s Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. <strong>Data are not neutral and they reflect societal power dynamics</strong> - especially when it comes to the question of which data are collected/published and which are not <span class="citation">(Townsend, <a href="#ref-townsend_cities_2015">2015</a>)</span>.</p>
 
 </div>
 </div>

@@ -8,10 +8,10 @@ The goal of this project is to provide a clearer understanding of which neighbor
 
 ## Key Findings {-}
 
-  1. **The communities most impacted by inequities understand the challenge that they face and they must, therefore, play a meaningful role in the solution.**
-  2. **Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.**
-  3. **The vast majority of Communities of Opportunity (COO) neighborhoods show some signs (at least) of gentrification.**
-  4. **Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.**
+  1. **The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue.**<br><br>
+  2. **Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.**<br><br>
+  3. **The vast majority of Communities of Opportunity (COO) neighborhoods show some signs (at least) of gentrification.**<br><br>
+  4. **Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.**<br><br>
 
 
 ## How to Use This Report {-}

@@ -4,9 +4,11 @@
 
 library(bookdown)
 library(tidyverse)
+library(sp)
 library(sf)
 library(gt)
 library(leaflet)
+library(leaflet.extras)
 library(showtext) 
 library(cowplot)
 library(magick)
@@ -21,6 +23,39 @@ g <- dplyr::glimpse
 
 wrapper <- function(x, width = 125, ...){
   paste(strwrap(x, width, ...), collapse = "\n")
+  
+}
+
+myLfltOpts <- function(map, tileLabels = TRUE, fullScreenBtn = TRUE, bumpTileLabels = TRUE, hideControls = TRUE, pseudoFullscreen = TRUE){
+
+        # Arguments to pass to the chain
+
+        fs <- if(fullScreenBtn){
+                function(x)addFullscreenControl(x, pseudoFullscreen = pseudoFullscreen)
+        }else{function(x)x}
+
+        tileLbl <- if(tileLabels){
+                function(x)addProviderTiles(x,
+                                            providers$CartoDB.PositronOnlyLabels,
+                                            layerId = 'labels_layer' )
+        }else{function(x)x}
+
+        # JS strings
+
+        lbl <- if(bumpTileLabels == TRUE){"var shadowPane = myMap.getPanes().shadowPane;shadowPane.style.pointerEvents = 'none';shadowPane.appendChild(myMap.layerManager._byLayerId['tile\\nlabels_layer'].getContainer());"}else{""}
+
+        cntrl <- if(hideControls == TRUE){"myMap.removeControl(myMap.attributionControl);myMap.removeControl(myMap.zoomControl);"}else{""}
+
+        jqry <- paste0("function(el, t){var myMap = this;",lbl,cntrl,"}")
+
+
+        # Final function
+
+        map %>%
+                tileLbl()%>%
+                fs() %>%
+                htmlwidgets::onRender(jqry)
+
 }
 
 

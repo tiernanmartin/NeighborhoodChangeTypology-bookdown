@@ -1,0 +1,134 @@
+
+`r if (knitr::is_html_output()) '
+# Interactive Maps
+'`
+
+## COO Revised Neighborhood Typology (Single-Family/Mixed) {-}
+
+```{r interactive-maps-coorev18-sf, fig.asp=1}
+
+# SETUP -------------------------------------------------------------------
+
+source("R/setup.R",echo = FALSE)
+
+# LOAD DATA ---------------------------------------------------------------
+
+model_all <- st_read("data/model-coorev18-20190305.gpkg", quiet = TRUE)
+
+kc_boundary <- st_read("data/kc-boundary.gpkg", quiet = TRUE)
+
+# LEAFLET MAP ---------------------------------------------------------------
+
+show_coorev18_sf_map <- function(){ 
+  
+  # assign one of the model objects to model_df
+  
+  coo_communities <- model_all %>%
+    dplyr::select(GEOGRAPHY_ID,
+                  dplyr::matches("GEOGRAPHY_COMMUNITY")) %>%
+    dplyr::filter(! is.na(GEOGRAPHY_COMMUNITY_ID)) %>%
+    dplyr::group_by(GEOGRAPHY_COMMUNITY_NAME, GEOGRAPHY_COMMUNITY_ID) %>%
+    dplyr::summarise() %>%
+    sf::st_transform(4326)
+  
+  model_colnames <- c("PDX18_TYPE",       # 1
+                      "COO16_TYPE",       # 2
+                      "COO18_TYPE",       # 3
+                      "COOREV18_SF_TYPE", # 4
+                      "COOREV18_SF_TYPE") # 5
+  
+  kc_boundary <- sf::st_transform(kc_boundary, 4326)
+  
+  model_all <- sf::st_transform(model_all, 4326)
+  
+  model_ready <- model_all %>%
+    dplyr::select(dplyr::starts_with("GEOGRAPHY"),
+                  tidyselect::vars_select(names(.),model_colnames[4])) %>%  
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, "Census ")) %>% 
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, ", King County, Washington")) %>% 
+    dplyr::mutate(POPUP = case_when(
+      
+      !is.na(GEOGRAPHY_COMMUNITY_NAME) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
+                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})\n
+                                            Type: {COOREV18_SF_TYPE}")),
+      TRUE ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})"))
+      
+    )) %>% 
+    dplyr::mutate(COOREV18_SF_TYPE_FCT = factor(COOREV18_SF_TYPE,
+                                                levels = c("Susceptible",
+                                                           "Early Type 1",
+                                                           "Early Type 2",
+                                                           "Dynamic",
+                                                           "Late",
+                                                           "Continued Loss"
+                                                )))
+  
+  wc_tr <- c("53033026600",
+             "53033026700",
+             "53033026500",
+             "53033026801",
+             "53033026802",
+             "53033027000")
+  
+  my_pal <- c(
+    RColorBrewer::brewer.pal(n = 9,'YlOrRd')[c(3,5,6)],
+    RColorBrewer::brewer.pal(n = 9,'RdPu')[c(6)],
+    RColorBrewer::brewer.pal(n = 9,'YlGnBu')[c(6,7)]
+  )
+  
+  my_pal_hex <- c("#ffff00",
+                  "#ffc800",
+                  "#ff9600",
+                  "#a30382",
+                  "#0794d0",
+                  "#1b5f8f")
+  
+  
+  pal <- leaflet::colorFactor(my_pal_hex,levels = levels(model_ready$COOREV18_SF_TYPE_FCT), ordered = TRUE,na.color = 'transparent')
+  
+  vals <- levels(ordered(model_ready$COOREV18_SF_TYPE_FCT))
+  
+  html_legend <- "<img src='images/typology-scale.png' style= 'height: 25px;'>"
+  
+  model_ready %>% 
+    sf::st_transform(4326) %>% 
+    leaflet::leaflet() %>%
+    leaflet::addMapPane("background_map", zIndex = 410) %>%
+    leaflet::addMapPane("polygons", zIndex = 420) %>%
+    leaflet::addMapPane("lines", zIndex = 430) %>%
+    leaflet::addMapPane("communities", zIndex = 440) %>%
+    leaflet::addMapPane("labels", zIndex = 450) %>% 
+    leaflet::addMapPane("popup", zIndex = 460) %>%
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLite,
+                              options = leaflet::pathOptions(pane = "background_map")) %>%
+    leaflet::addPolygons(data = kc_boundary,
+                         fillOpacity = 0.1, smoothFactor = 0,
+                         fill = "black", weight = 0, 
+                         options = leaflet::pathOptions(pane = "polygons")) %>% 
+    leaflet::addPolygons(fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5, 
+                         options = leaflet::pathOptions(pane = "polygons")) %>% 
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLines,
+                              options = leaflet::pathOptions(pane = "lines")) %>% 
+    leaflet::addPolygons(data = coo_communities,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .85, weight = 2,
+                       options = leaflet::pathOptions(pane = "communities")) %>% 
+    leaflet::addPolygons(data = coo_communities,
+                       fillOpacity = 0, smoothFactor = 0,
+                       color = 'black', opacity = .25, weight = 10,
+                       options = leaflet::pathOptions(pane = "communities")) %>% 
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLabels,
+                              options = leaflet::pathOptions(pane = "labels")) %>% 
+    leaflet::addPolygons(popup = ~POPUP,
+                         fillOpacity = 0, 
+                         opacity = 0, 
+                         smoothFactor = 0,
+                         options = leaflet::pathOptions(pane = "popup")) %>%
+    myLfltOpts(tileLabels = FALSE, fullScreenBtn = TRUE, hideControls = FALSE, pseudoFullscreen = FALSE)
+  
+}
+
+
+show_coorev18_sf_map()
+```

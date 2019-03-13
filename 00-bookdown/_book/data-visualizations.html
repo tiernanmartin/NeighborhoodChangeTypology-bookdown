@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>A Data Visualizations | NeighborhoodChangeTypology-report.utf8.md</title>
+  <title>B Data Visualizations | NeighborhoodChangeTypology-report.utf8.md</title>
   <meta name="description" content="" />
   <meta name="generator" content="bookdown  and GitBook 2.6.7" />
 
-  <meta property="og:title" content="A Data Visualizations | NeighborhoodChangeTypology-report.utf8.md" />
+  <meta property="og:title" content="B Data Visualizations | NeighborhoodChangeTypology-report.utf8.md" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="http://tinyurl.com/NeighborhoodChangeTypology" />
   
@@ -16,7 +16,7 @@
   <meta name="github-repo" content="tiernanmartin/NeighborhoodChangeTypology-bookdown" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="A Data Visualizations | NeighborhoodChangeTypology-report.utf8.md" />
+  <meta name="twitter:title" content="B Data Visualizations | NeighborhoodChangeTypology-report.utf8.md" />
   
   
   
@@ -29,7 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="conclusion.html">
+<link rel="prev" href="interactive-maps.html">
 <link rel="next" href="tabular-data.html">
 <script src="libs/jquery/jquery.min.js"></script>
 <link href="libs/gitbook/css/style.css" rel="stylesheet" />
@@ -45,10 +45,23 @@
 
 
 
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
 </head>
 
 <body>
@@ -96,11 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+<li class="chapter" data-level="A" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>A</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology-single-familymixed"><i class="fa fa-check"></i>COO Revised Neighborhood Typology (Single-Family/Mixed)</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
+<li class="chapter" data-level="B" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>B</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>C</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -123,36 +139,48 @@
 
             <section class="normal" id="section-">
 <div id="data-visualizations" class="section level1">
-<h1><span class="header-section-number">A</span> Data Visualizations</h1>
-<div id="how-to-read-these-plots" class="section level2 unnumbered">
-<h2>How to Read these Plots</h2>
-<p>The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column, with each grid square containing the following information:</p>
+<h1><span class="header-section-number">B</span> Data Visualizations</h1>
+<div id="project-indicators-by-coo-community" class="section level2 unnumbered">
+<h2>Project Indicators by COO Community</h2>
+<div id="how-to-read-these-plots" class="section level3 unnumbered">
+<h3>How to Read these Plots</h3>
+<p>The following plots display a lot of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square containing the following information:</p>
 <ul>
 <li>the indicator values for each census tract (represented by a thin yellow line)</li>
 <li>the indicator values for all census tracts (represented by a light gray histogram chart in the grid’s background)</li>
 <li>the indicator value for King County (represented by a thick blue line)</li>
-<li><em>for percent indicators only:</em> the indicator value of all of the tracts in the COO community combined (represented by a thick dashed vertical line)</li>
+<li><em>for percent indicators only:</em> the indicator value of all of the tracts in the COO community combined (represented by a thick dashed yellow line)</li>
 </ul>
 <p>Reading the plot from top to bottom, one column at a time, the viewer can see how the tracts of each community compare to each other; to the community as a whole; to the county as a whole; and to the distribution of values amongst all King County census tracts.</p>
 </div>
-<div id="plots" class="section level2 unnumbered">
-<h2>Plots</h2>
+<div id="plots" class="section level3 unnumbered">
+<h3>Plots</h3>
 <div class="figure"><span id="fig:app-data-viz-comm-vuln-hist"></span>
 <img src="figures/app-data-viz-comm-vuln-hist-1.png" alt="Vulnerability Indicators by COO Community (2013-2017)" width="100%" />
 <p class="caption">
-Figure A.1: Vulnerability Indicators by COO Community (2013-2017)
+Figure B.1: Vulnerability Indicators by COO Community (2013-2017)
 </p>
 </div>
 <div class="figure"><span id="fig:app-data-viz-comm-demo-hist"></span>
 <img src="figures/app-data-viz-comm-demo-hist-1.png" alt="Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)" width="100%" />
 <p class="caption">
-Figure A.2: Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)
+Figure B.2: Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)
 </p>
 </div>
 <div class="figure"><span id="fig:app-data-viz-comm-hous-hist"></span>
 <img src="figures/app-data-viz-comm-hous-hist-1.png" alt="Housing Market Indicators by COO Community (2018)" width="100%" />
 <p class="caption">
-Figure A.3: Housing Market Indicators by COO Community (2018)
+Figure B.3: Housing Market Indicators by COO Community (2018)
+</p>
+</div>
+</div>
+</div>
+<div id="other-data-visualizations" class="section level2 unnumbered">
+<h2>Other Data Visualizations</h2>
+<div class="figure"><span id="fig:app-data-viz-pct-mf"></span>
+<img src="figures/app-data-viz-pct-mf-1.png" alt="Multifamily Residences as a % of All Housing Units (2013-2017)" width="100%" />
+<p class="caption">
+Figure B.4: Multifamily Residences as a % of All Housing Units (2013-2017)
 </p>
 </div>
 
@@ -163,7 +191,7 @@ Figure A.3: Housing Market Indicators by COO Community (2018)
           </div>
         </div>
       </div>
-<a href="conclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="interactive-maps.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="tabular-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

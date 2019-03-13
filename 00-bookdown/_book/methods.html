@@ -45,10 +45,23 @@
 
 
 
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
 
 
 
 <link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
 </head>
 
 <body>
@@ -96,11 +109,14 @@
 </ul></li>
 <li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>A</b> Data Visualizations</a><ul>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#how-to-read-these-plots"><i class="fa fa-check"></i>How to Read these Plots</a></li>
-<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#plots"><i class="fa fa-check"></i>Plots</a></li>
+<li class="chapter" data-level="A" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>A</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology-single-familymixed"><i class="fa fa-check"></i>COO Revised Neighborhood Typology (Single-Family/Mixed)</a></li>
 </ul></li>
-<li class="chapter" data-level="B" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>B</b> Tabular Data</a></li>
+<li class="chapter" data-level="B" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>B</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>C</b> Tabular Data</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
@@ -218,7 +234,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nsqpitpabl .gt_table {
+#zgbbdylhae .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -237,13 +253,13 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   /* table.border.top.color */
 }
 
-#nsqpitpabl .gt_heading {
+#zgbbdylhae .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
 }
 
-#nsqpitpabl .gt_title {
+#zgbbdylhae .gt_title {
   color: #000000;
   font-size: 125%;
   /* heading.title.font.size */
@@ -254,7 +270,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   border-bottom-width: 0;
 }
 
-#nsqpitpabl .gt_subtitle {
+#zgbbdylhae .gt_subtitle {
   color: #000000;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -265,7 +281,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   border-top-width: 0;
 }
 
-#nsqpitpabl .gt_bottom_border {
+#zgbbdylhae .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -274,7 +290,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   /* heading.border.bottom.color */
 }
 
-#nsqpitpabl .gt_column_spanner {
+#zgbbdylhae .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #A8A8A8;
@@ -282,7 +298,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   padding-bottom: 4px;
 }
 
-#nsqpitpabl .gt_col_heading {
+#zgbbdylhae .gt_col_heading {
   color: #000000;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -295,11 +311,11 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   margin: 10px;
 }
 
-#nsqpitpabl .gt_sep_right {
+#zgbbdylhae .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#nsqpitpabl .gt_group_heading {
+#zgbbdylhae .gt_group_heading {
   padding: 8px;
   color: #000000;
   background-color: #FFFFFF;
@@ -323,7 +339,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   vertical-align: middle;
 }
 
-#nsqpitpabl .gt_empty_group_heading {
+#zgbbdylhae .gt_empty_group_heading {
   padding: 0.5px;
   color: #000000;
   background-color: #FFFFFF;
@@ -347,37 +363,37 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   vertical-align: middle;
 }
 
-#nsqpitpabl .gt_striped {
+#zgbbdylhae .gt_striped {
   background-color: #f2f2f2;
 }
 
-#nsqpitpabl .gt_from_md > :first-child {
+#zgbbdylhae .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nsqpitpabl .gt_from_md > :last-child {
+#zgbbdylhae .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nsqpitpabl .gt_row {
+#zgbbdylhae .gt_row {
   padding: 10px;
   /* row.padding */
   margin: 10px;
   vertical-align: middle;
 }
 
-#nsqpitpabl .gt_stub {
+#zgbbdylhae .gt_stub {
   border-right-style: solid;
   border-right-width: 2px;
   border-right-color: #A8A8A8;
   padding-left: 12px;
 }
 
-#nsqpitpabl .gt_stub.gt_row {
+#zgbbdylhae .gt_stub.gt_row {
   background-color: #FFFFFF;
 }
 
-#nsqpitpabl .gt_summary_row {
+#zgbbdylhae .gt_summary_row {
   background-color: #FFFFFF;
   /* summary_row.background.color */
   padding: 6px;
@@ -386,13 +402,13 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   /* summary_row.text_transform */
 }
 
-#nsqpitpabl .gt_first_summary_row {
+#zgbbdylhae .gt_first_summary_row {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #A8A8A8;
 }
 
-#nsqpitpabl .gt_table_body {
+#zgbbdylhae .gt_table_body {
   border-top-style: solid;
   /* field.border.top.style */
   border-top-width: 2px;
@@ -407,55 +423,55 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
   /* field.border.bottom.color */
 }
 
-#nsqpitpabl .gt_footnote {
+#zgbbdylhae .gt_footnote {
   font-size: 90%;
   /* footnote.font.size */
   padding: 4px;
   /* footnote.padding */
 }
 
-#nsqpitpabl .gt_sourcenote {
+#zgbbdylhae .gt_sourcenote {
   font-size: 90%;
   /* sourcenote.font.size */
   padding: 4px;
   /* sourcenote.padding */
 }
 
-#nsqpitpabl .gt_center {
+#zgbbdylhae .gt_center {
   text-align: center;
 }
 
-#nsqpitpabl .gt_left {
+#zgbbdylhae .gt_left {
   text-align: left;
 }
 
-#nsqpitpabl .gt_right {
+#zgbbdylhae .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nsqpitpabl .gt_font_normal {
+#zgbbdylhae .gt_font_normal {
   font-weight: normal;
 }
 
-#nsqpitpabl .gt_font_bold {
+#zgbbdylhae .gt_font_bold {
   font-weight: bold;
 }
 
-#nsqpitpabl .gt_font_italic {
+#zgbbdylhae .gt_font_italic {
   font-style: italic;
 }
 
-#nsqpitpabl .gt_super {
+#zgbbdylhae .gt_super {
   font-size: 65%;
 }
 
-#nsqpitpabl .gt_footnote_glyph {
+#zgbbdylhae .gt_footnote_glyph {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nsqpitpabl" style="overflow-x:auto;"><!--gt table start-->
+<div id="zgbbdylhae" style="overflow-x:auto;"><!--gt table start-->
 <table class='gt_table'>
 <tr>
 <th class='gt_col_heading gt_left' rowspan='1' colspan='1'>TYPE</th>
@@ -675,7 +691,7 @@ Figure 2.1: Bates’ Conceptual model; Source: author’s interpretation of Bate
 <li id="fn17"><p>Note: the 2008-2012 5-year span could have been used but the project team decided not to because the potential increase in recency didn’t outweigh the cost of revising the data processing code. This change could be made to future improvements of the model.<a href="methods.html#fnref17" class="footnote-back">↩</a></p></li>
 <li id="fn18"><p>See the metadata for the ‘Real Property Sales’ file listed on King County’s Assessor Data Portal: <a href="https://info.kingcounty.gov/assessor/datadownload/desc/Real%20Property%20Sales.doc" class="uri">https://info.kingcounty.gov/assessor/datadownload/desc/Real%20Property%20Sales.doc</a><a href="methods.html#fnref18" class="footnote-back">↩</a></p></li>
 <li id="fn19"><p>Similar projects like <span class="citation">City of Seattle (<a href="#ref-city_of_seattle_seattle_2016">2016</a>)</span> used data from the now-closed market research firm Dupre and Scott. Other data sources that are currently available do not provide data at the census tract geographic scale.<a href="methods.html#fnref19" class="footnote-back">↩</a></p></li>
-<li id="fn20"><p>A simple analysis of the share of housing units in multifamily buildings (by census tract) led the project team to select &gt;=90% as the threshold for determining that a tract should be considered “mostly multifamily”<a href="methods.html#fnref20" class="footnote-back">↩</a></p></li>
+<li id="fn20"><p>A simple analysis of the share of housing units in multifamily buildings (by census tract) led the project team to select &gt;=90% as the threshold for determining that a tract should be considered “mostly multifamily”. See <a href="#app-data-viz-pct-mf"><strong>??</strong></a> for details.<a href="methods.html#fnref20" class="footnote-back">↩</a></p></li>
 <li id="fn21"><p>For a relevant summary of the limitations of displacement risk composite indices, see <span class="citation">City of Seattle (<a href="#ref-city_of_seattle_seattle_2016">2016</a>, page 15)</span> <a href="methods.html#fnref21" class="footnote-back">↩</a></p></li>
 <li id="fn22"><p><span class="citation">Bates (<a href="#ref-bates_gentrification_2013">2013</a>, page 64)</span> mentions the potential for conducting a “neighborhood-serving business analysis” using data from the US Census Bureau’s North American Industry Classification System (NAICS)<a href="methods.html#fnref22" class="footnote-back">↩</a></p></li>
 </ol>

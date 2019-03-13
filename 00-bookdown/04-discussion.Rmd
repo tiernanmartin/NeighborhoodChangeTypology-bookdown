@@ -41,9 +41,11 @@ While evidence of substantial demographic change is present in only 7 of the 34 
 
 ## Policy Implications
 
-The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political, must be made in partnership with the most impacted communities, and exceed the scope of this project [@bates_gentrification_2013, p.56].
+The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political and therefore must be made in partnership with the most impacted communities [@bates_gentrification_2013, p.56]. 
 
-The following tables are direct transcriptions from [@bates_gentrification_2013]:
+Prescriptive policy recommendations for specific communties are beyond the scope of this project but the following tables, when paired with the typology results, may be useful in assessing appropriate policy alternatives.
+
+Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
 ```{r discussion-toolkit-table-01}
@@ -125,3 +127,4 @@ The importance of including people from the communities experiencing the disrupt
 >  * Shaping policies to promote equity and positively impact our communities
 >  * Bringing new resources into communities ^[For more details on the COO's approach see @noauthor_communities_nodate]
 
+As mentioned in the Section \@ref(limitations) of the Methods chapter, if the results of this project are used to inform public policy, it is critical that they _complement_ the findings of direct community engagement - not replace them.
