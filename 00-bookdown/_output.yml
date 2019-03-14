@@ -1,4 +1,4 @@
-bookdown::gitbook:
+bookdown::gitbook: 
     css: [css/style.css, css/bookdown-leaflet.css]
     toc_depth: 2
     config:  

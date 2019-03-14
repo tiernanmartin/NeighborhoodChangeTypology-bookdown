@@ -37,7 +37,7 @@ p1 <- p1 +labs(y = "Number of Census Tracts",
                title = "Neighborhood Change Typology Types (Single-Family/Mixed)",
                subtitle = "King County, Washington (2018)",
                caption = wrapper("Source: author's analysis
-                                 \nNotes: the total number of census tracts in King County is 398. The graphic above does not include tracts where 90% or more of the housing units are located in multifamily buildings."))
+                                 \nNotes: the total number of census tracts in King County is 398. The graphic above does not include tracts where 90% or more of the housing units are located in multifamily buildings.", width = 100))
 p1 <- p1 + theme(
   panel.grid.major.y = element_blank(),
   panel.grid.minor.y = element_blank(),

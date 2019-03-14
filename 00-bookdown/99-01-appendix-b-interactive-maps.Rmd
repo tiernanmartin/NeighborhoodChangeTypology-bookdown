@@ -125,7 +125,8 @@ show_coorev18_sf_map <- function(){
                          opacity = 0, 
                          smoothFactor = 0,
                          options = leaflet::pathOptions(pane = "popup")) %>%
-    myLfltOpts(tileLabels = FALSE, fullScreenBtn = TRUE, hideControls = FALSE, pseudoFullscreen = FALSE)
+    myLfltOpts(tileLabels = FALSE, fullScreenBtn = TRUE, hideControls = FALSE, pseudoFullscreen = FALSE) %>% 
+    addControl(html = html_legend, position = "bottomright")
   
 }
 

@@ -2,7 +2,7 @@
 
 ## Background {-}
 
-Gentrification and displacement shape the neighborhoods of King County, Washingtons's cities and unincorporated urban communities in profound and comlpex ways. While many parts of America struggle to overcome depopulation and disinvestment, the residents of King County have experienced a set of challenge that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [@king_county_2016_2016]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents and the appreciation of real estate values - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
+Gentrification and displacement shape the neighborhoods of King County, Washington's cities and unincorporated urban communities in profound and comlpex ways. While many parts of America struggle to overcome depopulation and disinvestment, over the past two decades the residents of King County have experienced a set of challenges that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [@king_county_2016_2016]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents, the appreciation of real estate values, and new investment by public and private actors - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
 
 The goal of this project is to provide a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The project's partners envision that this information will be used by community members and community-serving organizations in these neighborhoods as they demand displacement mitigation and community restoration policies from their local governments.
 
@@ -10,8 +10,8 @@ The goal of this project is to provide a clearer understanding of which neighbor
 
   1. **The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue.**<br><br>
   2. **Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.**<br><br>
-  3. **The vast majority of Communities of Opportunity (COO) neighborhoods show some signs (at least) of gentrification.**<br><br>
-  4. **Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement.**<br><br>
+  3. **The vast majority of Communities of Opportunity (COO) neighborhoods show signs of gentrification but the specific stages of gentrification vary.**<br><br>
+  4. **Each COO community has at least one neighborhood undergoing the "dynamic" stage of gentrification that is associated with on-going involuntary displacement.**<br><br>
 
 
 ## How to Use This Report {-}

@@ -6,3 +6,4 @@ rsconnect
 00-bookdown/images/*highres.png
 00-bookdown/images/*.indd
 00-bookdown/images/*.idlk
+00-bookdown/_book/*.docx
