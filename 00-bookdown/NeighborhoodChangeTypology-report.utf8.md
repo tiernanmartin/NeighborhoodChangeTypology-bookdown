@@ -110,7 +110,7 @@ Two of COO's signature strategies (the practice data-driven policy making and th
 
 ### Stage One: Pilot Project, 2016 - 2017 {-}
 
-Between the project's beginning in 2016 and the publishing of this report in early 2019, there have been several different stages. The first might be described as the "Pilot Project" and it included many phases: the formation of the project team; a literature review; consultation with experts on demographic and real estate data; the development of a preliminary model and results; testing the veracity of these results by comparing them with community members' lived experiences ("ground-truthing" workshops); and the regular sharing of progress updates with the EAG. The Pilot Project ended with a presentation to a group of COO stakeholders that included EAG members but also members of the program's system change committee and staff from some of COO's place-based partner organizations.
+Between the project's beginning in 2016 and the publishing of this report in early 2019, there have been several different stages. The first might be described as the "Pilot Project" and it included many stages of its own: the formation of the project team; a literature review; consultation with experts on demographic and real estate data; the development of a preliminary model and results; testing the veracity of these results by comparing them with community members' lived experiences at "ground-truthing" workshops; and the periodic sharing of progress updates with the EAG. The Pilot Project ended with a presentation to a group of COO stakeholders that included EAG members as well as members of the program's system change committee and staff from some of COO's place-based partner organizations.
 
 This presentation at the end of the Pilot turned out to be a critically important milestone for the project. The results of the Neighborhood Change Typology method suggested that some parts of Seattle’s Rainier Valley neighborhood and the cities of Seatac and Tukwila^[These two cities were treated as a single place-based “community” in the COO program] were at-risk for gentrification (and displacement) and that the unincorporated community of White Center was not. This finding did not match the experience that many of the members of those three communities. But in the case of White Center the findings were more than just an inaccurate characterization; as staff from the White Center Community Development Association (WC CDA) explained, these results had the potential to be “weaponized” by opponents of affordable housing and other equitable community development efforts. These staff offered to work with the project team to troubleshoot the model and look for opportunities to improve it but they also requested that the publication of the preliminary results wait until this follow-up work could be completed.
 
@@ -124,7 +124,7 @@ In early summer of 2018, the project team reconvened and began working on a revi
 
 ## Defining Gentrification & Displacement
 
-Terms like "neighborhood change", "gentrification", and "displacement" have become increasingly commonplace in the popular discourse about American urban life but this doesn't mean that there is broad agreement on what they are. To the contrary, the academic literature on this subject contains a passionate debate around the definition of these words as well as the forces the cause them. This project benefits from the scholarship of researchers like Dr. Lisa Bates - who developed the method that this project is modeled after [@bates_gentrification_2013] - and Dr. Miriam Zuk  - who, along with her colleagues, produced a comprehensive literature review on these subjects [@miriam_zuk_gentrification_2015].
+Terms like "neighborhood change", "gentrification", and "displacement" have become increasingly commonplace in the popular discourse about American urban life but this doesn't mean that there is broad agreement on what they mean. To the contrary, the academic literature on this subject contains a passionate debate around the definition of these words as well as the forces that cause them. This project benefits from the scholarship of researchers like Dr. Lisa Bates - who developed the method that this project is modeled after - and Dr. Miriam Zuk  - who, along with her colleagues, produced a comprehensive literature review on these subjects [@bates_gentrification_2013; @miriam_zuk_gentrification_2015].
 
 ### Influential Works {-}
 
@@ -134,7 +134,7 @@ First and foremost, Dr. Bates’ 2013 report titled “Gentrification and Displa
 
 In addition to defining the “neighborhood change typology” model, Bates frames her analysis as a tool for selecting public policies that will promote equitable development rather than exacerbate displacement. She summarizes the public sector’s role in gentrification and recommends: a “market-conscious” strategy involving  the monitoring of housing market indicators; the creation of regulations and incentives to “leverage limited housing resources”; and public support for community partner organizations as they build their capacity to lead anti-displacement efforts [@bates_gentrification_2013, pp.18-25].
 
-In addition to Bates' and Freeman's respective works, the aforementioned literature review by Dr. Miriam Zuk et all describes the scholarship landscape on neighborhood change, gentrification, and displacement. This work explains the different conceptions and helps dispel any notion that there might be a universally accepted method for measuring any of these phenomena. Dr. Jackelyn Hwang’s study of homeowner mobility in Philadelphia, which uses anonymized credit data from the Federal Reserve Bank of Philadelphia, illustrates the extraordinary degree of access and ingenuity required to “track” displacement at the household level [@ding_effects_2018].
+In addition to Bates' and Freeman's respective works, the literature review by Dr. Miriam Zuk et al describes the scholarship landscape on neighborhood change, gentrification, and displacement. This work explains the different conceptions and helps dispel any notion that there might be a universally accepted method for measuring any of these phenomena. Dr. Jackelyn Hwang’s study of homeowner mobility in Philadelphia, which uses anonymized credit data from the Federal Reserve Bank of Philadelphia, illustrates the extraordinary degree of methodological ingenuity and access to private data that is required to “track” displacement at the household level [@ding_effects_2018].
 
 Lastly, the City of Seattle’s 2016 “Growth and Equity” report illustrates a different methodology applied to part of the study area of this report [@city_of_seattle_seattle_2016]. Although Seattle’s assessment of displacement risk is also informed by Dr. Bates’ work in Portland, OR; it uses a wide variety of indicators to produce an estimate of the relative _amount_ of risk rather than  the relative _type_ of susceptibility (i.e., a “continuous” scale rather than a “discrete” one).
 
@@ -142,8 +142,8 @@ Lastly, the City of Seattle’s 2016 “Growth and Equity” report illustrates 
 
 While the authors acknowledge the existing debate around these terms, for the sake of clarity this project uses the following definitions when referring to each term:
 
-  - **Neighborhood Change:** a substantial shift in the socio-economic and/or racial composition of a neighborhood’s residents and businesses along with the elements of the built environment that make up the neighborhood’s physical space
-  - **Gentrification:** the socio-economic “upgrading” of a neighborhood’s demographics combined with a shift from low to high real estate values. While gentrification in the US context is often associated with the racial turnover of majority people of color neighborhoods [@miriam_zuk_gentrification_2015, pp.7-9], this project does not limit its definition of gentrification to racial demographic change.^[While this project doesn’t _require_ evidence of racial turnover in order for a neighborhood to be considered “gentrifying”, this study shows that increases in white, non-hispanic population are common in King County's gentrifying census tracts. See the #methods section for a detailed explanation of how this project defines gentrification]
+  - **Neighborhood Change:** a substantial shift in the socioeconomic and/or racial composition of a neighborhood’s residents and businesses along with the elements of the built environment that make up the neighborhood’s physical space.
+  - **Gentrification:** the socioeconomic “upgrading” of a neighborhood’s demographics combined with a shift from low to high real estate values. While gentrification in the US context is often associated with the racial turnover of majority people of color neighborhoods [@miriam_zuk_gentrification_2015, pp.7-9], this project does not limit its definition of gentrification to racial demographic change.^[While this project doesn’t _require_ evidence of racial turnover in order for a neighborhood to be considered “gentrifying”, this study shows that increases in white, non-hispanic population are common in King County's gentrifying census tracts. See the #methods section for a detailed explanation of how this project defines gentrification]
   - **Displacement:** “the involuntary relocation of current residents or businesses from their current residence” [@city_of_seattle_seattle_2016, p.4]. This may be caused by the physical destruction of a home, the process of becoming “priced out” of a neighborhood, or the loss of an individual’s community and community-serving institutions. While studies show that the causality between gentrification and displacement is less clear than the popular narrative would suggest [@ding_gentrification_2016, p.6], this project nevertheless follows Bates' example of treating displacement as a negatives outcome resulting from the the process of neighborhood gentrification [@bates_gentrification_2013, pp.9-11].
 
 Other terms used throughout this report include:
@@ -154,7 +154,7 @@ Other terms used throughout this report include:
 
 ## Project Summary
 
-The primary goal of this project is to provide the COO partners with a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The gentrification of a neighborhood often leads to the removal of many of the residents (i.e., displacement), preventing them from receiving the benefits of the changes and improvements that characterize neighborhood revitalization efforts. As this regions economic and population growth changes the composition of neighborhoods, it is critical that communities and their governments work together to ensure that the costs and benefits of growth are distributed equitably.
+The primary goal of this project is to provide the COO partners with a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The gentrification of a neighborhood often leads to the removal of many of the residents (i.e., displacement), preventing them from receiving the benefits of the changes and improvements that characterize neighborhood revitalization efforts. As this region's economic and population growth changes the composition of neighborhoods, it is critical that communities and their governments work together to ensure that the costs and benefits of growth are distributed equitably.
 
 In addition to the question of which neighborhoods are at-risk or gentrifying, this project also tries to provide a useful description of what stage each neighborhood is at in the process. The concept of a "neighborhood change typology" that is actionable and connects to anti-displacement policies comes directly from the work of Dr. @bates_gentrification_2013 [p.9]. Importantly (although perhaps counter-intuitively), this project does not try to measure the number of displaced households, nor does it try to predict displacement rates. While those two data points would be useful information and would fit nicely into the COO "headline indicator" framework, this project's literature review suggests that there is not yet a methodologically sound way to measure them at the project's geographic scale.
 
@@ -264,7 +264,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
 
-preserve5b19189f2b036e5c
+preserve6ae4199c0eefde1f
 
 ## Limitations
 
@@ -434,17 +434,17 @@ Prescriptive policy recommendations for specific communties are beyond the scope
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve66a79bd9c4a1db41
+preserve1fcfba52adc3c685
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserved25a5248b51d7a5c
+preserveb7f008752691a63a
 
 ##### 2.2 Create new affordable housing {-}
-preserve41e1d9c4d4219252
+preserve0c357aba02484e20
 
 ##### 2.3 Preserve affordable housing {-}
-preserve2078ffd80fd7ab57
+preserve45c340587d56c6f4
 
 #### Final word on inclusive policy-making {-}
 
@@ -487,7 +487,7 @@ While the findings of this project are limited by the method that produced them,
 
 ## COO Revised Neighborhood Typology (Single-Family/Mixed) {-}
 
-preserve416255d1d8b87ae9
+preserve8950fa7146b6199a
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -545,11 +545,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve1acc29b4921f775a
+preserve93762542a78b167e
 
 
 ### Housing Market Change Indicators {-}
-preservee5540675aa56e6c6
+preserve7d091655190e4921
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 

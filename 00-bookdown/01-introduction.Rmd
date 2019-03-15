@@ -9,7 +9,7 @@ Two of COO's signature strategies (the practice data-driven policy making and th
 
 ### Timeline {-}
 
-```{r intro-timeline, fig.align='left'}
+```{r intro-timeline, fig.align='left', fig.asp=0.5}
 
 timline_image <- image_read("images/project-timeline-lowres-01.png")  
 
