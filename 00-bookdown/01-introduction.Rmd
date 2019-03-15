@@ -9,13 +9,14 @@ Two of COO's signature strategies (the practice data-driven policy making and th
 
 ### Timeline {-}
 
-```{r intro-timeline, fig.align='left', fig.asp=0.5}
+```{r intro-timeline, fig.asp=.5, fig.width=6}
 
-timline_image <- image_read("images/project-timeline-lowres-01.png")  
+timline_image <- image_read("images/project-timeline-leftalign-lowres.png")  
 
 p1 <- image_ggplot(timline_image)
 p1 <- p1 +  
-  labs(title = "COO Neighborhood Change Typology - Project Timeline",
+  labs(x = NULL, y = NULL,
+       title = "COO Neighborhood Change Typology - Project Timeline",
        subtitle = "",
 caption = wrapper('Note: The "ground-truthing" workshops were conducted in White Center, Rainier Valley, and Tukwila.'))  +
   theme_void_nct

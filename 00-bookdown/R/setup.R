@@ -77,7 +77,8 @@ typology_levels <- c("Susceptible",
 theme_nct <- theme_minimal(base_size = 10,
                            base_family = "Open Sans",
                            base_line_size = 1) +
-  theme(plot.title = element_text(hjust = 0),
+  theme(plot.margin = margin(t = 0,r = 0,b = 0,l = 0,unit = "pt"),
+    plot.title = element_text(hjust = 0),
         plot.subtitle = element_text(hjust = 0),
         plot.caption = element_text(hjust = 0))
 
@@ -91,10 +92,10 @@ theme_nct_8 <- theme_minimal(base_size = 8,
 theme_void_nct <- theme_void(base_size = 10,
                            base_family = "Open Sans",
                            base_line_size = 1) +
-  theme(plot.margin = margin(t = 5,r = 5,b = 5,l = 0,unit = "pt"),
+  theme(plot.margin = margin(t = 0,r = 0,b = 0,l = 0,unit = "pt"),
         plot.title = element_text(hjust = 0),
         plot.subtitle = element_text(hjust = 0),
-        plot.caption = element_text(hjust = 0))
+        plot.caption = element_text(hjust = 0)) 
 
 colors_nct <- list(darkgrey = "#434343",
                    grey = "#cccccc")

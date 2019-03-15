@@ -20,7 +20,7 @@ The structure's levels are:
 The diagram below illustrates how elements of this hierarchical conceptual structure relate, pairing them with the results of Bates' 2013 assessment:
 
 
-```{r methods-concept-diagram, fig.asp= 1, fig.cap='Bates\' Conceptual model; Source: author\'s interpretation of Bates (2013)'}
+```{r methods-concept-diagram, fig.asp= 1, fig.cap='Bates\' Neighborhood Change Typology Conceptual model'}
 
 pdx_map_image <- image_read("images/pdx-with-hierarchy-diagram-lowres.png")  
 

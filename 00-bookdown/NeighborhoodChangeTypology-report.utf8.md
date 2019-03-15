@@ -105,7 +105,7 @@ Two of COO's signature strategies (the practice data-driven policy making and th
 
 ### Timeline {-}
 
-<img src="figures/intro-timeline-1.png" width="2100" style="display: block; margin: auto auto auto 0;" />
+<img src="figures/intro-timeline-1.png" width="100%" style="display: block; margin: auto auto auto 0;" />
 
 
 ### Stage One: Pilot Project, 2016 - 2017 {-}
@@ -188,8 +188,8 @@ The diagram below illustrates how elements of this hierarchical conceptual struc
 
 
 <div class="figure" style="text-align: left">
-<img src="figures/methods-concept-diagram-1.png" alt="Bates' Conceptual model; Source: author's interpretation of Bates (2013)" width="2100" />
-<p class="caption">(\#fig:methods-concept-diagram)Bates' Conceptual model; Source: author's interpretation of Bates (2013)</p>
+<img src="figures/methods-concept-diagram-1.png" alt="Bates' Neighborhood Change Typology Conceptual model" width="100%" />
+<p class="caption">(\#fig:methods-concept-diagram)Bates' Neighborhood Change Typology Conceptual model</p>
 </div>
 
 
@@ -264,7 +264,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
 
-preserve6ae4199c0eefde1f
+preserve5453b372f6ea6465
 
 ## Limitations
 
@@ -297,7 +297,7 @@ https://doi.org/10.17605/OSF.IO/SJ7N9
 The COO Revised Model identifies many neighborhoods in King County as either "at-risk" or gentrifying. 
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-type-counts-1.png" alt="The number of tracts in each typology type" width="2100" />
+<img src="figures/findings-type-counts-1.png" alt="The number of tracts in each typology type" width="100%" />
 <p class="caption">(\#fig:findings-type-counts)The number of tracts in each typology type</p>
 </div>
 
@@ -305,7 +305,7 @@ Of the 398 census tracts in King County, just over 30% of them show signs of eit
 
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-kc-map-1.png" alt="COO Neighborhood Change Typology - Single-Family/Mixed (2018)" width="2100" />
+<img src="figures/findings-kc-map-1.png" alt="COO Neighborhood Change Typology - Single-Family/Mixed (2018)" width="100%" />
 <p class="caption">(\#fig:findings-kc-map)COO Neighborhood Change Typology - Single-Family/Mixed (2018)</p>
 </div>
 
@@ -325,14 +325,14 @@ There are far fewer neighborhoods included in the “mostly multifamily” model
 The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). However, as the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-type-counts-mf-1.png" alt="The number of tracts in each typology type (multifamily)" width="2100" />
+<img src="figures/findings-type-counts-mf-1.png" alt="The number of tracts in each typology type (multifamily)" width="100%" />
 <p class="caption">(\#fig:findings-type-counts-mf)The number of tracts in each typology type (multifamily)</p>
 </div>
 
 The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill].
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-kc-map-mf-1.png" alt="COO Neighborhood Change Typology - Multifamily (2018)" width="2100" />
+<img src="figures/findings-kc-map-mf-1.png" alt="COO Neighborhood Change Typology - Multifamily (2018)" width="100%" />
 <p class="caption">(\#fig:findings-kc-map-mf)COO Neighborhood Change Typology - Multifamily (2018)</p>
 </div>
 
@@ -346,14 +346,14 @@ The COO program’s three original place-based communities are White Center, Rai
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-type-by-comm-counts-1.png" alt="The number of tracts in each typology type by COO Community" width="2100" />
+<img src="figures/findings-type-by-comm-counts-1.png" alt="The number of tracts in each typology type by COO Community" width="100%" />
 <p class="caption">(\#fig:findings-type-by-comm-counts)The number of tracts in each typology type by COO Community</p>
 </div>
 
 As indicated in the graphic below, no clear pattern is present in the geographic distribution of the neighborhood change types.
 
 <div class="figure" style="text-align: left">
-<img src="figures/findings-typo-coo-comms-map-1.png" alt="COO Neighborhood Change Typology - Original Three COO Communities (2018)" width="2100" />
+<img src="figures/findings-typo-coo-comms-map-1.png" alt="COO Neighborhood Change Typology - Original Three COO Communities (2018)" width="100%" />
 <p class="caption">(\#fig:findings-typo-coo-comms-map)COO Neighborhood Change Typology - Original Three COO Communities (2018)</p>
 </div>
 
@@ -434,17 +434,17 @@ Prescriptive policy recommendations for specific communties are beyond the scope
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve1fcfba52adc3c685
+preserve0d4b2b0d41c5321d
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserveb7f008752691a63a
+preservea532c1ca44366b99
 
 ##### 2.2 Create new affordable housing {-}
-preserve0c357aba02484e20
+preserve8e213c06b6643ee0
 
 ##### 2.3 Preserve affordable housing {-}
-preserve45c340587d56c6f4
+preserve4eb9162a90f497f4
 
 #### Final word on inclusive policy-making {-}
 
@@ -487,7 +487,7 @@ While the findings of this project are limited by the method that produced them,
 
 ## COO Revised Neighborhood Typology (Single-Family/Mixed) {-}
 
-preserve8950fa7146b6199a
+preservea6528939959eda4d
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -509,19 +509,19 @@ Reading the plot from top to bottom, one column at a time, the viewer can see ho
 ### Plots {-}
 
 <div class="figure" style="text-align: left">
-<img src="figures/app-data-viz-comm-vuln-hist-1.png" alt="Vulnerability Indicators by COO Community (2013-2017)" width="2100" />
+<img src="figures/app-data-viz-comm-vuln-hist-1.png" alt="Vulnerability Indicators by COO Community (2013-2017)" width="100%" />
 <p class="caption">(\#fig:app-data-viz-comm-vuln-hist)Vulnerability Indicators by COO Community (2013-2017)</p>
 </div>
 
 
 <div class="figure" style="text-align: left">
-<img src="figures/app-data-viz-comm-demo-hist-1.png" alt="Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)" width="2100" />
+<img src="figures/app-data-viz-comm-demo-hist-1.png" alt="Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)" width="100%" />
 <p class="caption">(\#fig:app-data-viz-comm-demo-hist)Demographic Change Indicators by COO Community (2007-2001 to 2013-2017)</p>
 </div>
 
 
 <div class="figure" style="text-align: left">
-<img src="figures/app-data-viz-comm-hous-hist-1.png" alt="Housing Market Indicators by COO Community (2018)" width="2100" />
+<img src="figures/app-data-viz-comm-hous-hist-1.png" alt="Housing Market Indicators by COO Community (2018)" width="100%" />
 <p class="caption">(\#fig:app-data-viz-comm-hous-hist)Housing Market Indicators by COO Community (2018)</p>
 </div>
 
@@ -530,7 +530,7 @@ Reading the plot from top to bottom, one column at a time, the viewer can see ho
 ## Other Data Visualizations {-}
 
 <div class="figure" style="text-align: left">
-<img src="figures/app-data-viz-pct-mf-1.png" alt="Multifamily Residences as a % of All Housing Units (2013-2017)" width="2100" />
+<img src="figures/app-data-viz-pct-mf-1.png" alt="Multifamily Residences as a % of All Housing Units (2013-2017)" width="100%" />
 <p class="caption">(\#fig:app-data-viz-pct-mf)Multifamily Residences as a % of All Housing Units (2013-2017)</p>
 </div>
 
@@ -545,11 +545,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve93762542a78b167e
+preserve56ffa9a77fe1115e
 
 
 ### Housing Market Change Indicators {-}
-preserve7d091655190e4921
+preserve2d90c35a3e51ceed
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 

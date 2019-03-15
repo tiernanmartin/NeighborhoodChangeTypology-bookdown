@@ -18,7 +18,7 @@ options(
   fig.showtext = TRUE, fig_retina = 1
 )
 
-knitr::opts_chunk$set(fig.width=7, fig.path='figures/', dpi = 300,  fig.align = 'left',
+knitr::opts_chunk$set(fig.path='figures/', dpi = 300,  fig.align = 'left', out.width = '100%',
                       echo=FALSE, warning=FALSE, message=FALSE) 
 
 source("R/setup.R",echo = FALSE)
