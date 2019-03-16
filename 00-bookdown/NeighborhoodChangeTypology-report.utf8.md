@@ -264,7 +264,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
 
-preserve20bb56f3c57c6faf
+preserveb5970b970a0c38b4
 
 ## Limitations
 
@@ -436,17 +436,17 @@ Prescriptive policy recommendations for specific communties are beyond the scope
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preservec5146ab4258693d3
+preserve77d254c0651b4339
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve8696d4c3b3224b80
+preserveec3aa64b55e949fd
 
 ##### 2.2 Create new affordable housing {-}
-preserve5c735f7abceaa754
+preserve9bdc8d80fa2eb9ad
 
 ##### 2.3 Preserve affordable housing {-}
-preserve7bf0446380df1fb9
+preserve8a92a142057b3593
 
 #### Final word on inclusive policy-making {-}
 
@@ -489,7 +489,7 @@ While the findings of this project are limited by the method that produced them,
 
 ## COO Revised Neighborhood Typology (Single-Family/Mixed) {-}
 
-preserveea7c6bdb08977565
+preservef0c59f3f6105f419
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -547,11 +547,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserveafb6afec236b4f2e
+preserve5abc892dd5730f74
 
 
 ### Housing Market Change Indicators {-}
-preserve41e914502abeb395
+preserve322369b76cf263a9
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 

@@ -48,10 +48,16 @@ show_coorev18_sf_map <- function(){
     dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, ", King County, Washington")) %>% 
     dplyr::mutate(POPUP = case_when(
       
-      !is.na(GEOGRAPHY_COMMUNITY_NAME) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
-                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})\n
+      !is.na(GEOGRAPHY_COMMUNITY_NAME) & !is.na(COOREV18_SF_TYPE) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
+                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
                                             Type: {COOREV18_SF_TYPE}")),
-      TRUE ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})"))
+      !is.na(GEOGRAPHY_COMMUNITY_NAME) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
+                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: Not At-Risk or Gentrifying")),
+      !is.na(COOREV18_SF_TYPE) ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: {COOREV18_SF_TYPE}")),
+      TRUE ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: Not At-Risk or Gentrifying")) 
       
     )) %>% 
     dplyr::mutate(COOREV18_SF_TYPE_FCT = factor(COOREV18_SF_TYPE,
@@ -61,7 +67,16 @@ show_coorev18_sf_map <- function(){
                                                            "Dynamic",
                                                            "Late",
                                                            "Continued Loss"
-                                                )))
+                                                ))) %>% 
+    sf::st_transform(4326)
+  
+  model_wc <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "WC")
+  
+  model_rv <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "RV")
+  
+  model_stk <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "STC_TUK")
+  
+  model_other <- model_ready %>% filter(is.na(GEOGRAPHY_COMMUNITY_ID))
   
   wc_tr <- c("53033026600",
              "53033026700",
@@ -90,43 +105,67 @@ show_coorev18_sf_map <- function(){
   
   html_legend <- "<img src='images/typology-scale.png' style= 'height: 25px;'>"
   
-  model_ready %>% 
-    sf::st_transform(4326) %>% 
-    leaflet::leaflet() %>%
+  
+  leaflet::leaflet(data = model_ready) %>%
     leaflet::addMapPane("background_map", zIndex = 410) %>%
     leaflet::addMapPane("polygons", zIndex = 420) %>%
     leaflet::addMapPane("lines", zIndex = 430) %>%
     leaflet::addMapPane("communities", zIndex = 440) %>%
     leaflet::addMapPane("labels", zIndex = 450) %>% 
-    leaflet::addMapPane("popup", zIndex = 460) %>%
+    leaflet::addMapPane("popup", zIndex = 499) %>%
     leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLite,
                               options = leaflet::pathOptions(pane = "background_map")) %>%
     leaflet::addPolygons(data = kc_boundary,
                          fillOpacity = 0.1, smoothFactor = 0,
-                         fill = "black", weight = 0, 
-                         options = leaflet::pathOptions(pane = "polygons")) %>% 
-    leaflet::addPolygons(fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
-                         color = 'white', opacity = .85, weight = .5, 
-                         options = leaflet::pathOptions(pane = "polygons")) %>% 
+                         fill = "black", weight = 0,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "White Center",
+                         data = model_wc,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Rainier Valley",
+                         data = model_rv,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Seatac/Tukwila",
+                         data = model_stk,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Outside COO",
+                         data = model_other,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%  
     leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLines,
-                              options = leaflet::pathOptions(pane = "lines")) %>% 
+                              options = leaflet::pathOptions(pane = "lines")) %>%
     leaflet::addPolygons(data = coo_communities,
-                       fillOpacity = 0, smoothFactor = 0,
-                       color = 'black', opacity = .85, weight = 2,
-                       options = leaflet::pathOptions(pane = "communities")) %>% 
+                         fillOpacity = 0, smoothFactor = 0,
+                         color = 'black', opacity = .85, weight = 2,
+                         options = leaflet::pathOptions(pane = "communities")) %>%
     leaflet::addPolygons(data = coo_communities,
-                       fillOpacity = 0, smoothFactor = 0,
-                       color = 'black', opacity = .25, weight = 10,
-                       options = leaflet::pathOptions(pane = "communities")) %>% 
+                         fillOpacity = 0, smoothFactor = 0,
+                         color = 'black', opacity = .25, weight = 10,
+                         options = leaflet::pathOptions(pane = "communities")) %>%
     leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLabels,
-                              options = leaflet::pathOptions(pane = "labels")) %>% 
+                              options = leaflet::pathOptions(pane = "labels")) %>%
     leaflet::addPolygons(popup = ~POPUP,
-                         fillOpacity = 0, 
-                         opacity = 0, 
+                         fillOpacity = 0,
+                         opacity = 0,
                          smoothFactor = 0,
                          options = leaflet::pathOptions(pane = "popup")) %>%
-    myLfltOpts(tileLabels = FALSE, fullScreenBtn = TRUE, hideControls = FALSE, pseudoFullscreen = FALSE) %>% 
-    addControl(html = html_legend, position = "bottomright")
+    leaflet.extras::addFullscreenControl() %>%
+    leaflet::addLegend(position = "topright",pal = pal, values = ~COOREV18_SF_TYPE_FCT, opacity = 1,title = "") %>% 
+    addLayersControl( 
+      overlayGroups = c("White Center", 
+                        "Rainier Valley",
+                        "Seatac/Tukwila",
+                        "Outside COO"),
+      position = "topleft",
+      options = layersControlOptions(collapsed = TRUE)
+    )
   
 }
 
