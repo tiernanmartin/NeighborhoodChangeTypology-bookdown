@@ -127,7 +127,7 @@ p1
 
 ```
 
-The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill].
+The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District.^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill]
 
 ```{r findings-kc-map-mf, fig.cap='COO Neighborhood Change Typology - Multifamily (2018)'}
 
