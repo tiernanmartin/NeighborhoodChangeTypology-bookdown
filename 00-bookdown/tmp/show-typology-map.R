@@ -861,3 +861,194 @@ dat_ready %>%
 }
 
 
+show_coorev18_both <- function(){
+  
+  source("00-bookdown/R/setup.R",echo = FALSE)
+
+# LOAD DATA ---------------------------------------------------------------
+
+model_all <- st_read("00-bookdown/data/model-coorev18-20190305.gpkg", quiet = TRUE) 
+
+kc_boundary <- st_read("00-bookdown/data/kc-boundary.gpkg", quiet = TRUE)
+
+# LEAFLET MAP ---------------------------------------------------------------
+  
+  # assign one of the model objects to model_df
+  
+  coo_communities <- model_all %>%
+    dplyr::select(GEOGRAPHY_ID,
+                  dplyr::matches("GEOGRAPHY_COMMUNITY")) %>%
+    dplyr::filter(! is.na(GEOGRAPHY_COMMUNITY_ID)) %>%
+    dplyr::group_by(GEOGRAPHY_COMMUNITY_NAME, GEOGRAPHY_COMMUNITY_ID) %>%
+    dplyr::summarise() %>%
+    sf::st_transform(4326)
+  
+  model_colnames <- c("PDX18_TYPE",       # 1
+                      "COO16_TYPE",       # 2
+                      "COO18_TYPE",       # 3
+                      "COOREV18_SF_TYPE", # 4
+                      "COOREV18_MF_TYPE") # 5
+  
+  kc_boundary <- sf::st_transform(kc_boundary, 4326)
+  
+  model_all <- sf::st_transform(model_all, 4326)
+  
+  model_mf_ready <- model_all %>%
+    dplyr::select(dplyr::starts_with("GEOGRAPHY"),
+                  tidyselect::vars_select(names(.),model_colnames[5])) %>%  
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, "Census ")) %>% 
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, ", King County, Washington")) %>% 
+    dplyr::mutate(POPUP = as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: {COOREV18_MF_TYPE}<br>
+                                            Housing Market Type: Multifamily"))
+      
+    ) %>% 
+    dplyr::mutate(COOREV18_SF_TYPE_FCT = factor(COOREV18_MF_TYPE,
+                                                levels = c("Susceptible",
+                                                           "Early Type 1",
+                                                           "Early Type 2",
+                                                           "Dynamic",
+                                                           "Late",
+                                                           "Continued Loss"
+                                                ))) %>% 
+    sf::st_transform(4326) %>% 
+    filter(!is.na(COOREV18_SF_TYPE_FCT))
+  
+  
+  model_sf_ready <- model_all %>%
+    filter(! GEOGRAPHY_ID %in% model_mf_ready$GEOGRAPHY_ID) %>% 
+    dplyr::select(dplyr::starts_with("GEOGRAPHY"),
+                  tidyselect::vars_select(names(.),model_colnames[4])) %>%  
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, "Census ")) %>% 
+    dplyr::mutate(GEOGRAPHY_NAME = str_remove(GEOGRAPHY_NAME, ", King County, Washington")) %>% 
+    dplyr::mutate(POPUP = case_when(
+      
+      !is.na(GEOGRAPHY_COMMUNITY_NAME) & !is.na(COOREV18_SF_TYPE) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
+                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: {COOREV18_SF_TYPE}")),
+      !is.na(GEOGRAPHY_COMMUNITY_NAME) ~ as.character(glue("<strong>{GEOGRAPHY_COMMUNITY_NAME}</strong>\n<hr>\n 
+                                            {GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: Not At-Risk or Gentrifying")),
+      !is.na(COOREV18_SF_TYPE) ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: {COOREV18_SF_TYPE}")),
+      TRUE ~ as.character(glue("{GEOGRAPHY_NAME} ({GEOGRAPHY_ID})<br>
+                                            Type: Not At-Risk or Gentrifying")) 
+      
+    )) %>% 
+    dplyr::mutate(COOREV18_SF_TYPE_FCT = factor(COOREV18_SF_TYPE,
+                                                levels = c("Susceptible",
+                                                           "Early Type 1",
+                                                           "Early Type 2",
+                                                           "Dynamic",
+                                                           "Late",
+                                                           "Continued Loss"
+                                                ))) %>%   
+    sf::st_transform(4326) 
+  
+  model_ready <- list(model_mf_ready,
+       model_sf_ready) %>% 
+    map_dfr(c) %>% 
+    st_sf() %>% 
+    st_set_crs(st_crs(model_mf_ready))
+  
+  
+  model_wc <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "WC")
+  
+  model_rv <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "RV")
+  
+  model_stk <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "STC_TUK")
+  
+  model_other <- model_ready %>% filter(is.na(GEOGRAPHY_COMMUNITY_ID))
+  
+  
+  
+  
+  my_pal <- c(
+    RColorBrewer::brewer.pal(n = 9,'YlOrRd')[c(3,5,6)],
+    RColorBrewer::brewer.pal(n = 9,'RdPu')[c(6)],
+    RColorBrewer::brewer.pal(n = 9,'YlGnBu')[c(6,7)]
+  )
+  
+  my_pal_hex <- c("#ffff00",
+                  "#ffc800",
+                  "#ff9600",
+                  "#a30382",
+                  "#0794d0",
+                  "#1b5f8f")
+  
+  
+  pal <- leaflet::colorFactor(my_pal_hex,levels = levels(model_ready$COOREV18_SF_TYPE_FCT), ordered = TRUE,na.color = 'transparent')
+  
+  vals <- levels(ordered(model_ready$COOREV18_SF_TYPE_FCT))
+  
+  html_legend <- "<img src='images/typology-scale.png' style= 'height: 25px;'>"
+  
+  
+  leaflet::leaflet(data = model_ready) %>%
+    leaflet::addMapPane("background_map", zIndex = 410) %>%
+    leaflet::addMapPane("polygons", zIndex = 420) %>%
+    leaflet::addMapPane("lines", zIndex = 430) %>%
+    leaflet::addMapPane("communities", zIndex = 440) %>%
+    leaflet::addMapPane("labels", zIndex = 450) %>% 
+    leaflet::addMapPane("popup", zIndex = 499) %>%
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLite,
+                              options = leaflet::pathOptions(pane = "background_map")) %>%
+    leaflet::addPolygons(data = kc_boundary,
+                         fillOpacity = 0.1, smoothFactor = 0,
+                         fill = "black", weight = 0,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "White Center",
+                         data = model_wc,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Rainier Valley",
+                         data = model_rv,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Seatac/Tukwila",
+                         data = model_stk,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>%
+    leaflet::addPolygons(group = "Outside COO (SF/Mixed)",
+                         data = model_other,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>% 
+    leaflet::addPolygons(group = "Outside COO (MF)",
+                         data = model_mf_ready,
+                         fillColor = ~pal(COOREV18_SF_TYPE_FCT), fillOpacity = 1, smoothFactor = 0,
+                         color = 'white', opacity = .85, weight = .5,
+                         options = leaflet::pathOptions(pane = "polygons")) %>% 
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLines,
+                              options = leaflet::pathOptions(pane = "lines")) %>%
+    leaflet::addPolygons(data = coo_communities,
+                         fillOpacity = 0, smoothFactor = 0,
+                         color = 'black', opacity = .85, weight = 2,
+                         options = leaflet::pathOptions(pane = "communities")) %>%
+    leaflet::addPolygons(data = coo_communities,
+                         fillOpacity = 0, smoothFactor = 0,
+                         color = 'black', opacity = .25, weight = 10,
+                         options = leaflet::pathOptions(pane = "communities")) %>%
+    leaflet::addProviderTiles(provider = leaflet::providers$Stamen.TonerLabels,
+                              options = leaflet::pathOptions(pane = "labels")) %>%
+    leaflet::addPolygons(popup = ~POPUP,
+                         fillOpacity = 0,
+                         opacity = 0,
+                         smoothFactor = 0,
+                         options = leaflet::pathOptions(pane = "popup")) %>%
+    leaflet.extras::addFullscreenControl() %>%
+    leaflet::addLegend(position = "topright",pal = pal, values = ~COOREV18_SF_TYPE_FCT, opacity = 1,title = "") %>% 
+    addLayersControl( 
+      overlayGroups = c("White Center", 
+                        "Rainier Valley",
+                        "Seatac/Tukwila",
+                        "Outside COO (SF/Mixed)",
+                        "Outside COO (MF)"),
+      position = "topleft",
+      options = layersControlOptions(collapsed = TRUE)
+    )
+  
+}

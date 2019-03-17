@@ -329,12 +329,12 @@
 	border-radius: 5px;
 	}
 .book .book-body .page-wrapper .page-inner section.normal .leaflet-control-layers-toggle {
-	background-image: url(images/layers.png);
+	background-image: url("../_book/libs/leaflet/images/layers.png");
 	width: 36px;
 	height: 36px;
 	}
 .book .book-body .page-wrapper .page-inner section.normal .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(images/layers-2x.png);
+	background-image: url("../_book/libs/leaflet/images/layers-2x.png");
 	background-size: 26px 26px;
 	}
 .book .book-body .page-wrapper .page-inner section.normal .leaflet-touch .leaflet-control-layers-toggle {
