@@ -266,7 +266,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
-preserve50db11666ce9922f
+preservede81d5b5f4431299
 
 ## Limitations
 
@@ -438,17 +438,17 @@ Prescriptive policy recommendations for specific communities are beyond the scop
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserved443e17e416f93b5
+preserve7af4667b03c0bb6f
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserveb31c343fe93275b2
+preserveb79a1e807fc509f2
 
 ##### 2.2 Create new affordable housing {-}
-preserved8bf0b74918a0222
+preserve517ea83f7c8d0a3d
 
 ##### 2.3 Preserve affordable housing {-}
-preserveb39128f8bc6bba9f
+preserve6919247a7fdf9750
 
 #### Final word on inclusive policy-making {-}
 
@@ -495,7 +495,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preservea8b455b8035ba60b
+preserve5d2cb9446501d599
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -553,11 +553,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve970fc2b2c9c991e2
+preserveb19f857d032ebfce
 
 
 ### Housing Market Change Indicators {-}
-preserved4da974850739d13
+preserve5da2f5938ee27274
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 

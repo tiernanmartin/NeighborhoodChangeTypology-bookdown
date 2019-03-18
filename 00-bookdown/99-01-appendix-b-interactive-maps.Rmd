@@ -114,7 +114,9 @@ show_coorev18_sf_map <- function(){
   
   model_stk <- model_ready %>% filter(GEOGRAPHY_COMMUNITY_ID %in% "STC_TUK")
   
-  model_other <- model_ready %>% filter(is.na(GEOGRAPHY_COMMUNITY_ID))
+  model_other <- model_ready %>% 
+    filter(is.na(GEOGRAPHY_COMMUNITY_ID)) %>% 
+    filter(! GEOGRAPHY_ID %in% model_mf_ready$GEOGRAPHY_ID)
   
   
   
