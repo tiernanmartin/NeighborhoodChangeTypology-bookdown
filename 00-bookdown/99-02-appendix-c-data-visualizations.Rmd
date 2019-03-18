@@ -4,7 +4,7 @@
 
 ### How to Read these Plots {-}
 
-The following plots display a large amount of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square containing the following information:
+The following plots display a large amount of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square contains the following information:
 
   * the indicator values for each census tract (represented by a thin yellow line)
   * the indicator values for all census tracts (represented by a light gray histogram chart in the grid's background)

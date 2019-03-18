@@ -74,7 +74,7 @@ The characteristics of a neighborhood that determine its type are referred to as
       c. **Appreciated neighborhoods:** high value neighborhoods that appreciated from low value status over a longer period of time
 
 
-## The (Revised) Communinities of Opportunity Model
+## The (Revised) Communities of Opportunity Model
 
 The model that Dr. Bates developed for the City of Portland served as a foundation for this project and for many others.^[see @city_of_seattle_seattle_2016] However, given that this approach uses a limited number of indicators to capture a complex process, it is necessary to adapt the method slightly to fit the context in which it is applied.^[When developing the model for Portland, Dr. Bates began with a “retrospective look” at neighborhood change in that city and this process informed the selection of indicators; see @bates_gentrification_2013 [p.59]] After considering the context of King County and receiving constructive criticism of the preliminary model, the project team decided to implement the following adaptations to the Portland model:
 
@@ -106,7 +106,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 ## Model Comparison
 
-The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
+The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
 ```{r methods-gt}
  readr::read_csv("data/model-comparison-table-20190306.csv")  %>% 

@@ -127,7 +127,7 @@ p1
 
 ```
 
-The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District.^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill]
+The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District.^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the westernmost part of Capitol Hill]
 
 ```{r findings-kc-map-mf, fig.cap='COO Neighborhood Change Typology - Multifamily (2018)'}
 
@@ -158,7 +158,7 @@ dat <- readr::read_rds("data/model-all-20190305.rds")  %>%
               MOE = scales::comma(tidycensus::moe_sum(COOREV18_VULN_POC_MOE_TOT_2013_2017,COOREV18_VULN_POC_EST_TOT_2013_2017)))
 ```
 
-The COO program’s three original place-based communities are White Center, Raininer Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
+The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
 
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
