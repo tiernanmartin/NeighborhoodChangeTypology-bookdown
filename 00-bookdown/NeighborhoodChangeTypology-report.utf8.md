@@ -90,7 +90,7 @@ The results of this project should be interpreted and used with caution.
 
 As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and, therefore, should be treated as estimates rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to identify appropriate public policy solutions.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings. See the #limitations section for a detailed list of the challenges that are inherent to this project, its method, and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some important indicators (like recent market-rate rent prices) are not available. Data are not neutral; they reflect societal power dynamics, especially when it comes to the question of which data are collected (and published) and which are not [@coalition_of_communities_of_color_leading_2018; @jolivette_research_2015; @townsend_cities_2015]. 
 
-This report makes use of a relatively small set of indicators from public data sources in order to describe gentrification in an actionable way. **The results of this project should be interpreted not as definitive facts but rather as systematically-derived starting points for discussions between impacted commmunities and policymakers.** The findings of this project cannot be used as a substitute for direct engagement with impacted communities but they may help contentualize such efforts and point toward potential solutions.
+This report makes use of a relatively small set of indicators from public data sources in order to describe gentrification in an actionable way. **The results of this project should be interpreted not as definitive facts but rather as systematically-derived starting points for discussions between impacted communities and policymakers.** The findings of this project cannot be used as a substitute for direct engagement with impacted communities but they may help contextualize such efforts and point toward potential solutions.
 
  
 
@@ -232,7 +232,7 @@ The characteristics of a neighborhood that determine its type are referred to as
       c. **Appreciated neighborhoods:** high value neighborhoods that appreciated from low value status over a longer period of time
 
 
-## The (Revised) Communinities of Opportunity Model
+## The (Revised) Communities of Opportunity Model
 
 The model that Dr. Bates developed for the City of Portland served as a foundation for this project and for many others.^[see @city_of_seattle_seattle_2016] However, given that this approach uses a limited number of indicators to capture a complex process, it is necessary to adapt the method slightly to fit the context in which it is applied.^[When developing the model for Portland, Dr. Bates began with a “retrospective look” at neighborhood change in that city and this process informed the selection of indicators; see @bates_gentrification_2013 [p.59]] After considering the context of King County and receiving constructive criticism of the preliminary model, the project team decided to implement the following adaptations to the Portland model:
 
@@ -264,9 +264,9 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 ## Model Comparison
 
-The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
+The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
-preserve80d4a04ccb77ba28
+preserve50db11666ce9922f
 
 ## Limitations
 
@@ -333,7 +333,7 @@ The tracts included in the multifamily version of the COO Revised Model are geog
 <p class="caption">(\#fig:findings-type-counts-mf)The number of tracts in each typology type (multifamily)</p>
 </div>
 
-The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District.^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the western-most part of Capitol Hill]
+The neighborhoods are located either within Seattle's "city center" area (broadly defined) or within the University District.^[The “city center” is, in this case, being defined here to include the range of neighborhoods from Chinatown International District in the south to South Lake Union in the north; it also includes the westernmost part of Capitol Hill]
 
 <div class="figure" style="text-align: left">
 <img src="figures/findings-kc-map-mf-1.png" alt="COO Neighborhood Change Typology - Multifamily (2018)" width="100%" />
@@ -345,7 +345,7 @@ The neighborhoods are located either within Seattle's "city center" area (broadl
 
 
 
-The COO program’s three original place-based communities are White Center, Raininer Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be 166,967 (+/-2,698) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
+The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be 166,967 (+/-2,698) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
 
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
@@ -433,22 +433,22 @@ While evidence of substantial demographic change is present in only 7 of the 34 
 
 The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political and therefore must be made in partnership with the most impacted communities [@bates_gentrification_2013, p.56]. 
 
-Prescriptive policy recommendations for specific communties are beyond the scope of this project but the following tables, when paired with the typology results, may be useful in assessing appropriate policy alternatives.
+Prescriptive policy recommendations for specific communities are beyond the scope of this project but the following tables, when paired with the typology results, may be useful in assessing appropriate policy alternatives.
 
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve7ac4ecaf3d0d2312
+preserved443e17e416f93b5
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve92246e2b86569823
+preserveb31c343fe93275b2
 
 ##### 2.2 Create new affordable housing {-}
-preserve7d7a9e48783c268f
+preserved8bf0b74918a0222
 
 ##### 2.3 Preserve affordable housing {-}
-preservee18a2baebd2bc199
+preserveb39128f8bc6bba9f
 
 #### Final word on inclusive policy-making {-}
 
@@ -495,7 +495,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preserve3f10da1e1ff7fdc0
+preservea8b455b8035ba60b
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -505,7 +505,7 @@ preserve3f10da1e1ff7fdc0
 
 ### How to Read these Plots {-}
 
-The following plots display a large amount of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square containing the following information:
+The following plots display a large amount of data in a visually-dense format. The indicators for each COO Community are arranged in a column; within those columns, each grid square contains the following information:
 
   * the indicator values for each census tract (represented by a thin yellow line)
   * the indicator values for all census tracts (represented by a light gray histogram chart in the grid's background)
@@ -553,11 +553,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve72feb211c28029ee
+preserve970fc2b2c9c991e2
 
 
 ### Housing Market Change Indicators {-}
-preserve91cb9ab8adb008d3
+preserved4da974850739d13
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 
