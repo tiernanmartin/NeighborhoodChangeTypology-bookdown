@@ -4,9 +4,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 csl: environment-and-planning.csl
-link-citations: yes
-monofont: "Source Code Pro"
-monofontoptions: "Scale=0.7"
+link-citations: yes 
 url: 'http\://tinyurl.com/NeighborhoodChangeTypology'
 github-repo: tiernanmartin/NeighborhoodChangeTypology-bookdown
 ---
@@ -264,7 +262,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
 
-preserve7c2a8ee7c1a37717
+preserve26615682c4751baf
 
 ## Limitations
 
@@ -436,17 +434,17 @@ Prescriptive policy recommendations for specific communties are beyond the scope
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve94392b2e5679e8bc
+preservedce7a54f78d9741b
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve6568e7f07eb95f00
+preserve25943eb70d2d564e
 
 ##### 2.2 Create new affordable housing {-}
-preserve8abea0d97c6f4891
+preserve3075238764c55323
 
 ##### 2.3 Preserve affordable housing {-}
-preservefe363186501ec3e2
+preserve0935b02914c80033
 
 #### Final word on inclusive policy-making {-}
 
@@ -493,7 +491,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preserve8134167684bcc3b0
+preserveb0d73046f8ee3507
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -551,11 +549,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserveeb7ee21cb0bdfac0
+preservef2b39da0a486dcee
 
 
 ### Housing Market Change Indicators {-}
-preservef3f670133fe82d78
+preserve877b989b40188604
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 

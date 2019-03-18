@@ -4,9 +4,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 csl: environment-and-planning.csl
-link-citations: yes
-monofont: "Source Code Pro"
-monofontoptions: "Scale=0.7"
+link-citations: yes 
 url: 'http\://tinyurl.com/NeighborhoodChangeTypology'
 github-repo: tiernanmartin/NeighborhoodChangeTypology-bookdown
 ---
