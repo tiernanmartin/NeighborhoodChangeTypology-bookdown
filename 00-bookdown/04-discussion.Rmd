@@ -9,7 +9,7 @@ Data-driven analyses like this one have no shortage of technical challenges to o
 
 This experience underscores what might be the most significant finding of the project: 
 
-#### 1. The communities most impacted by inequities understand the challenges that they face best; they must, therefore, play a direct role in the pursuit of solutions to these challenges. {-}
+#### 1. The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue. {-}
 
 A classification model built with institutional data can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
 

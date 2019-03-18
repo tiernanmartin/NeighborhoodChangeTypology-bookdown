@@ -86,7 +86,11 @@ The goal of this project is to provide a clearer understanding of which neighbor
 
 ## How to Use This Report {-}
 
-The results of this project should be interpreted and used with caution. As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and - therefore - should be treated as "estimates" rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to make improvements.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some indicators like recent market-rate rent prices are not available. **Data are not neutral and they reflect societal power dynamics** - especially when it comes to the question of which data are collected/published and which are not [@townsend_cities_2015].
+The results of this project should be interpreted and used with caution. 
+
+As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and, therefore, should be treated as estimates rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to identify appropriate public policy solutions.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings. See the #limitations section for a detailed list of the challenges that are inherent to this project, its method, and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some important indicators (like recent market-rate rent prices) are not available. Data are not neutral; they reflect societal power dynamics, especially when it comes to the question of which data are collected (and published) and which are not [@coalition_of_communities_of_color_leading_2018; @jolivette_research_2015; @townsend_cities_2015]. 
+
+This report makes use of a relatively small set of indicators from public data sources in order to describe gentrification in an actionable way. **The results of this project should be interpreted not as definitive facts but rather as systematically-derived starting points for discussions between impacted commmunities and policymakers.** The findings of this project cannot be used as a substitute for direct engagement with impacted communities but they may help contentualize such efforts and point toward potential solutions.
 
  
 
@@ -262,7 +266,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the divison of the model between neighborhoods with mostly multifamily housing and those characterized by eithr mostly single family or a mixture of housing types.
 
-preserve26615682c4751baf
+preserve80d4a04ccb77ba28
 
 ## Limitations
 
@@ -395,7 +399,7 @@ Data-driven analyses like this one have no shortage of technical challenges to o
 
 This experience underscores what might be the most significant finding of the project: 
 
-#### 1. The communities most impacted by inequities understand the challenges that they face best; they must, therefore, play a direct role in the pursuit of solutions to these challenges. {-}
+#### 1. The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue. {-}
 
 A classification model built with institutional data can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
 
@@ -434,17 +438,17 @@ Prescriptive policy recommendations for specific communties are beyond the scope
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preservedce7a54f78d9741b
+preserve7ac4ecaf3d0d2312
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve25943eb70d2d564e
+preserve92246e2b86569823
 
 ##### 2.2 Create new affordable housing {-}
-preserve3075238764c55323
+preserve7d7a9e48783c268f
 
 ##### 2.3 Preserve affordable housing {-}
-preserve0935b02914c80033
+preservee18a2baebd2bc199
 
 #### Final word on inclusive policy-making {-}
 
@@ -491,7 +495,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preserveb0d73046f8ee3507
+preserve3f10da1e1ff7fdc0
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -549,11 +553,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preservef2b39da0a486dcee
+preserve72feb211c28029ee
 
 
 ### Housing Market Change Indicators {-}
-preserve877b989b40188604
+preserve91cb9ab8adb008d3
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 
