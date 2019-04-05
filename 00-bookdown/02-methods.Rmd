@@ -114,24 +114,6 @@ The following table captures the similarities and difference between the Portlan
   gt()
 ```
 
-## Limitations
-
-This method is intended to guide policy makers and community members toward effective displacement mitigation strategies by categorizing neighborhoods according to their stage in the process of neighborhood change. As with any approach that attempts to model a complex system (in this case, a neighborhood), the results of this method should be interpreted cautiously and its limitations must be acknowledged.^[For a relevant summary of the limitations of displacement risk composite indices, see @city_of_seattle_seattle_2016 [p.15].]
-
-**The most important limitation is the absence of contextual information.** Simply put, if a neighborhood is experiencing gentrification and displacement but those changes are not captured in Census/Assessor’s Office data then this model will be wrong because it only “knows about” a small set of indicators. This method does not include a way to add contextual data from the communities that are being displaced to refine its typology classification. If used to inform public policy, the model’s results should _complement_ the results of direct community engagement - not replace them.
-
-**Individual households that are vulnerable to displacement can likely be found in every neighborhood in the county, not just the neighborhoods identified by this project’s model.** All members of marginalized populations face systemic challenges that impact their ability to resist displacement, but this method focuses on the _neighborhoods_ where these populations are more concentrated. The results of this model run the risk of being misinterpreted as a depiction of the only places where displacement is a concern, when in fact this issue is likely relevant for some households in nearly every neighborhood.
-
-**The use of small geographic units (e.g., census tracts) increases the uncertainty of the data.** While there appears to be some consensus in the academic scholarship that gentrification is a neighborhood-based dynamic [@miriam_zuk_gentrification_2015], the use of neighborhood-sized samples of American Community Survey data introduces significant statistical uncertainty into the results. Similarly, the use of data collected during wide spans of time (five years for the ACS data) restricts the ability of the model to reflect current on-the-ground conditions. This limitation is particularly relevant to highly dynamic indicators like rent prices but is also has implications on the data's ability to reflect the rapid pace of shifting neighborhood demographics. 
-
-**This method's reliance on _relative_ measures might discount the impact of _absolute_ changes.** The median and quintile values provide a useful baseline for comparing the County’s tracts but this approach risks underestimating the impacts of region-wide growth. For instance, if most neighborhoods are experiencing rising housing costs while household incomes remain flat then residents will experience pressure to relocate. In this scenario the comparison of one neighborhood to the rest may be less important than the measurement of absolute change.
-
-**This method produces _descriptive_ – not predictive – results.** The results describe the demographic and housing market pattern of neighborhoods; they do not predict the precise number of households that might be displaced, nor do they directly measure the number of households that have been displaced already.
-
-**The absence of recent, systematically collected rent price data weakens the model’s ability to accurately portray changes in rental housing markets.** While the project team tried to find a better source of rent data than the ACS, that effort was ultimately unsuccessful. The procurement of rent price data (past and present) for the entirety of King County is beyond the scope of this project.
-
-**The model narrowly focuses on indicators of residential neighborhood change but businesses experience gentrification and displacement pressure as well.** The results should not be interpreted as evidence of changes in the composition of a neighborhood’s business community [@bates_gentrification_2013, p.64].^[@bates_gentrification_2013 [p.64] mentions the potential for conducting a “neighborhood-serving business analysis” using data from the US Census Bureau’s North American Industry Classification System (NAICS)] 
- 
 ## Reproducibility & Open Source Materials
 
 The raw data and an R package containing the project's code files are available to download at 
