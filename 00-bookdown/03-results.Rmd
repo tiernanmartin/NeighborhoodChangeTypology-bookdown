@@ -3,7 +3,7 @@
 
 ## COO Revised Model (Single-Family/Mixed) Results
 
-The COO Revised Model identifies many neighborhoods in King County as either "at-risk" or gentrifying. 
+The COO Revised Model identifies many neighborhoods in King County as either “at-risk” or gentrifying. While the results below have not been vetted by every community in the county, the project team believes that these results can nevertheless be useful in framing discussions about anti-displacement and community stabilization policies if used responsibly. As was previously mentioned, it is imperative that Neighborhood Change Typology results be paired with local contextual data from impacted communities in order to determine their accuracy and utility.
 
 ```{r findings-type-counts, fig.asp = 0.5, fig.cap='The number of tracts in each typology type'}
 # LOAD DATA ---------------------------------------------------------------
