@@ -30,11 +30,11 @@ source("R/setup.R",echo = FALSE)
 
 # Acknowledgements {-}
 
-Futurewise would like to thank King County Public Health and the Communities of Opportunity Program for their generous support, which made this analysis possible.
+Futurewise would like to thank King County Public Health and the Communities of Opportunity Program for their generous support, which made this project possible.
 
 The authors would like to thank the staff members of the White Center Community Development Association for their valuable insights and critiques of the project throughout its timeline. They would also like to thank the following King County staff for their guidance and support: Andrea Akita, Public Health; Kim Tippens, Public Health; Kirsten Wysen, Public Health; Kristin Moore, Public Health; Cheryl Markham, Department of Community and Human Services; and Christie Most at the King County Assessor’s office.
 
-Additional gratitude is extended to the members of the COO Evaluation and Advisory Group who provided feedback on the project and to all of the community members who contributed to the project by participating in workshops in the Fall of 2016. Without the guidance of community members and community-based organizations this project would not have been possible.
+Additional gratitude is extended to the members of the COO Evaluation and Advisory Data Workgroup who provided feedback on the project and to all of the community members who contributed to the project by participating in workshops in the Fall of 2016. Without the guidance of community members and community-based organizations this project would not have been possible.
  
 
 # Authors & Contributors {-}
