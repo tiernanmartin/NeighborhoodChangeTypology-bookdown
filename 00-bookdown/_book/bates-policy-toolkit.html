@@ -1,0 +1,1388 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>A Bates’ Policy Toolkit | NeighborhoodChangeTypology-report.utf8.md</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown  and GitBook 2.6.7" />
+
+  <meta property="og:title" content="A Bates’ Policy Toolkit | NeighborhoodChangeTypology-report.utf8.md" />
+  <meta property="og:type" content="book" />
+  <meta property="og:url" content="http://tinyurl.com/NeighborhoodChangeTypology" />
+  
+  
+  <meta name="github-repo" content="tiernanmartin/NeighborhoodChangeTypology-bookdown" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="A Bates’ Policy Toolkit | NeighborhoodChangeTypology-report.utf8.md" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="conclusion.html">
+<link rel="next" href="interactive-maps.html">
+<script src="libs/jquery/jquery.min.js"></script>
+<link href="libs/gitbook/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets/htmlwidgets.js"></script>
+<link href="libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet/leaflet.js"></script>
+<link href="libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding/leaflet.js"></script>
+<script src="libs/leaflet-providers/leaflet-providers.js"></script>
+<script src="libs/leaflet-providers-plugin/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen/lfx-fullscreen-prod.js"></script>
+
+
+
+<link rel="stylesheet" href="css\style.css" type="text/css" />
+<link rel="stylesheet" href="css\bookdown-leaflet.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Communities of Opportunity:<br/>Neighborhood Change Typology</a></li>
+
+<li class="divider"></li>
+<li><a href="index.html#section"></a></li>
+<li class="chapter" data-level="" data-path="acknowledgements.html"><a href="acknowledgements.html"><i class="fa fa-check"></i>Acknowledgements</a></li>
+<li class="chapter" data-level="" data-path="authors-contributors.html"><a href="authors-contributors.html"><i class="fa fa-check"></i>Authors &amp; Contributors</a></li>
+<li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html"><i class="fa fa-check"></i>Executive Summary</a><ul>
+<li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html#background"><i class="fa fa-check"></i>Background</a></li>
+<li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html#guidance-limitations"><i class="fa fa-check"></i>Guidance &amp; Limitations</a></li>
+<li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html#process-findings"><i class="fa fa-check"></i>Process Findings</a></li>
+<li class="chapter" data-level="" data-path="executive-summary.html"><a href="executive-summary.html#typology-findings"><i class="fa fa-check"></i>Typology Findings</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#project-history"><i class="fa fa-check"></i><b>1.1</b> Project History</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#defining-gentrification-displacement"><i class="fa fa-check"></i><b>1.2</b> Defining Gentrification &amp; Displacement</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>2</b> Methods</a><ul>
+<li class="chapter" data-level="2.1" data-path="methods.html"><a href="methods.html#the-portland-model"><i class="fa fa-check"></i><b>2.1</b> The Portland Model</a></li>
+<li class="chapter" data-level="2.2" data-path="methods.html"><a href="methods.html#the-revised-communities-of-opportunity-model"><i class="fa fa-check"></i><b>2.2</b> The (Revised) Communities of Opportunity Model</a></li>
+<li class="chapter" data-level="2.3" data-path="methods.html"><a href="methods.html#model-comparison"><i class="fa fa-check"></i><b>2.3</b> Model Comparison</a></li>
+<li class="chapter" data-level="2.4" data-path="methods.html"><a href="methods.html#reproducibility-open-source-materials"><i class="fa fa-check"></i><b>2.4</b> Reproducibility &amp; Open Source Materials</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="results.html"><a href="results.html"><i class="fa fa-check"></i><b>3</b> Results</a><ul>
+<li class="chapter" data-level="3.1" data-path="results.html"><a href="results.html#coo-revised-model-single-familymixed-results"><i class="fa fa-check"></i><b>3.1</b> COO Revised Model (Single-Family/Mixed) Results</a></li>
+<li class="chapter" data-level="3.2" data-path="results.html"><a href="results.html#coo-revised-model-multifamily-results"><i class="fa fa-check"></i><b>3.2</b> COO Revised Model (Multifamily) Results</a></li>
+<li class="chapter" data-level="3.3" data-path="results.html"><a href="results.html#coo-revised-model-results-by-community"><i class="fa fa-check"></i><b>3.3</b> COO Revised Model Results By Community</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="discussion.html"><a href="discussion.html"><i class="fa fa-check"></i><b>4</b> Discussion</a><ul>
+<li class="chapter" data-level="4.1" data-path="discussion.html"><a href="discussion.html#partnership-process-findings"><i class="fa fa-check"></i><b>4.1</b> Partnership &amp; Process Findings</a></li>
+<li class="chapter" data-level="4.2" data-path="discussion.html"><a href="discussion.html#typology-findings-1"><i class="fa fa-check"></i><b>4.2</b> Typology Findings</a></li>
+<li class="chapter" data-level="4.3" data-path="discussion.html"><a href="discussion.html#policy-implications"><i class="fa fa-check"></i><b>4.3</b> Policy Implications</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>5</b> Conclusion</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li class="chapter" data-level="A" data-path="bates-policy-toolkit.html"><a href="bates-policy-toolkit.html"><i class="fa fa-check"></i><b>A</b> Bates’ Policy Toolkit</a></li>
+<li class="chapter" data-level="B" data-path="interactive-maps.html"><a href="interactive-maps.html"><i class="fa fa-check"></i><b>B</b> Interactive Maps</a><ul>
+<li class="chapter" data-level="" data-path="interactive-maps.html"><a href="interactive-maps.html#coo-revised-neighborhood-typology"><i class="fa fa-check"></i>COO Revised Neighborhood Typology</a></li>
+</ul></li>
+<li class="chapter" data-level="C" data-path="data-visualizations.html"><a href="data-visualizations.html"><i class="fa fa-check"></i><b>C</b> Data Visualizations</a><ul>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#project-indicators-by-coo-community"><i class="fa fa-check"></i>Project Indicators by COO Community</a></li>
+<li class="chapter" data-level="" data-path="data-visualizations.html"><a href="data-visualizations.html#other-data-visualizations"><i class="fa fa-check"></i>Other Data Visualizations</a></li>
+</ul></li>
+<li class="chapter" data-level="D" data-path="tabular-data.html"><a href="tabular-data.html"><i class="fa fa-check"></i><b>D</b> Tabular Data</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li> 
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="bates-policy-toolkit" class="section level1">
+<h1><span class="header-section-number">A</span> Bates’ Policy Toolkit</h1>
+<p>Please note that the following tables are direct transcriptions from <span class="citation">Bates (<a href="#ref-bates_gentrification_2013">2013</a>)</span>:</p>
+<div id="plan-for-inclusive-equitable-development" class="section level4 unnumbered">
+<h4>1. Plan for inclusive, equitable development</h4>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#oqvfpsxrgl .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+}
+
+#oqvfpsxrgl .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+}
+
+#oqvfpsxrgl .gt_title {
+  color: #000000;
+  font-size: 125%;
+  /* heading.title.font.size */
+  padding-top: 4px;
+  /* heading.top.padding */
+  padding-bottom: 1px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oqvfpsxrgl .gt_subtitle {
+  color: #000000;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  padding-top: 1px;
+  padding-bottom: 4px;
+  /* heading.bottom.padding */
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oqvfpsxrgl .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* heading.border.bottom.color */
+}
+
+#oqvfpsxrgl .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#oqvfpsxrgl .gt_col_heading {
+  color: #000000;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 16px;
+  /* column_labels.font.size */
+  font-weight: initial;
+  /* column_labels.font.weight */
+  vertical-align: middle;
+  padding: 10px;
+  margin: 10px;
+}
+
+#oqvfpsxrgl .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#oqvfpsxrgl .gt_group_heading {
+  padding: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#oqvfpsxrgl .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#oqvfpsxrgl .gt_striped {
+  background-color: #f2f2f2;
+}
+
+#oqvfpsxrgl .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oqvfpsxrgl .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oqvfpsxrgl .gt_row {
+  padding: 10px;
+  /* row.padding */
+  margin: 10px;
+  vertical-align: middle;
+}
+
+#oqvfpsxrgl .gt_stub {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #A8A8A8;
+  padding-left: 12px;
+}
+
+#oqvfpsxrgl .gt_stub.gt_row {
+  background-color: #FFFFFF;
+}
+
+#oqvfpsxrgl .gt_summary_row {
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  padding: 6px;
+  /* summary_row.padding */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+}
+
+#oqvfpsxrgl .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+}
+
+#oqvfpsxrgl .gt_table_body {
+  border-top-style: solid;
+  /* field.border.top.style */
+  border-top-width: 2px;
+  /* field.border.top.width */
+  border-top-color: #A8A8A8;
+  /* field.border.top.color */
+  border-bottom-style: solid;
+  /* field.border.bottom.style */
+  border-bottom-width: 2px;
+  /* field.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* field.border.bottom.color */
+}
+
+#oqvfpsxrgl .gt_footnote {
+  font-size: 90%;
+  /* footnote.font.size */
+  padding: 4px;
+  /* footnote.padding */
+}
+
+#oqvfpsxrgl .gt_sourcenote {
+  font-size: 90%;
+  /* sourcenote.font.size */
+  padding: 4px;
+  /* sourcenote.padding */
+}
+
+#oqvfpsxrgl .gt_center {
+  text-align: center;
+}
+
+#oqvfpsxrgl .gt_left {
+  text-align: left;
+}
+
+#oqvfpsxrgl .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oqvfpsxrgl .gt_font_normal {
+  font-weight: normal;
+}
+
+#oqvfpsxrgl .gt_font_bold {
+  font-weight: bold;
+}
+
+#oqvfpsxrgl .gt_font_italic {
+  font-style: italic;
+}
+
+#oqvfpsxrgl .gt_super {
+  font-size: 65%;
+}
+
+#oqvfpsxrgl .gt_footnote_glyph {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="oqvfpsxrgl" style="overflow-x:auto;"><!--gt table start-->
+<table class='gt_table'>
+<tr>
+<th class='gt_col_heading gt_left' rowspan='1' colspan='1'>TOOL</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>EARLY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>MID</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>LATE</th>
+</tr>
+<tbody class='gt_table_body'>
+<tr>
+<td class='gt_row gt_left'>Health Impact Assessment/Environmental Impact Assessment</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Community Impact Report</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Community Benefits Agreement and tools</td>
+<td class='gt_row gt_center'></td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Neighborhood planning process</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'></td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Support community building initiatives</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'></td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Task force/community advisory committee</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan='5' class='gt_sourcenote'>Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76</td>
+</tr>
+</tfoot>
+</table>
+<!--gt table end-->
+</div>
+</div>
+<div id="increasepreserve-opportunities-for-affordable-housing" class="section level4 unnumbered">
+<h4>2. Increase/preserve opportunities for affordable housing</h4>
+<div id="generate-revenue-for-housing-programs" class="section level5 unnumbered">
+<h5>2.1 Generate revenue for housing programs</h5>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#fegjfobwwx .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+}
+
+#fegjfobwwx .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+}
+
+#fegjfobwwx .gt_title {
+  color: #000000;
+  font-size: 125%;
+  /* heading.title.font.size */
+  padding-top: 4px;
+  /* heading.top.padding */
+  padding-bottom: 1px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#fegjfobwwx .gt_subtitle {
+  color: #000000;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  padding-top: 1px;
+  padding-bottom: 4px;
+  /* heading.bottom.padding */
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#fegjfobwwx .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* heading.border.bottom.color */
+}
+
+#fegjfobwwx .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#fegjfobwwx .gt_col_heading {
+  color: #000000;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 16px;
+  /* column_labels.font.size */
+  font-weight: initial;
+  /* column_labels.font.weight */
+  vertical-align: middle;
+  padding: 10px;
+  margin: 10px;
+}
+
+#fegjfobwwx .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#fegjfobwwx .gt_group_heading {
+  padding: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#fegjfobwwx .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#fegjfobwwx .gt_striped {
+  background-color: #f2f2f2;
+}
+
+#fegjfobwwx .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#fegjfobwwx .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#fegjfobwwx .gt_row {
+  padding: 10px;
+  /* row.padding */
+  margin: 10px;
+  vertical-align: middle;
+}
+
+#fegjfobwwx .gt_stub {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #A8A8A8;
+  padding-left: 12px;
+}
+
+#fegjfobwwx .gt_stub.gt_row {
+  background-color: #FFFFFF;
+}
+
+#fegjfobwwx .gt_summary_row {
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  padding: 6px;
+  /* summary_row.padding */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+}
+
+#fegjfobwwx .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+}
+
+#fegjfobwwx .gt_table_body {
+  border-top-style: solid;
+  /* field.border.top.style */
+  border-top-width: 2px;
+  /* field.border.top.width */
+  border-top-color: #A8A8A8;
+  /* field.border.top.color */
+  border-bottom-style: solid;
+  /* field.border.bottom.style */
+  border-bottom-width: 2px;
+  /* field.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* field.border.bottom.color */
+}
+
+#fegjfobwwx .gt_footnote {
+  font-size: 90%;
+  /* footnote.font.size */
+  padding: 4px;
+  /* footnote.padding */
+}
+
+#fegjfobwwx .gt_sourcenote {
+  font-size: 90%;
+  /* sourcenote.font.size */
+  padding: 4px;
+  /* sourcenote.padding */
+}
+
+#fegjfobwwx .gt_center {
+  text-align: center;
+}
+
+#fegjfobwwx .gt_left {
+  text-align: left;
+}
+
+#fegjfobwwx .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#fegjfobwwx .gt_font_normal {
+  font-weight: normal;
+}
+
+#fegjfobwwx .gt_font_bold {
+  font-weight: bold;
+}
+
+#fegjfobwwx .gt_font_italic {
+  font-style: italic;
+}
+
+#fegjfobwwx .gt_super {
+  font-size: 65%;
+}
+
+#fegjfobwwx .gt_footnote_glyph {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="fegjfobwwx" style="overflow-x:auto;"><!--gt table start-->
+<table class='gt_table'>
+<tr>
+<th class='gt_col_heading gt_left' rowspan='1' colspan='1'>STRATEGY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>EARLY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>MID</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>LATE</th>
+</tr>
+<tbody class='gt_table_body'>
+<tr>
+<td class='gt_row gt_left'>Housing levy</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Document recording fee</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Housing trust fund</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Developer exactions</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Tax increment financing</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Real estate transfer taxes</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan='5' class='gt_sourcenote'>Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76</td>
+</tr>
+</tfoot>
+</table>
+<!--gt table end-->
+</div>
+</div>
+<div id="create-new-affordable-housing" class="section level5 unnumbered">
+<h5>2.2 Create new affordable housing</h5>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#tnudgwzvzm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+}
+
+#tnudgwzvzm .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+}
+
+#tnudgwzvzm .gt_title {
+  color: #000000;
+  font-size: 125%;
+  /* heading.title.font.size */
+  padding-top: 4px;
+  /* heading.top.padding */
+  padding-bottom: 1px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#tnudgwzvzm .gt_subtitle {
+  color: #000000;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  padding-top: 1px;
+  padding-bottom: 4px;
+  /* heading.bottom.padding */
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#tnudgwzvzm .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* heading.border.bottom.color */
+}
+
+#tnudgwzvzm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#tnudgwzvzm .gt_col_heading {
+  color: #000000;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 16px;
+  /* column_labels.font.size */
+  font-weight: initial;
+  /* column_labels.font.weight */
+  vertical-align: middle;
+  padding: 10px;
+  margin: 10px;
+}
+
+#tnudgwzvzm .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#tnudgwzvzm .gt_group_heading {
+  padding: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#tnudgwzvzm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#tnudgwzvzm .gt_striped {
+  background-color: #f2f2f2;
+}
+
+#tnudgwzvzm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#tnudgwzvzm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#tnudgwzvzm .gt_row {
+  padding: 10px;
+  /* row.padding */
+  margin: 10px;
+  vertical-align: middle;
+}
+
+#tnudgwzvzm .gt_stub {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #A8A8A8;
+  padding-left: 12px;
+}
+
+#tnudgwzvzm .gt_stub.gt_row {
+  background-color: #FFFFFF;
+}
+
+#tnudgwzvzm .gt_summary_row {
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  padding: 6px;
+  /* summary_row.padding */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+}
+
+#tnudgwzvzm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+}
+
+#tnudgwzvzm .gt_table_body {
+  border-top-style: solid;
+  /* field.border.top.style */
+  border-top-width: 2px;
+  /* field.border.top.width */
+  border-top-color: #A8A8A8;
+  /* field.border.top.color */
+  border-bottom-style: solid;
+  /* field.border.bottom.style */
+  border-bottom-width: 2px;
+  /* field.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* field.border.bottom.color */
+}
+
+#tnudgwzvzm .gt_footnote {
+  font-size: 90%;
+  /* footnote.font.size */
+  padding: 4px;
+  /* footnote.padding */
+}
+
+#tnudgwzvzm .gt_sourcenote {
+  font-size: 90%;
+  /* sourcenote.font.size */
+  padding: 4px;
+  /* sourcenote.padding */
+}
+
+#tnudgwzvzm .gt_center {
+  text-align: center;
+}
+
+#tnudgwzvzm .gt_left {
+  text-align: left;
+}
+
+#tnudgwzvzm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#tnudgwzvzm .gt_font_normal {
+  font-weight: normal;
+}
+
+#tnudgwzvzm .gt_font_bold {
+  font-weight: bold;
+}
+
+#tnudgwzvzm .gt_font_italic {
+  font-style: italic;
+}
+
+#tnudgwzvzm .gt_super {
+  font-size: 65%;
+}
+
+#tnudgwzvzm .gt_footnote_glyph {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="tnudgwzvzm" style="overflow-x:auto;"><!--gt table start-->
+<table class='gt_table'>
+<tr>
+<th class='gt_col_heading gt_left' rowspan='1' colspan='1'>TOOL</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>EARLY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>MID</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>LATE</th>
+</tr>
+<tbody class='gt_table_body'>
+<tr>
+<td class='gt_row gt_left'>Commercial linkage fee</td>
+<td class='gt_row gt_center'></td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Inclusionary zoning</td>
+<td class='gt_row gt_center gt_striped'></td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Vacant/underutilized land</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'></td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Revise zoning</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan='5' class='gt_sourcenote'>Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76</td>
+</tr>
+</tfoot>
+</table>
+<!--gt table end-->
+</div>
+</div>
+<div id="preserve-affordable-housing" class="section level5 unnumbered">
+<h5>2.3 Preserve affordable housing</h5>
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#gcuofcplaf .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+}
+
+#gcuofcplaf .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+}
+
+#gcuofcplaf .gt_title {
+  color: #000000;
+  font-size: 125%;
+  /* heading.title.font.size */
+  padding-top: 4px;
+  /* heading.top.padding */
+  padding-bottom: 1px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#gcuofcplaf .gt_subtitle {
+  color: #000000;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  padding-top: 1px;
+  padding-bottom: 4px;
+  /* heading.bottom.padding */
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#gcuofcplaf .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* heading.border.bottom.color */
+}
+
+#gcuofcplaf .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#gcuofcplaf .gt_col_heading {
+  color: #000000;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 16px;
+  /* column_labels.font.size */
+  font-weight: initial;
+  /* column_labels.font.weight */
+  vertical-align: middle;
+  padding: 10px;
+  margin: 10px;
+}
+
+#gcuofcplaf .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#gcuofcplaf .gt_group_heading {
+  padding: 8px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#gcuofcplaf .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #000000;
+  background-color: #FFFFFF;
+  /* stub_group.background.color */
+  font-size: 16px;
+  /* stub_group.font.size */
+  font-weight: initial;
+  /* stub_group.font.weight */
+  border-top-style: solid;
+  /* stub_group.border.top.style */
+  border-top-width: 2px;
+  /* stub_group.border.top.width */
+  border-top-color: #A8A8A8;
+  /* stub_group.border.top.color */
+  border-bottom-style: solid;
+  /* stub_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* stub_group.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* stub_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#gcuofcplaf .gt_striped {
+  background-color: #f2f2f2;
+}
+
+#gcuofcplaf .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#gcuofcplaf .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#gcuofcplaf .gt_row {
+  padding: 10px;
+  /* row.padding */
+  margin: 10px;
+  vertical-align: middle;
+}
+
+#gcuofcplaf .gt_stub {
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #A8A8A8;
+  padding-left: 12px;
+}
+
+#gcuofcplaf .gt_stub.gt_row {
+  background-color: #FFFFFF;
+}
+
+#gcuofcplaf .gt_summary_row {
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  padding: 6px;
+  /* summary_row.padding */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+}
+
+#gcuofcplaf .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+}
+
+#gcuofcplaf .gt_table_body {
+  border-top-style: solid;
+  /* field.border.top.style */
+  border-top-width: 2px;
+  /* field.border.top.width */
+  border-top-color: #A8A8A8;
+  /* field.border.top.color */
+  border-bottom-style: solid;
+  /* field.border.bottom.style */
+  border-bottom-width: 2px;
+  /* field.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* field.border.bottom.color */
+}
+
+#gcuofcplaf .gt_footnote {
+  font-size: 90%;
+  /* footnote.font.size */
+  padding: 4px;
+  /* footnote.padding */
+}
+
+#gcuofcplaf .gt_sourcenote {
+  font-size: 90%;
+  /* sourcenote.font.size */
+  padding: 4px;
+  /* sourcenote.padding */
+}
+
+#gcuofcplaf .gt_center {
+  text-align: center;
+}
+
+#gcuofcplaf .gt_left {
+  text-align: left;
+}
+
+#gcuofcplaf .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#gcuofcplaf .gt_font_normal {
+  font-weight: normal;
+}
+
+#gcuofcplaf .gt_font_bold {
+  font-weight: bold;
+}
+
+#gcuofcplaf .gt_font_italic {
+  font-style: italic;
+}
+
+#gcuofcplaf .gt_super {
+  font-size: 65%;
+}
+
+#gcuofcplaf .gt_footnote_glyph {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="gcuofcplaf" style="overflow-x:auto;"><!--gt table start-->
+<table class='gt_table'>
+<tr>
+<th class='gt_col_heading gt_left' rowspan='1' colspan='1'>STRATEGY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>EARLY</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>MID</th>
+<th class='gt_col_heading gt_center' rowspan='1' colspan='1'>LATE</th>
+</tr>
+<tbody class='gt_table_body'>
+<tr>
+<td class='gt_row gt_left'>Code enforcement</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'></td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Replacement ordinance and "right to return" policy</td>
+<td class='gt_row gt_center gt_striped'></td>
+<td class='gt_row gt_center gt_striped'></td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Retain expiring-subsidy units</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left gt_striped'>Rent control<sup class='gt_footnote_glyph'>1</sup></td>
+<td class='gt_row gt_center gt_striped'></td>
+<td class='gt_row gt_center gt_striped'>×</td>
+<td class='gt_row gt_center gt_striped'>×</td>
+</tr>
+<tr>
+<td class='gt_row gt_left'>Eviction protection law</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'>×</td>
+<td class='gt_row gt_center'></td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan='5' class='gt_sourcenote'>Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76</td>
+</tr>
+</tfoot>
+<tfoot>
+<tr>
+<td colspan='4' class='gt_footnote'><sup class='gt_footnote_glyph'><em>1</em></sup> Rent control policies have significant legal challenges to overcome before they can be applied in Washington State</td>
+</tr>
+</tfoot></table>
+<!--gt table end-->
+</div>
+
+</div>
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-bates_gentrification_2013">
+<p>Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification” <em>Urban Studies and Planning Faculty Publications and Presentations</em>, <a href="http://pdxscholar.library.pdx.edu/usp_fac/83">http://pdxscholar.library.pdx.edu/usp_fac/83</a></p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="conclusion.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="interactive-maps.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook/js/app.min.js"></script>
+<script src="libs/gitbook/js/lunr.js"></script>
+<script src="libs/gitbook/js/plugin-search.js"></script>
+<script src="libs/gitbook/js/plugin-sharing.js"></script>
+<script src="libs/gitbook/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"toolbar": {
+"position": "fixed"
+},
+"search": true
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -21,22 +21,21 @@ github-repo: tiernanmartin/NeighborhoodChangeTypology-bookdown
 
 Futurewise would like to thank King County Public Health and the Communities of Opportunity Program for their generous support, which made this analysis possible.
 
-The authors would like to thank the staff members of the White Center Community Development Association for their valuable insights and critiques of the project throughout its timeline. They would also like to thank the following King County staff for their guidance and support: Andrea Akita, Public Health; Kim Tippens, Public Health; Kirsten Wysen, Public Health; Kristin Moore, Public Health; and Cheryl Markham, Department of Community and Human Services. 
+The authors would like to thank the staff members of the White Center Community Development Association for their valuable insights and critiques of the project throughout its timeline. They would also like to thank the following King County staff for their guidance and support: Andrea Akita, Public Health; Kim Tippens, Public Health; Kirsten Wysen, Public Health; Kristin Moore, Public Health; Cheryl Markham, Department of Community and Human Services; and Christie Most at the King County Assessor’s office.
 
-Additional gratitude is extended to the members of the COO Evaluation and Advisory Group who provided feedback on the project; to Christie Most at the King County Assessor's office; and to all of the community members who contributed to the project by participating in workshops in the Fall of 2016. 
+Additional gratitude is extended to the members of the COO Evaluation and Advisory Group who provided feedback on the project and to all of the community members who contributed to the project by participating in workshops in the Fall of 2016. Without the guidance of community members and community-based organizations this project would not have been possible.
+ 
 
 # Authors & Contributors {-}
 
 #### [Futurewise](http://www.futurewise.org) {-}
 
-Futurewise works to advance livable communities while protecting Washington’s most valuable natural resources. 
-They collaborate strategically with legislators, government staff, community-based non-profits, Washington residents and Futurewise members to develop smart policy and advocate for responsible growth management. 
-Futurewise works statewide with offices in Seattle and Spokane and a presence in both Pierce County and the Tri-Cities to create a livable and dynamic future for Washington.
+Futurewise works to advance livable communities while protecting Washington’s most valuable natural resources. They collaborate strategically with legislators, government staff, community-based non-profits, Washington residents and Futurewise members to develop smart policy and advocate for responsible growth management. Futurewise works statewide with offices in Seattle and Spokane and a presence in both Pierce County and the Tri-Cities to create a livable and dynamic future for Washington.
 
 Contributring staff include:
 
   - **Tiernan Martin**, author - for more information about the project contact Tiernan at tiernan@futurewise.org
-  - **Yen Baynes**, contributor
+  - **Yen Baynes**, author
   
 #### [Puget Sound Sage](http://www.pugetsoundsage.org) {-}
 
@@ -46,7 +45,7 @@ accessible transit and a healthy environment.
 
 Contributring staff include:
 
-  - **Giulia Pasciuto**, contributor
+  - **Giulia Pasciuto**, contributor (Pilot Phase only)
   
 #### [White Center Community Development Association](https://www.wccda.org/) {-}
 
@@ -59,12 +58,7 @@ They do this by:
   - Working across communities, cultures and systems
 The WCCDA is committed to ensuring long-term equity and social justice through systems change for the benefit of the White Center community.
 
-Contributring staff include:
-
-  - **Sili Savusa**, contributor
-  - **Dao Tran**, contributor 
-  - **Aaron Garcia**, contributor
-  - **Catherina Willard**, contributor
+The White Center CDA made invaluable contributions to learning process and development of this research. The collaboration between Futurewise and WCCDA was instrumental in enabling the project team to unpack the limitations of research methods that fail to involve community members, as well as the importance of supporting communities in the struggle to control their own data. WCCDA provided crucial guidance to the project team’s search for indicators that better represent the experience of communities like White Center.
 
 <!--chapter:end:index.Rmd-->
 
@@ -72,25 +66,56 @@ Contributring staff include:
 
 ## Background {-}
 
-Gentrification and displacement shape the neighborhoods of King County, Washington's cities and unincorporated urban communities in profound and comlpex ways. While many parts of America struggle to overcome depopulation and disinvestment, over the past two decades the residents of King County have experienced a set of challenges that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [@king_county_2016_2016]. Gentrification - a term that generally refers to the alteration of a neighborhood's character in response to changes in the socioeconomic makeup of its residents, the appreciation of real estate values, and new investment by public and private actors - has occurred in many of King County's neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is unfortunately the case that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods.
+Gentrification and displacement shape the neighborhoods of King County, Washington’s cities and unincorporated urban communities in profound and complex ways. While many parts of America struggle to overcome depopulation and disinvestment, over the past two decades the residents of King County have experienced a set of challenges that come with growth: rising costs of living, ballooning commute times, and housing costs that have grown much faster than most incomes [@king_county_2016_2016]. Gentrification – a term that generally refers to the alteration of a neighborhood’s character in response to changes in the socioeconomic makeup of its residents, the appreciation of real estate values, and new investment by public and private actors – has occurred in many of King County’s neighborhoods during this period of regional growth. While the revitalization of neighborhoods that suffer the costs of persistent poverty is an outcome worth pursuing, it is necessary for policy makers to acknowledge that throughout history many such efforts have instead lead to the displacement of the residents and businesses from these neighborhoods. In King County and throughout the US, marginalized groups including communities of color and low-income communities have born a disproportionate amount of the pressures of urban growth, resulting in social fragmentation and diminished economic opportunity that have intergenerational consequences [@fullilove_root_2016].	
 
-The goal of this project is to provide a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The project's partners envision that this information will be used by community members and community-serving organizations in these neighborhoods as they demand displacement mitigation and community restoration policies from their local governments.
+The project began in 2016 as an initiative of the Communities of Opportunity (COO) Evaluation and Advisory Data Workgroup (EAG), which had identified involuntary displacement as a critical but missing indicator of community opportunity. The project team started as a collaboration between Futurewise and Puget Sound Sage but later shifted to an intentional partnership between Futurewise and the White Center Community Development Association (WCCDA). All of the project’s partners made important contributions to the work but the insight and perspective of WCCDA were particularly instrumental in enabling the team to adapt the project’s indicators to more closely reflect the conditions on the ground.
 
-## Key Findings {-}
+The goal of this project is to provide a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at risk of gentrifying, as well as a useful description of what stage each neighborhood is at in the process. The concept of a “neighborhood change typology” that is actionable and connects to anti-displacement policies comes directly from the work of Dr. @bates_gentrification_2013 [p.9]. Importantly (although perhaps counter-intuitively), this project does not try to measure the number of displaced households, nor does it try to predict displacement rates. While those two data points would be useful information and would fit nicely into the COO “headline indicator” framework, this project’s literature review suggests that there is not yet a methodologically sound way to measure them at the project’s geographic scale (i.e., all census tracts within King County). The project team intends for the typology information to be used by community-serving organizations in these neighborhoods as they organize their members to demand displacement mitigation and community restoration policies from the local government. 
+
+In addition to presenting the project’s typology results, this report shares findings about the importance of conducting this work in a mutually accountable partnership between external partners (e.g., Futurewise) and community-based organizations (e.g., WCCDA). The value of including community members and trusted community-based organizations early in the process is explained in the report’s process findings section, as are the project team’s lessons learned about committing to equitable partnership practices and fixing mistakes in a project like this. These findings are included because of the project team’s commitment to transparency and so that future efforts might learn from this project’s mistakes.
+
+
+
+## Guidance & Limitations {-}
+
+The results of this project should be interpreted and used with caution. Academic researchers, corporations, and governments all have a history of using data analysis in ways that disempower marginalized communities, and it is important to the project team and to all participants in the Communities of Opportunity program that the findings of this project are not misused in this manner [@coalition_of_communities_of_color_leading_2018; @jolivette_research_2015; @townsend_cities_2015]. The following limitations should be considered when interpreting the project’s results and findings:
+
+**The neighborhood types identified by this project do not represent the experience of everyone in each neighborhood.** 
+They should not be used to undermine the validity of the lived experience of any individual or group. This project does not include the type of qualitative data that could reflect the experience of being displaced from a gentrifying neighborhood, nor does it provide a quantitative measure of displacement itself. 
+
+**Data are not neutral; they reflect the systemic biases and power dynamics of the individuals or groups that produce them.** 
+This project uses data that are publicly available for all neighborhoods in King County, but these data are published by public institutions that have their own priorities and mandates. Decisions about which data to collect and how the collection takes place reflect the priorities of public agencies like the US Census Bureau and the King County Tax Assessor’s Office, and it should not be assumed that their priorities always align with those of the communities most impacted by displacement.^[While lots of good social science research has been done using data from these sources, it is critical that researchers, community members, and policy makers understand and acknowledge the limitations of such data before using them to influence policy decisions] The absence of a frequently-updated, county-wide source of rent prices exemplifies the potentially misaligned priorities between the needs of groups that are susceptible to displacement and the priorities of public institutions.
+
+**This approach uses a relatively small number of indicators to describe the stage of gentrification that neighborhoods are experiencing.**
+The project team’s choice to use fewer indicators makes the results more scruitable but also limits the ability to identify different types of gentrification. It is important to understand that the results do not measure the amount of displacement that is occurring nor do they predict how much may occur. 
+
+**This method does not include a way to add contextual data from the communities that are being displaced to refine its typology classification.**
+Simply put, if a neighborhood is experiencing gentrification and displacement but those changes are not captured in US Census or Assessor’s Office data then this model will be wrong because it only “knows about” a small set of indicators. If used to inform public policy, the project’s results should complement the results of direct community engagement - not replace them.
+
+**This project’s reliance on relative measures might discount the impact of absolute changes.**
+While the median and quintile values provide a useful baseline for comparing the County’s tracts, this approach risks underestimating the impacts of region-wide growth. For instance, if most neighborhoods are experiencing rising housing costs while household incomes remain flat then residents will experience pressure to relocate. In this scenario the comparison of one neighborhood to the rest may be less important than the measurement of absolute change.
+
+**Several technical limitations should also be considered when reading this report.**
+For a project attempting to describe a localized, fast-moving process like gentrification, the following limitations are significant and important to acknowledge.
+
+  - The use of survey data from samples of populations at the census tract scale introduces geographic abstraction and statistical uncertainty. Tracts are small, arbitrarily-defined units of geography that often don’t align with familiar neighborhood boundaries. Groups of people with disparate experiences may end up grouped together in the same tract, resulting in data that doesn’t reflect the actual experiences of most of the tract’s population. 
+  - The use of statistical sampling increases the uncertainty of the results because this method relies on a relatively small number of survey responses to represent a whole tract. The uncertainty is reduced by combining survey results from different years (e.g., a five-year span of time like 2013 - 2017)
+  - The results are more “outdated” and don’t fully reflect any recent changes that may have occurred. 
+
+Given these limitations, the project team suggests that the the results be understood as an incomplete depiction of where and how gentrification is occurring in King County and that they should be used with appropriate caution. The team hopes that this project will be understood as imperfect attempt to simplify a complex socioeconomic process in order to identify appropriate public policy solutions that can be acted on quickly. **The results of this project should be interpreted not as definitive facts but rather as systematically-derived starting points for discussions between impacted communities and policymakers.** The findings should not be used as a substitute for direct engagement with impacted communities but they may help contextualize such efforts and point toward potential solutions.
+
+## Process Findings {-}
 
   1. **The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue.**<br><br>
-  2. **Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.**<br><br>
-  3. **The vast majority of Communities of Opportunity (COO) neighborhoods show signs of gentrification but the specific stages of gentrification vary.**<br><br>
-  4. **Each COO community has at least one neighborhood undergoing the "dynamic" stage of gentrification that is associated with on-going involuntary displacement.**<br><br>
+  2. **Involving community members and staff from community serving institutions during the ground-truthing workshops played a critical role in the project team’s effort to identify representative indicators. Ground truthing earlier in the project would have made the process more efficient.**<br><br>
+  3. **Equitable, well-resourced, and accountable partnerships between researchers/consultants and community-serving institutions/community members are necessary when conducting research that aims describe historically-marginalized communities.**<br><br>
 
+## Typology Findings {-}
 
-## How to Use This Report {-}
+  1. **Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it.**<br><br>
+  2. **The vast majority of Communities of Opportunity (COO) neighborhoods show signs of gentrification but the specific stages of gentrification vary.**<br><br>
+  3. **Each COO community has at least one neighborhood undergoing the “dynamic” stage of gentrification that is associated with ongoing involuntary displacement**<br><br>
 
-The results of this project should be interpreted and used with caution. 
-
-As the project team learned early on in the process, the neighborhood types do not represent the experience of everyone in each neighborhood. Further, the data that inform the results all contain some degree of uncertainty and, therefore, should be treated as estimates rather than exact representations of reality. But most importantly, the results should be understood as imperfect attempts to simplify a complex socioeconomic process in order to identify appropriate public policy solutions.^[The 20th century statistician George Box is commonly attributed for coining the phase "All models are wrong but some are useful", an aphorism that applies to this project and its findings. See the #limitations section for a detailed list of the challenges that are inherent to this project, its method, and its findings.] The data that are publicly available for each neighborhood reflect the priorities of the public institutions that collect data (e.g., US Census, King County Tax Assessor's Office, etc.) and therefore some important indicators (like recent market-rate rent prices) are not available. Data are not neutral; they reflect societal power dynamics, especially when it comes to the question of which data are collected (and published) and which are not [@coalition_of_communities_of_color_leading_2018; @jolivette_research_2015; @townsend_cities_2015]. 
-
-This report makes use of a relatively small set of indicators from public data sources in order to describe gentrification in an actionable way. **The results of this project should be interpreted not as definitive facts but rather as systematically-derived starting points for discussions between impacted communities and policymakers.** The findings of this project cannot be used as a substitute for direct engagement with impacted communities but they may help contextualize such efforts and point toward potential solutions.
 
  
 
@@ -101,9 +126,10 @@ This report makes use of a relatively small set of indicators from public data s
 
 ## Project History
 
-This project was undertaken at a time when King County was experiencing both economic and population growth.^[Between 1985 and 2015, King County's population grew by 25% (1.4M to 2.1M) and it is expected to grow to 2.3M by 2031 [@king_county_2016_2016]] As with any growing region, the costs and benefits of this growth have not been experienced equally or equitably by the County's residents. The government of King County, in partnership with the Seattle Foundation, formed a partnership and began implementing the Communities of Opportunity (COO) program with the goal of "address[ing] economic and racial inequities through place-based work and systemic change"^[To learn more information about COO visit the program's [website](https://www.coopartnerships.org/about-coo)].
+This project was undertaken at a time when King County was experiencing both economic and population growth.^[Between 1985 and 2015, King County's population grew by 25% (1.4M to 2.1M) and it is expected to grow to 2.3M by 2031 [@king_county_2016_2016]] As with any growing region, the costs and benefits of this growth have not been experienced equally or equitably by the County’s residents. The government of King County, in partnership with the Seattle Foundation, formed a partnership and began implementing the Communities of Opportunity (COO) program with the goal of “address[ing] economic and racial inequities through place-based work and systemic change”.^[To learn more information about COO visit the program's [website](https://www.coopartnerships.org/about-coo)]
 
-Two of COO's signature strategies (the practice data-driven policy making and the creation of peer-based learning communities) were exemplified by a group of placed-based organizations that met regularly to discuss the challenges and opportunities of working with community data. Known as the Evaluation and Advisory Data Workgroup (EAG)^[The name was initially just "The COO Data Workgroup" but it changed in 2018 to reflect the COO program's focus on internal evaluation], this body provided the inspiration and motivation for the project that would become the "COO Neighborhood Change Typology Report". At a meeting in early 2016, EAG participants discussed the four outcome areas that COO had identified^[These include health, housing, economic opportunity, and community connections] and the "headline indicators" of these different topics. The group felt that progress was being made on the tracking of most indicators with one glaring exception: involuntary displacement. While everyone in the group had stories of neighbors and clients who were feeling displacement pressure (or had already moved because of it), the participants noted a lack of comprehensive data confirming these lived experiences. The group decided to explore how this problem might be addressed, a process which led to the formation of a subgroup and, ultimately, the creation of this report.
+Two of COO’s signature strategies (the practice data-driven policy making and the creation of peer-based learning communities) were exemplified by a group of placed-based organizations that met regularly to discuss the challenges and opportunities of working with community data. Known as the Evaluation and Advisory Data Workgroup (EAG)^[The name was initially just "The COO Data Workgroup" but it changed in 2018 to reflect the COO program's focus on internal evaluation], this body provided the inspiration and motivation for the project that would become the “COO Neighborhood Change Typology Report”. At a meeting in early 2016, EAG participants discussed the four outcome areas that COO had identified^[These include health, housing, economic opportunity, and community connections] and the “headline indicators” of these different topics. The group felt that progress was being made on the tracking of most indicators with one glaring exception: involuntary displacement. While everyone in the group had stories of neighbors and clients who were feeling displacement pressure (or had already moved because of it), the participants noted a lack of comprehensive data confirming these lived experiences. The group decided to explore how this problem might be addressed, a process which led to the formation of a subgroup and, ultimately, the creation of this report.
+
 
 ### Timeline {-}
 
@@ -112,9 +138,11 @@ Two of COO's signature strategies (the practice data-driven policy making and th
 
 ### Stage One: Pilot Project, 2016 - 2017 {-}
 
-Between the project's start in 2016 and the publication of this report in early 2019, there have been several "stages" of work. The first might be described as the "Pilot Project" and it included many stages of its own: the formation of the project team; a  review of gentrification and displacement literature; consultation with experts on demographic and real estate data; the development of a preliminary model and results; testing the veracity of these results by comparing them with community members' lived experiences at "ground-truthing" workshops; and the periodic sharing of progress updates with the EAG. The Pilot Project ended in January 2017 with a presentation to a group of COO stakeholders that included EAG members as well as members of the program's system change committee and staff from some of COO's place-based partner organizations.
+Between the project’s start in 2016 and the publication of this report in early 2019, there have been several “stages” of work. The first might be described as the “Pilot Project” and it included many stages of its own: the formation of the project team; a review of gentrification and displacement literature; consultation with experts on demographic and real estate data; the development of a preliminary model and results; testing the veracity of these results by comparing them with community members’ lived experiences at “ground-truthing” workshops; and the periodic sharing of progress updates with the EAG.
 
-This presentation at the end of the Pilot turned out to be a critically important milestone for the project. The results of the Neighborhood Change Typology method suggested that some parts of Seattle’s Rainier Valley neighborhood and the cities of Seatac and Tukwila^[These two cities were treated as a single place-based “community” in the COO program] were at-risk for gentrification (and displacement) and that the unincorporated community of White Center was not. These findings did not match the lived experience of many of the members of those three communities who had shared examples of on-going gentrification and displacement in the "ground-truthing" workshops. But in the case of White Center the findings were more than just an inaccurate characterization; as staff from the White Center Community Development Association (WC CDA) explained, these results had the potential to be “weaponized” by opponents of affordable housing and other equitable community development efforts. These staff offered to work with the project team to troubleshoot the model and look for opportunities to improve it but they also requested that the publication of the preliminary results wait until this follow-up work could be completed.
+The ground-truthing workshops, led by Puget Sound Sage, asked members of the three COO communities to describe their experiences of neighborhood change and compare them to the description provided by the Neighborhood Change Typology model.^[This was an earlier version of the model that used a different set of indicators from those used in the model presented in the Results section of this report.] The information shared by workshop participants strongly suggested that the model under-represented the degree of gentrification and potential displacement risk in the COO community neighborhoods, particularly in White Center.
+
+The Pilot Project ended in January 2017 with a presentation to a group of COO stakeholders that included EAG members as well as members of the program’s system change committee and staff from some of COO’s place-based partner organizations. This presentation turned out to be a critically important milestone for the project. The results of the Neighborhood Change Typology method suggested that some parts of Seattle’s Rainier Valley neighborhood and the cities of Seatac and Tukwila^[These two cities were treated as a single place-based “community” in the COO program] were at-risk for gentrification (and displacement) and that the unincorporated community of White Center was not. These findings did not match the lived experience of many of the members of those three communities who had shared examples of on-going gentrification and displacement in the “ground-truthing” workshops. Inaccurate characterizations of communities can negatively impact marginalized communities by undermining their efforts to advocate for public resources and to hold policy makers accountable for addressing disparities. In the case of White Center, these inaccurate preliminary results also had the potential to be “weaponized” by opponents of affordable housing and other equitable community development efforts. Because of these implications, the project team requested additional time and funding to troubleshoot the model and gather data that better reflects the lived experiences of the community members through directly; this additional work was conducted in collaboration with the WCCDA.  
 
 ### Stage Two: Hiatus, 2017 - 2018 {-}
 
@@ -122,7 +150,12 @@ The next stage of the project was a 12-month period of no activity that stretche
 
 ### Stage Three: Collaborative Revision, 2018 - 2019 {-}
 
-In early summer of 2018, the project team reconvened and began working on a revision. Unlike the Pilot, the third stage was structured as a direct collaboration between the project team and staff from WC CDA. The project team took the lead on exploring alternative indicators that might improve the project’s model of neighborhood change and WC CDA staff provided their expertise on the specific displacement-related challenges that the members of their community faced (and continue to face). Additionally, this partnership led to productive discussions between the two groups about the challenging limitations that are present in “institutional data”^[In this context, the term “institutional data” was used to refer to data that are created by public agencies (e.g., the US Census) and it was contrasted with “community data” that don’t come from centralized, institutional sources] and how these limitations reflect the priorities of America’s dominant culture.
+In early summer of 2018, the project team reconvened and began working on a revision. Because the Pilot Project's preliminary results were most inaccurate and potentially damaging to the White Center neighborhood, the revision process focused on improving the model’s characterization of that community. Unfortunately, time and resource constraints prevented the team from expanding to include representatives from Rainier Valley, Seatac, and Tukwila, who could have provided important contextual information to guide the revision process.
+
+Unlike the Pilot, the third stage was structured as a direct collaboration between Futurewise and the WCCDA to form the project team that would finalize the work. Futurewise took the lead on exploring alternative indicators that might improve the project’s model of neighborhood change and the WCCDA provided their expertise on the specific displacement-related challenges that the members of their community faced (and continue to face). The collaborative process involved many meetings in which the WCCDA staff offered invaluable input that guided the search for more-representative indicators. While higher-quality renter data was identified as a priority early in the process, it ultimately became clear that these data do not exist at the county-wide scale required by the project’s method. Nevertheless, the information that the WCCDA provided clarified the limitations inherent in both the original and revised method and led the team to emphasize these limitations in this report. Additionally, this partnership led to productive discussions between the two groups about the challenging limitations that are present in “institutional data” and how these limitations reflect the priorities of America’s dominant culture as reflected in local governments’ land use policies.
+
+Unlike the Pilot phase, the revision did not include a series of ground-truthing workshops. While such workshops would have provided important feedback and vetting for the revised model, they were precluded by the project’s budgetary constraints. The revised Neighborhood Typology Results were presented to the COO EAG in February 2019, who suggested several improvements in how this project can be described to community members and made useful to community-based organizations. A consensus was reached that the neighborhood typology results by themselves provide an incomplete picture and that they must be complemented by contextual information that comes from the impacted communities themselves.
+
 
 ## Defining Gentrification & Displacement
 
@@ -153,16 +186,6 @@ Other terms used throughout this report include:
   - **Census Tract:** according to the US Census Bureau, census tracts are "small, relatively permanent statistical subdivisions of a county or county equivalent and generally have a population size between 1,200 and 8,000 people, with an optimum size of 4,000 people" [@us_census_bureau_geography_nodate]. For the purposes of this project, census tracts are used as a geographic proxy for neighborhoods.
   - **Indicator:** an indicator is the "representation of statistical data for a specified time, place or any other relevant characteristic, corrected for at least one dimension (usually size) so as to allow for meaningful comparisons... It is a summary measure related to a key issue or phenomenon and derived from a series of observed facts" [@eurostat_eurostat_nodate]. For example, this project uses the percentage of a census tract's population that are low-income as an indicator of vulnerability to displacement.
   - **Model:** according to Professor Daniel Kaplan of Macalester College, a model is "a representation for a particular purpose" [@kaplan_statistical_2009, p.6]. This project builds a "classification model" of neighborhood change in order to better understand what displacement mitigation and neighborhood revitalization policies to consider adopting in specific neighborhoods throughout King County. The project's model is grounded in a conceptual understanding of how neighborhood change works [see @freeman_displacement_2005; @bates_gentrification_2013; and @miriam_zuk_gentrification_2015] and model's results are determined by the indicator data.^[A common aphorism in the field of statistics says that "all models are wrong, but some are useful" [@box_science_1976]. This phrase means that models are _necessarily_ a simplification of reality and, therefore, they should be judged not by their accuracy alone but by their ability to represent a phenomenon with enough accuracy to be useful. While the project's authors generally agree with this observation, we also believe that researchers have a responsibility to ask themselves "to _whom_ is this model useful?" and to consider the history of harm that has been done to marginalized communities by researchers and their models.]
-
-## Project Summary
-
-The primary goal of this project is to provide the COO partners with a clearer understanding of which neighborhoods in King County are experiencing gentrification or are at-risk of gentrifying. The gentrification of a neighborhood often leads to the removal of many of the residents (i.e., displacement), preventing them from receiving the benefits of the changes and improvements that characterize neighborhood revitalization efforts. As this region's economic and population growth changes the composition of neighborhoods, it is critical that communities and their governments work together to ensure that the costs and benefits of growth are distributed equitably.
-
-In addition to the question of which neighborhoods are at-risk or gentrifying, this project also tries to provide a useful description of what stage each neighborhood is at in the process. The concept of a "neighborhood change typology" that is actionable and connects to anti-displacement policies comes directly from the work of Dr. @bates_gentrification_2013 [p.9]. Importantly (although perhaps counter-intuitively), this project does not try to measure the number of displaced households, nor does it try to predict displacement rates. While those two data points would be useful information and would fit nicely into the COO "headline indicator" framework, this project's literature review suggests that there is not yet a methodologically sound way to measure them at the project's geographic scale (i.e., all census tracts within King County).
-
-Because this project operates within the framework of the COO program, it focuses specifically on the census tracts^[Census tracts are a geographic unit created used by the US Census to organize its survey data. Although these geographies are often used as proxies for neighborhoods, they almost never align with the actual boundaries of any given city's neighborhoods. For that reason, they should be consider a "best approximation" of neighborhoods rather than an exact representation.] that characterize the three original COO place-based communities. The purpose is not to compare one community against another but rather to provide a data-driven foundation for displacement mitigation and community restoration policies.
-
-Finally, the project is intended to be clear, accessible, and reproducible; particularly to staff members of the COO community partners and the residents of the neighborhoods in those communities. The data and code files used to create the model and findings are published online and open to those who want to explore them.
 
 
 <!--chapter:end:01-introduction.Rmd-->
@@ -198,7 +221,7 @@ The diagram below illustrates how elements of this hierarchical conceptual struc
 
 ### Statuses {-}
 
-A neighborhood’s status simply describes whether or not it is considered to be at-risk for gentrification or not. Neighborhoods that experience long-term disinvestment and poverty face many challenges but the threat of gentrification only applies when these conditions are combined with a housing market that begins to rapidly appreciate in value.^[Bates explains that while long-term low-income and low-value neighborhoods are not likely to experience displacement pressure directly, they are connected to the gentrification process: “There is a relationship between gentrifying and low-income areas: the latter are the most likely destinations for low-income, vulnerable residents displaced from ‘hot’ markets.” @bates_gentrification_2013 [p.57].] Similarly, a long-term high cost neighborhood may experience home value appreciation but without a shift toward higher-income and highly-educated residents this case doesn’t fit the definition of gentrification. Further, as part of the Communities of Opportunity (COO) program this project is focused on supporting the County’s most marginalized communities and therefore addressing the potential gentrification of moderately high-value neighborhoods is not a priority for this effort. The characteristics of a gentrifying or gentrified neighborhood are “housing market changes, economic status changes, and demographic changes … that alter its character”.[@bates_gentrification_2013, p.9]
+A neighborhood’s status simply describes whether or not it is considered to be at-risk for gentrification or not. Neighborhoods that experience long-term disinvestment and poverty face many challenges but the threat of gentrification only applies when these conditions are combined with a housing market that begins to rapidly appreciate in value.^[Bates explains that while long-term low-income and low-value neighborhoods are not likely to experience displacement pressure directly, they are connected to the gentrification process: “There is a relationship between gentrifying and low-income areas: the latter are the most likely destinations for low-income, vulnerable residents displaced from ‘hot’ markets.”  [-@bates_gentrification_2013, p.57]] Similarly, a long-term high cost neighborhood may experience home value appreciation but without a shift toward higher-income and highly-educated residents this case doesn’t fit the definition of gentrification. Further, as part of the Communities of Opportunity (COO) program this project is focused on supporting the County’s most marginalized communities and therefore addressing the potential gentrification of moderately high-value neighborhoods is not a priority for this effort. The characteristics of a gentrifying or gentrified neighborhood are “housing market changes, economic status changes, and demographic changes … that alter its character” [@bates_gentrification_2013, p.9].
 
 ### Stages {-}
 
@@ -226,7 +249,7 @@ The characteristics of a neighborhood that determine its type are referred to as
       c. Medium/high-income households
       d. Owner households
       
-  3. **Housing Market Appreciation:** whether the neighborhood's housing market is shifting from a low-value state to a high-value one. Bates measures this change using the home values themselves (in comparison to all neighborhoods) and the rate of change in these values (i.e., appreciation) [@bates_gentrification_2013, p.28]. The Housing Market Appreciation dimension of neighborhood change can itself be divided into types:
+  3. **Housing Market Appreciation:** whether the neighborhood's housing market is shifting from a low-value state to a high-value one. Bates measures this change using the home values themselves (in comparison to all neighborhoods) and the rate of change in these values (i.e., appreciation) [-@bates_gentrification_2013, p.28]. The Housing Market Appreciation dimension of neighborhood change can itself be divided into types:
       a. **Adjacent neighborhoods:** low/moderate value neighborhoods with low appreciation rates that are next to high value or rapidly appreciating neighborhoods^[The Adjacent type is intended to capture the "spillover effect" where the proximity to high value markets draws buyers to a nearby low value neighborhood [see @bates_gentrification_2013, p.61]]
       b. **Accelerating neighborhoods:** low/moderate value neighborhoods with high appreciation rates
       c. **Appreciated neighborhoods:** high value neighborhoods that appreciated from low value status over a longer period of time
@@ -250,7 +273,7 @@ In contrast, the COO Revised Model uses data from one additional data source (th
 
 While the Portland model relied on US Census surveys responses, the COO Revised model primarily uses data from the King County Tax Assessor. The tax assessor data captures the entirety of the County’s housing properties and the valuations are updated regularly according to the  County’s algorithm. Additionally, this data includes all sales of housing properties along with relevant metadata like the sale price, the size of the home, and the “instrument” of the sale (e.g., foreclosure, divorce settlement, etc.).^[See the metadata for the ‘Real Property Sales’ file listed on King County’s Assessor Data Portal: <https://info.kingcounty.gov/assessor/datadownload/desc/Real%20Property%20Sales.doc>]
 
-In addition to adding a source of more recent housing market data, this project deviates from the Portland model by using multiple indicators in the definition of each housing market appreciation type. For instance, a neighborhood with a “High” 2018 value may either have a high median assessed value or a high median sale price per square foot (both measures are relative to all census tracts in King County). Similarly, this project adds a measurement of the percentage of homes sold in a neighborhood in the past three years as an alternate indicator of a “hot” market. The inspiration for this additional appreciation indicator comes from Bates’ recommendations for the “monitoring and tracking” of new market sales activity [@bates_gentrification_2013, p.35]. The COO Revised Model refers to this sale rate indicator as “short-term” appreciation and the home value indicator as “medium-term” appreciation, but the presence of a high value in either indicator is interpreted by the model as an “appreciating” housing market type.
+In addition to adding a source of more recent housing market data, this project deviates from the Portland model by using multiple indicators in the definition of each housing market appreciation type. For instance, a neighborhood with a “High” 2018 value may either have a high median assessed value or a high median sale price per square foot (both measures are relative to all census tracts in King County). Similarly, this project adds a measurement of the percentage of homes sold in a neighborhood in the past three years as an alternate indicator of a “hot” market. The inspiration for this additional appreciation indicator comes from Bates’ recommendations for the “monitoring and tracking” of new market sales activity [-@bates_gentrification_2013, p.35]. The COO Revised Model refers to this sale rate indicator as “short-term” appreciation and the home value indicator as “medium-term” appreciation, but the presence of a high value in either indicator is interpreted by the model as an “appreciating” housing market type.
 
 ### The Renter Experience {-}
 
@@ -260,32 +283,14 @@ Nevertheless, this project made an effort to include rent prices in the Housing 
 
 The project team tried to identify a reliable source of rental prices for King County but was unsuccessful in this effort.^[Similar projects like @city_of_seattle_seattle_2016 used data from the now-closed market research firm Dupre and Scott. Other data sources that are currently available do not provide data at the census tract geographic scale.] Instead, data from the American Community Survey 5-year spans was included in the model even though it does not meet the projects requirements for “freshness” (i.e., rents change too dynamically to use a sample of survey responses collected over the span of five years).
 
-Finally, this model makes a distinction between neighborhoods that are predominantly multifamily housing markets and those that are either mostly single family or mixed housing markets. The primary reason for this change is that several of King County’s census tracts are almost entirely composed of multifamily homes and therefore the use of median single family home values as an indicator of market appreciation would yield inaccurate results.^[A simple analysis of the share of housing units in multifamily buildings (by census tract) led the project team to select >=90% as the threshold for determining that a tract should be considered “mostly multifamily”. See \@ref(app-data-viz-pct-mf) for details.] Instead, the COO Revised model uses a combination of rent prices, residential condominium values, and sale prices for these neighborhoods. This allows the model to more accurately describe the stage of gentrification for neighborhoods located near central business districts (primarily Seattle’s CBD) while avoiding the inadvertent "erasure" of the experience of these neighborhoods' residents.
+Finally, this model makes a distinction between neighborhoods that are predominantly multifamily housing markets and those that are either mostly single family or mixed housing markets. The primary reason for this change is that several of King County’s census tracts are almost entirely composed of multifamily homes and therefore the use of median single family home values as an indicator of market appreciation would yield inaccurate results.^[A simple analysis of the share of housing units in multifamily buildings (by census tract) led the project team to select >=90% as the threshold for determining that a tract should be considered “mostly multifamily”. See Figure \@ref(fig:app-data-viz-pct-mf) for details.] Instead, the COO Revised model uses a combination of rent prices, residential condominium values, and sale prices for these neighborhoods. This allows the model to more accurately describe the stage of gentrification for neighborhoods located near central business districts (primarily Seattle’s CBD) while avoiding the inadvertent "erasure" of the experience of these neighborhoods' residents.
 
 ## Model Comparison
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
-preservede81d5b5f4431299
+preserve87585eca4c3bbdab
 
-## Limitations
-
-This method is intended to guide policy makers and community members toward effective displacement mitigation strategies by categorizing neighborhoods according to their stage in the process of neighborhood change. As with any approach that attempts to model a complex system (in this case, a neighborhood), the results of this method should be interpreted cautiously and its limitations must be acknowledged.^[For a relevant summary of the limitations of displacement risk composite indices, see @city_of_seattle_seattle_2016 [p.15].]
-
-**The most important limitation is the absence of contextual information.** Simply put, if a neighborhood is experiencing gentrification and displacement but those changes are not captured in Census/Assessor’s Office data then this model will be wrong because it only “knows about” a small set of indicators. This method does not include a way to add contextual data from the communities that are being displaced to refine its typology classification. If used to inform public policy, the model’s results should _complement_ the results of direct community engagement - not replace them.
-
-**Individual households that are vulnerable to displacement can likely be found in every neighborhood in the county, not just the neighborhoods identified by this project’s model.** All members of marginalized populations face systemic challenges that impact their ability to resist displacement, but this method focuses on the _neighborhoods_ where these populations are more concentrated. The results of this model run the risk of being misinterpreted as a depiction of the only places where displacement is a concern, when in fact this issue is likely relevant for some households in nearly every neighborhood.
-
-**The use of small geographic units (e.g., census tracts) increases the uncertainty of the data.** While there appears to be some consensus in the academic scholarship that gentrification is a neighborhood-based dynamic [@miriam_zuk_gentrification_2015], the use of neighborhood-sized samples of American Community Survey data introduces significant statistical uncertainty into the results. Similarly, the use of data collected during wide spans of time (five years for the ACS data) restricts the ability of the model to reflect current on-the-ground conditions. This limitation is particularly relevant to highly dynamic indicators like rent prices but is also has implications on the data's ability to reflect the rapid pace of shifting neighborhood demographics. 
-
-**This method's reliance on _relative_ measures might discount the impact of _absolute_ changes.** The median and quintile values provide a useful baseline for comparing the County’s tracts but this approach risks underestimating the impacts of region-wide growth. For instance, if most neighborhoods are experiencing rising housing costs while household incomes remain flat then residents will experience pressure to relocate. In this scenario the comparison of one neighborhood to the rest may be less important than the measurement of absolute change.
-
-**This method produces _descriptive_ – not predictive – results.** The results describe the demographic and housing market pattern of neighborhoods; they do not predict the precise number of households that might be displaced, nor do they directly measure the number of households that have been displaced already.
-
-**The absence of recent, systematically collected rent price data weakens the model’s ability to accurately portray changes in rental housing markets.** While the project team tried to find a better source of rent data than the ACS, that effort was ultimately unsuccessful. The procurement of rent price data (past and present) for the entirety of King County is beyond the scope of this project.
-
-**The model narrowly focuses on indicators of residential neighborhood change but businesses experience gentrification and displacement pressure as well.** The results should not be interpreted as evidence of changes in the composition of a neighborhood’s business community [@bates_gentrification_2013, p.64].^[@bates_gentrification_2013 [p.64] mentions the potential for conducting a “neighborhood-serving business analysis” using data from the US Census Bureau’s North American Industry Classification System (NAICS)] 
- 
 ## Reproducibility & Open Source Materials
 
 The raw data and an R package containing the project's code files are available to download at 
@@ -298,14 +303,14 @@ https://doi.org/10.17605/OSF.IO/SJ7N9
 
 ## COO Revised Model (Single-Family/Mixed) Results
 
-The COO Revised Model identifies many neighborhoods in King County as either "at-risk" or gentrifying. 
+The COO Revised Model identifies many neighborhoods in King County as either “at-risk” or gentrifying. While the results below have not been vetted by every community in the county, the project team believes that these results can nevertheless be useful in framing discussions about anti-displacement and community stabilization policies if used responsibly. As was previously mentioned, it is imperative that Neighborhood Change Typology results be paired with local contextual data from impacted communities in order to determine their accuracy and utility.
 
 <div class="figure" style="text-align: left">
 <img src="figures/findings-type-counts-1.png" alt="The number of tracts in each typology type" width="100%" />
 <p class="caption">(\#fig:findings-type-counts)The number of tracts in each typology type</p>
 </div>
 
-Of the 398 census tracts in King County, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are mostly concentrated in southwestern part of the county although some Late-stage gentrification tracts are identified in the communities surrounding Lake Sammamish. 
+Of the 398 census tracts in King County, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are predominantly concentrated in southwestern part of the county with a few notable exceptions. 
 
 
 <div class="figure" style="text-align: left">
@@ -324,7 +329,7 @@ Geographically, these neighborhoods appears to be split into three clusters:
 
 ## COO Revised Model (Multifamily) Results
 
-There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.^[As previously mentioned in the \@ref(results) section, the 90% threshold is an arbitrary one but it was arrived at through an analysis of the data. See \@ref(app-data-viz-pct-mf)  for detail of that analysis.]
+There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.^[As previously mentioned in the [Results](#results) section, the 90% threshold is an arbitrary one but it was arrived at through an analysis of the data. See Figure \@ref(fig:app-data-viz-pct-mf) for detail of that analysis.]
 
 The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). However, as the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
@@ -345,7 +350,7 @@ The neighborhoods are located either within Seattle's "city center" area (broadl
 
 
 
-The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be 166,967 (+/-2,698) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
+The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be 166,967 (+/-2,698) people]
 
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
@@ -391,23 +396,36 @@ The following maps display the COO Revised Neighborhood Change Typology (2018) r
 
 # Discussion
 
-## Partnership & Process 
+## Partnership & Process Findings
 
-Before discussing the project’s results (and their policy implications), it may be beneficial to consider the partnership and process that made the results possible. 
+Before discussing the project’s results (and their policy implications), it may be beneficial to consider the partnership and process that made the results possible.
 
-Data-driven analyses like this one have no shortage of technical challenges to overcome but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly.^[For a disucssion of the technical challenges faced by this project, see the [limitations] section of this report] This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Nevertheless, even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. These early results posed a potential threat to the community development efforts of organizations like the White Center Community Development Association. If their staff had not pointed out the flaws in these early results (and later brainstormed solutions with the project team), the project’s results would have been less accurate and could have been used as evidence _against_ the need for displacement mitigation policies and equitable public investment. 
+Data-driven analyses like this one have no shortage of technical challenges to overcome but perhaps an even greater obstacle is the formation of the type of partnership that brings together the necessary expertise to complete the project responsibly. This project benefited from its genesis in the COO Evaluation and Advisory group, where staff members of community-based organizations helped to shape it with their knowledge of the three COO communities. Even though the project team had access to this pool of local expertise, the Pilot phase’s preliminary results did not reflect the lived reality of many of these communities. Through collaboration with the WCCDA in the revision stage, the project team was able to explore the inaccuracies of these findings and brainstorm solutions for gathering data that would better reflect the lived experiences of the communities. Although the method and data remain subject to many limitations, the project team is confident that the collaborative process enhanced the accuracy of the final results.
 
-This experience underscores what might be the most significant finding of the project: 
+This experience underscores what might be the most significant finding of the project:
+ 
 
 #### 1. The people from the communities most impacted by inequities are the ones who best understand the challenges that they face. They must, therefore, play a meaningful role in deciding what solutions to pursue. {-}
 
 A classification model built with institutional data can be useful, but its utility depends on the participation of members of the communities that are experiencing gentrification and displacement. Advisory groups, “ground-truthing” workshops, and flexibility on the part of the project team are all necessary components of a project like this one.
 
-This project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.^[For more information about research justice, see @jolivette_research_2015 and @coalition_of_communities_of_color_leading_2018]
+This project’s method relies on a small group of people using data from public institutions to produce information about many neighborhoods. The experience of undertaking this project has led its team to conclude that there is significant value in pursuing other research methods; ones that center the members of the most impacted communities and invest in their exploration of the issues that matter most to them. The approach known as “research justice” offers great potential in the pursuit of equitable community development and other related goals held by the Communities of Opportunity program and the government of King County.
+^[For more information about research justice, see @jolivette_research_2015 and @coalition_of_communities_of_color_leading_2018]
+
+#### 2. Involving community members and staff from community serving institutions during the ground-truthing workshops played a critical role in the project team’s effort to identify representative indicators. Ground truthing earlier in the project would have made the process more efficient. {-}
+
+Initially, the question of whether to include ground-truthing workshops in the Pilot Project or to recommend them as next steps was a source of disagreement within the project team. After some back-and-forth debate, Puget Sound Sage prevailed with their argument that local contextual information is crucial not only for the research’s accuracy but also as a safeguard to prevent unintended harm to marginalized communities. This decision proved to be the right one, as these workshops provided feedback and criticism that significantly influenced the revision process and the project’s findings. Had there been efforts to engage directly with residents of the COO communities (aside from the EAG participants) earlier in the process, it is possible that a more accurate set of indicators would have been selected during the pilot and that the revision phase might not have been necessary. In any case, this project clearly benefited from the direct feedback of community members and the project team strongly recommends that other related projects apply this approach as well.
+
+#### 3. Equitable, well-resourced, and accountable partnerships between researchers/consultants and community-serving institutions/community members are necessary when conducting research that aims describe historically-marginalized communities. {-}
+
+Given the major takeaway learned during Pilot stage, it became clear to Futurewise that they would need to partner and build stronger relationships with at least one of the communities that are experiencing gentrification. Since the WCCDA had expressed interest in offering more in-depth feedback, they became a natural ally in the search for better data sets to reflect their community. In October of 2017, Futurewise used its own resources to offer a graduate fellowship to Yen Baynes, a POC White Center community organizer and researcher.  This fellowship allowed Futurewise to build a closer relationship with the WCCDA because Ms. Baynes’ graduate thesis focused on her work with a WCCDA’s youth internship. Ms. Baynes joined the Neighborhood Change Typology (NCT) project in June of 2018, where she worked closely with Futurewise’s Data Analyst, Tiernan Martin, and WCCDA’s Data and Evaluation Manager, Dao Tran, to fine-tune the NCT by coordinating meetings in which both Futurewise and WCCDA staff worked together to identify indicators and data sets.
+
+As a result, Futurewise was able to gain the insight necessary to complete the project.  There were many lessons learned throughout about how primarily White-led, issue-focused organizations such as Futurewise can work with POC-led, community-based organizations like the WCCDA.  One major lesson came near the end of this project as the WCCDA held Futurewise accountable by insisting that this report be written more collaboratively after a less-complete report was turned in without input from the WCCDA or Puget Sound Sage. The accountability required to form a more collaborative approach was reinforced by the equitable relationships that had been built throughout the project.  As a result, Futurewise learned the critical importance of operationalizing accountability to community members moving forward.
+
 
 ## Typology Findings
 
-#### 2. Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it. {-}
+#### 1. Over 30% of the County’s neighborhoods are either experiencing gentrification or are susceptible to it. {-}
 
 According to the project’s definition of “gentrification”, this means that a substantial portion of the County is experiencing an upward shift in socioeconomic demographics combined with housing market appreciation. Gentrification occurs in changing neighborhoods that are neither persistently low-income/low-value nor persistently high-income/high-value; in and of itself, it is not necessarily a bad thing.  
 
@@ -419,36 +437,21 @@ Seattle’s Central Area neighborhood (also known as the Central District) shows
 
 Lastly, the geographically dispersed group of Continued Loss type neighborhoods east of Lake Washington is unexpected and warrants further investigation.
 
-#### 3. The vast majority of COO neighborhoods show some signs (at least) of gentrification. {-}
+#### 2. The vast majority of COO neighborhoods show some signs (at least) of gentrification. {-}
 
 Of the COO neighborhoods, the most prevalent type is Early Type 1. This indicates that a neighborhood has relatively large populations that are vulnerable to displacement; has not yet seen a substantial demographic shift toward whiter, more affluent, better educated home owners; and still has low or moderate home values but is seeing high rates of short-term or medium-term home value appreciation. Put plainly, the neighborhoods are “on track” to gentrify and may soon experience significant displacement pressure (if they aren’t already).
 
 The introduction of the additional indicators of appreciation (i.e., change in sale price per square foot and the percent of homes sold) improves the model’s ability to identify housing markets with high turnover rates.^[see Figure \@ref(fig:app-data-viz-comm-hous-hist) for a comparison of housing market indicators by COO community] The large number of Early Type 1 neighborhoods suggests that many places with high concentrations of vulnerable people are also the places where the housing market is “heating up”. This methodological change accounts for much of the different between the preliminary results produced during the Pilot phase and the final model results.
 
-#### 4. Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement. {-}
+#### 3. Each COO community has at least one neighborhood undergoing the type of active gentrification associated with involuntary displacement. {-}
 
 While evidence of substantial demographic change is present in only 7 of the 34 COO community tracts, each of the communities has at least one such changing tract. As with the Early Type 1 neighborhoods, the new housing market appreciation indicators help the model to better identify Dynamic neighborhoods. While the demographic change indicators cannot by themselves be used as measures of displacement, they strongly suggest that vulnerable groups are being displaced from these neighborhoods. The Rainier Valley, which has four Dynamic tracts, should be treated as a community undergoing active gentrification and policies that are appropriate to this gentrification stage should be explored by community members and policy makers.
 
 ## Policy Implications
 
-The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies to evaluate for the COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political and therefore must be made in partnership with the most impacted communities [@bates_gentrification_2013, p.56]. 
+The goal of this project is to provide a consistent description of gentrification so that community leaders and policy makers can design effective intervention strategies that address and mitigate the displacement risk that marginalized communities face as King County continues to grow rapidly. The project adopts Dr. Bates’ neighborhood change typology framework (with modifications) and it also includes her “Policy Toolkit” to guide discussions about which tools and strategies might best address the needs of marginalized residents in COO communities. As Bates states, the decisions about which tools to use and how to prioritize scarce public resources are inherently political and therefore must be made in partnership with the most impacted communities @bates_gentrification_2013 [p.56]. Additionally, one of the lessons learned as a result of this project is that equitable, well-resourced, and accountable partnerships with community-serving institutions are critical ingredients to success. The project team wishes to emphasize that this lesson applies both to research and to efforts to design or implement policies on a community’s behalf. Anti-displacement and community-stabilization policies that are generated by members of marginalized communities will have a much higher likelihood of sustained success than those that are created by external partners alone.
 
-Prescriptive policy recommendations for specific communities are beyond the scope of this project but the following tables, when paired with the typology results, may be useful in assessing appropriate policy alternatives.
-
-Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
-
-#### 1. Plan for inclusive, equitable development {-}
-preserve7af4667b03c0bb6f
-
-#### 2. Increase/preserve opportunities for affordable housing {-}
-##### 2.1 Generate revenue for housing programs {-}
-preserveb79a1e807fc509f2
-
-##### 2.2 Create new affordable housing {-}
-preserve517ea83f7c8d0a3d
-
-##### 2.3 Preserve affordable housing {-}
-preserve6919247a7fdf9750
+Prescriptive policy recommendations for specific communities are beyond the scope of this project but Dr. Bates’ “Policy Toolkit”, when paired with the typology results, may be useful in partnering with communities to assess appropriate policy alternatives. See [Appendix A: Bates' Policy Toolkit](#bates-policy-toolkit) for a list of the specific policies that Bates recommends for each stage of gentrification.
 
 #### Final word on inclusive policy-making {-}
 
@@ -461,28 +464,45 @@ The importance of including people from the communities experiencing the disrupt
 >  * Shaping policies to promote equity and positively impact our communities
 >  * Bringing new resources into communities ^[For more details on the COO's approach see @noauthor_communities_nodate]
 
-As mentioned in the Section \@ref(limitations) of the Methods chapter, if the results of this project are used to inform public policy, it is critical that they _complement_ the findings of direct community engagement - not replace them.
+As mentioned in the [Guidance & Limitations section](#guidance-limitations) of the [Executive Summary](#executive-summary), if the results of this project are used to inform public policy, it is critical that they _complement_ the findings of direct community engagement - not replace them.
 
 <!--chapter:end:04-discussion.Rmd-->
 
 
 # Conclusion
 
-The disruptive threat of displacement is confronted by communities throughout King County. The Communities of Opportunity program provides a framework for the formation of public/private/community-based relationships that are uniquely capable of confronting systemic challenges like gentrification and involuntary displacement. 
+The disruptive threat of displacement is confronted by communities throughout King County. The Communities of Opportunity program provides a framework for the formation of public/private/community-based relationships that are uniquely capable of confronting systemic challenges like gentrification and involuntary displacement.
 
 In 2016, a working group of community-based organizations from White Center, Rainier Valley, Seatac, and Tukwila decided to prioritize the monitoring of involuntary displacement in their neighborhoods. This led to a three-year endeavor with plenty of challenges along the way but ultimately the project arrived at its stated goal: a data-driven typology of neighborhood change that can inform current and future anti-displacement work.
 
-The method, based on the work of Dr. Lisa Bates in Portland, OR; categorizes neighborhoods according to their gentrification stage (Early-, Mid-, and Late-stage) and the specific type of neighborhood change that they reflect. In 2016 the project team developed a preliminary model but it failed to identify the type of gentrification that was occurring in communities like White Center. The project began again in 2018, this time with a partnership between the initial project team (led by Futurewise) and a group of staff members at the White Center Community Development Association. Together, the partnership developed a revised version of the neighborhood change typology that incorporates new indicators of housing market change.
+The method, based on the work of Dr. Lisa Bates in Portland, OR; categorizes neighborhoods according to their gentrification stage (Early-, Mid-, and Late-stage) and the specific type of neighborhood change that they reflect. In 2016 the project team developed a preliminary model but it failed to identify the type of gentrification that was occurring in communities like White Center. The project began again in 2018, this time with a partnership between the initial project team (led by Futurewise) and the White Center Community Development Association. Together, the partnership developed a revised version of the neighborhood change typology that incorporates new indicators of housing market change.
 
-The results of the project suggest that over 30% of the neighborhoods in the cities and unincorporated communities of King County are experiencing some stage of gentrification. Within the COO communities, the vast majority of neighborhoods are in either the Early- or Mid-stages; a result that reaffirms the many of the community members concerns and suggests some specific tools and strategies that should be investigated by community members and policymakers. The project also demonstrates the inherent limitations of data-driven methods that rely solely on datasets produced by centralized public institutions: they often exclude or mischaracterize the communities that are most marginalized. The lack of recent, county-wide rent price data is an example of how data availability reflects the power dynamics of a society, posing a challenge to this project and others like it. 
+The results of the project suggest that over 30% of the neighborhoods in the cities and unincorporated communities of King County are experiencing some stage of gentrification. Within the COO communities, the vast majority of neighborhoods are in either the Early- or Mid-stages; a result that reaffirms the many of the community members concerns and suggests some specific tools and strategies that should be investigated by community members and policymakers. The project also demonstrates the inherent limitations of data-driven methods that rely solely on datasets produced by centralized public institutions: they often exclude or mischaracterize the communities that are most marginalized. The lack of recent, county-wide rent price data is an example of how data availability reflects the power dynamics of a society, posing a challenge to this project and others like it.
 
-While the findings of this project are limited by the method that produced them, there are clear applications of this knowledge in the development of anti-displacement and neighborhood revitalization strategies. The project team hopes that this information can serve as a foundation for subsequent projects and collaborations; preferably ones that experiment with different approaches that might better advance the opportunity of communities throughout King County.
+While the findings of this project are limited by the method that produced them, there are clear applications of this knowledge in the development of anti-displacement and neighborhood revitalization strategies. The project team hopes that this information can serve as a foundation for subsequent projects and collaborations; preferably ones that experiment with different approaches that might better advance the opportunity of communities throughout King County.  Some of the same literature that informed this work also calls for providing communities, especially marginalized communities that include low income people and people of color, the wherewithal and the access to create, analyze and utilize their own data to inform policy decisions [@jolivette_research_2015]. Indeed, the project team found that throughout the process, it was the perspectives of community members that provided the most insight into how to improve the research. The project team suggests that when assessing next steps for researching and understanding gentrification and displacement in King County, the COO program should consider investing in educational and methodological resources for communities to embark on social science research that can yield community generated data. This would provide a critical missing link for better assessing policy solutions that seek to curb the negative impact of gentrification on these communities.
 
 <!--chapter:end:05-conclusion.Rmd-->
 
 # (APPENDIX) Appendix {-}
 
-<!--chapter:end:99-01-appendix-a-method-notes.Rmd-->
+# Bates' Policy Toolkit
+
+Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
+
+#### 1. Plan for inclusive, equitable development {-}
+preserve10f42940e9ef200c
+
+#### 2. Increase/preserve opportunities for affordable housing {-}
+##### 2.1 Generate revenue for housing programs {-}
+preserve52e166081c048603
+
+##### 2.2 Create new affordable housing {-}
+preserve1ba72140c9a57f10
+
+##### 2.3 Preserve affordable housing {-}
+preserve316c793a446ca4b1
+
+<!--chapter:end:99-01-appendix-a-policy-toolkit.Rmd-->
 
 
 
@@ -495,7 +515,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preserve5d2cb9446501d599
+preservef3ddc06345e0eab0
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -553,11 +573,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserveb19f857d032ebfce
+preserve25b93357cd3e90a8
 
 
 ### Housing Market Change Indicators {-}
-preserve5da2f5938ee27274
+preserved16ef404e55eb350
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 
