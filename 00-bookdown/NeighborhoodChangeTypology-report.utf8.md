@@ -289,7 +289,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
-preserve87585eca4c3bbdab
+preserve90faa092cbaebe33
 
 ## Reproducibility & Open Source Materials
 
@@ -304,6 +304,7 @@ https://doi.org/10.17605/OSF.IO/SJ7N9
 ## COO Revised Model (Single-Family/Mixed) Results
 
 The COO Revised Model identifies many neighborhoods in King County as either “at-risk” or gentrifying. While the results below have not been vetted by every community in the county, the project team believes that these results can nevertheless be useful in framing discussions about anti-displacement and community stabilization policies if used responsibly. As was previously mentioned, it is imperative that Neighborhood Change Typology results be paired with local contextual data from impacted communities in order to determine their accuracy and utility.
+
 
 <div class="figure" style="text-align: left">
 <img src="figures/findings-type-counts-1.png" alt="The number of tracts in each typology type" width="100%" />
@@ -490,17 +491,17 @@ While the findings of this project are limited by the method that produced them,
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve10f42940e9ef200c
+preserve7f2608b0c2a551c1
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve52e166081c048603
+preserved55d81420bb4f74c
 
 ##### 2.2 Create new affordable housing {-}
-preserve1ba72140c9a57f10
+preserve9bb140e3f5dc729c
 
 ##### 2.3 Preserve affordable housing {-}
-preserve316c793a446ca4b1
+preservecbec13285cf2ac44
 
 <!--chapter:end:99-01-appendix-a-policy-toolkit.Rmd-->
 
@@ -515,7 +516,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preservef3ddc06345e0eab0
+preservec886b45dd5767ae9
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -573,11 +574,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve25b93357cd3e90a8
+preserve9cf26301f8e8f9a9
 
 
 ### Housing Market Change Indicators {-}
-preserved16ef404e55eb350
+preservef8fbc7d5a764c042
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 
