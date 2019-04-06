@@ -1,0 +1,74 @@
+# (APPENDIX) Appendix {-}
+
+# Bates' Policy Toolkit
+
+Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
+
+#### 1. Plan for inclusive, equitable development {-}
+```{r discussion-toolkit-table-01}
+readr::read_csv("data/bates-toolkittable-01.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+#### 2. Increase/preserve opportunities for affordable housing {-}
+##### 2.1 Generate revenue for housing programs {-}
+```{r discussion-toolkit-table-02}
+readr::read_csv("data/bates-toolkittable-02.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+##### 2.2 Create new affordable housing {-}
+```{r discussion-toolkit-table-03}
+readr::read_csv("data/bates-toolkittable-03.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) 
+
+```
+
+##### 2.3 Preserve affordable housing {-}
+```{r discussion-toolkit-table-04}
+readr::read_csv("data/bates-toolkittable-04.csv") %>%  
+  mutate_all(~if_else(is.na(.x),"",.x)) %>% 
+  gt() %>% 
+  cols_align(
+    align = "center",
+    columns = vars(EARLY,MID,LATE)
+  ) %>% 
+  tab_source_note(
+    source_note = md(
+      'Source: Bates L, 2013, “Gentrification and Displacement Study: Implementing an Equitable Inclusive Development Strategy in the Context of Gentrification”; p.76')
+  ) %>% 
+   tab_footnote(
+    footnote = "Rent control policies have significant legal challenges to overcome before they can be applied in Washington State",
+    locations = cells_data(columns = vars(STRATEGY),rows = 4)
+  )
+
+```

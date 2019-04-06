@@ -5,6 +5,7 @@
 
 The COO Revised Model identifies many neighborhoods in King County as either “at-risk” or gentrifying. While the results below have not been vetted by every community in the county, the project team believes that these results can nevertheless be useful in framing discussions about anti-displacement and community stabilization policies if used responsibly. As was previously mentioned, it is imperative that Neighborhood Change Typology results be paired with local contextual data from impacted communities in order to determine their accuracy and utility.
 
+
 ```{r findings-type-counts, fig.asp = 0.5, fig.cap='The number of tracts in each typology type'}
 # LOAD DATA ---------------------------------------------------------------
 
@@ -50,7 +51,7 @@ p1
 
 ```
 
-Of the 398 census tracts in King County, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are mostly concentrated in southwestern part of the county although some Late-stage gentrification tracts are identified in the communities surrounding Lake Sammamish. 
+Of the 398 census tracts in King County, just over 30% of them show signs of either being vulnerable to gentrification or experiencing this process right now (or in the recent past). Geographically, these neighborhoods are predominantly concentrated in southwestern part of the county with a few notable exceptions. 
 
 
 ```{r findings-kc-map, fig.cap='COO Neighborhood Change Typology - Single-Family/Mixed (2018)'}
@@ -78,7 +79,7 @@ Geographically, these neighborhoods appears to be split into three clusters:
 
 ## COO Revised Model (Multifamily) Results
 
-There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.^[As previously mentioned in the \@ref(results) section, the 90% threshold is an arbitrary one but it was arrived at through an analysis of the data. See \@ref(app-data-viz-pct-mf)  for detail of that analysis.]
+There are far fewer neighborhoods included in the “mostly multifamily” model results. This is because most neighborhoods in King County have a mixture of single-family and multifamily homes, making it relatively rare to find one where over 90% of the homes are located in multifamily buildings.^[As previously mentioned in the [Results](#results) section, the 90% threshold is an arbitrary one but it was arrived at through an analysis of the data. See Figure \@ref(fig:app-data-viz-pct-mf) for detail of that analysis.]
 
 The tracts included in the multifamily version of the COO Revised Model are geographically concentrated in Seattle and they include all three stages of gentrification (Early, Mid, and Late). However, as the figure below demonstrates, only four of the six types of neighborhood change are identified in the "mostly multifamily" neighborhoods.
 
@@ -158,7 +159,7 @@ dat <- readr::read_rds("data/model-all-20190305.rds")  %>%
               MOE = scales::comma(tidycensus::moe_sum(COOREV18_VULN_POC_MOE_TOT_2013_2017,COOREV18_VULN_POC_EST_TOT_2013_2017)))
 ```
 
-The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`) people] from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.
+The COO program’s three original place-based communities are White Center, Rainier Valley, and the combined residents of Seatac and Tukwila. These three communities include approximately 167,000 residents from four separate jurisdictions and countless distinct racial, ethnic, and cultural communities.^[Using data from the 2013-2017 American Community Survey, the author's calculations show the population of the census tracts included in the three original COO place-based communities to be `r dat$POP` (+/-`r dat$MOE`) people]
 
 The model identifies 28 of the 34 census tracts in these three communities as being either “at-risk” or gentrifying. Half of those 28 tracts fall into the Early Type 1 type while another quarter are identified as Dynamic (Mid-stage gentrification). Unlike the county as a whole, no Late-stage gentrification tracts are identified within the three original COO communities.
 
