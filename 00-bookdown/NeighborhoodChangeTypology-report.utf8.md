@@ -288,7 +288,7 @@ Finally, this model makes a distinction between neighborhoods that are predomina
 
 The following table captures the similarities and difference between the Portland model and this project's adaptation of it. The primary distinctions between the COO Revised model and the Portland model are the use of more recent data, the addition of alternative indicators of housing market appreciation, and the division of the model between neighborhoods with mostly multifamily housing and those characterized by either mostly single family or a mixture of housing types.
 
-preserve47596cd121b274ac
+preserveccf7be8b372f5a77
 
 ## Reproducibility & Open Source Materials
 
@@ -490,17 +490,17 @@ While the findings of this project are limited by the method that produced them,
 Please note that the following tables are direct transcriptions from @bates_gentrification_2013:
 
 #### 1. Plan for inclusive, equitable development {-}
-preserve098283eaef0b89e0
+preserved070f25bbbb957f8
 
 #### 2. Increase/preserve opportunities for affordable housing {-}
 ##### 2.1 Generate revenue for housing programs {-}
-preserve23222643882ecaba
+preserve88cfb342a8701e0e
 
 ##### 2.2 Create new affordable housing {-}
-preservec921fc397a36b292
+preserve3169a62ca4393775
 
 ##### 2.3 Preserve affordable housing {-}
-preserve9eae1c6cfef72a8d
+preserve8cb17159b3a86fe1
 
 <!--chapter:end:99-01-appendix-a-policy-toolkit.Rmd-->
 
@@ -515,7 +515,7 @@ The following interactive map includes the model results for both housing market
 
 _Tip: click the map to see to see the census tract identification number_
 
-preserveb72cd7484f457c81
+preserve69e5ca9329c0ef6a
 
 <!--chapter:end:99-01-appendix-b-interactive-maps.Rmd-->
 
@@ -573,11 +573,11 @@ The following tables show the indicator values for the census tracts that are pa
 
 ### Vulnernability & Demographic Change Indicators {-}
 
-preserve4e74849573690e3d
+preservefd22af263ae03a04
 
 
 ### Housing Market Change Indicators {-}
-preserve48e87b626a308fb1
+preserve1d7a0be6ce6e96f6
 
 For the complete data set, please download the research compendium: https://doi.org/10.17605/OSF.IO/SJ7N9
 
